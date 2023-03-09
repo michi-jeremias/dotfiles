@@ -138,11 +138,26 @@ require('lazy').setup({
     end,
   },
 
-  -- { -- Theme inspired by Atom
+  -- {
+  --   -- Theme inspired by Atom
   --   'navarasu/onedark.nvim',
   --   priority = 1000,
   --   config = function()
   --     vim.cmd.colorscheme 'onedark'
+  --   end,
+  -- },
+
+  -- {
+  --   -- required for zenbones
+  --   'rktjmp/lush.nvim',
+  -- },
+  -- {
+  --   -- Theme inspired by Atom
+  --   'mcchrish/zenbones.nvim',
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd.colorscheme 'zenbones'
+  --     vim.cmd.background = 'light'
   --   end,
   -- },
 
