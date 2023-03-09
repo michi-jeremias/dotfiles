@@ -116,3 +116,4 @@ export NVM_DIR="/home/michi/.nvm"
 
 alias loc='git ls-files | xargs wc -l'
 alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
+alias pbcopy="xclip -set clip"
