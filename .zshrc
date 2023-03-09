@@ -109,3 +109,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export NVM_DIR="/home/michi/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+alias loc='git ls-files | xargs wc -l'
+alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
