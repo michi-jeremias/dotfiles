@@ -113,7 +113,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',          opts = {} },
+  { 'folke/which-key.nvim', opts = {} },
   {
     -- Adds git releated signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -132,7 +132,7 @@ require('lazy').setup({
   {
     -- Nightfox Theme
     'EdenEast/nightfox.nvim',
-    priority = 1000,
+    -- priority = 1000,
     config = function()
       vim.cmd.colorscheme 'dayfox'
     end,
@@ -152,12 +152,13 @@ require('lazy').setup({
   --   'rktjmp/lush.nvim',
   -- },
   -- {
-  --   -- Theme inspired by Atom
+  --   -- Zenbones theme and related
+  --   -- 'mcchrish/zenbones.nvim',
   --   'mcchrish/zenbones.nvim',
   --   priority = 1000,
   --   config = function()
-  --     vim.cmd.colorscheme 'zenbones'
-  --     vim.cmd.background = 'light'
+  --     vim.cmd.colorscheme 'rosebones'
+  --     vim.cmd [[set background=light]]
   --   end,
   -- },
 
@@ -187,7 +188,7 @@ require('lazy').setup({
   },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',         opts = {} },
+  { 'numToStr/Comment.nvim', opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
   { 'nvim-telescope/telescope.nvim', version = '*', dependencies = { 'nvim-lua/plenary.nvim' } },
@@ -336,7 +337,7 @@ vim.keymap.set('n', 'x', '"_x"')
 -- Delete word in insert mode
 vim.keymap.set('i', '<C-del>', '<C-o>dw')
 vim.keymap.set('i', '<leader><del>', '<C-o>dw')
-vim.keymap.set('i', '<leader><BS>', '<C-w>')
+vim.keymap.set('i', '<C-BS>', '<C-w>')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
@@ -355,8 +356,8 @@ require('telescope').setup {
   defaults = {
     mappings = {
       i = {
-            ['<C-u>'] = false,
-            ['<C-d>'] = false,
+        ['<C-u>'] = false,
+        ['<C-d>'] = false,
       },
     },
   },
@@ -364,7 +365,6 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
-
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
@@ -380,8 +380,7 @@ vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { des
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>ss', require('telescope.builtin').live_grep,
-{ desc = '[S]earch [S]tring (same as <leader>sg)' })
+vim.keymap.set('n', '<leader>ss', require('telescope.builtin').live_grep, { desc = '[S]earch [S]tring (same as <leader>sg)' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 
 -- [[ Configure Treesitter ]]
@@ -410,41 +409,41 @@ require('nvim-treesitter.configs').setup {
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
       keymaps = {
         -- You can use the capture groups defined in textobjects.scm
-            ['aa'] = '@parameter.outer',
-            ['ia'] = '@parameter.inner',
-            ['af'] = '@function.outer',
-            ['if'] = '@function.inner',
-            ['ac'] = '@class.outer',
-            ['ic'] = '@class.inner',
+        ['aa'] = '@parameter.outer',
+        ['ia'] = '@parameter.inner',
+        ['af'] = '@function.outer',
+        ['if'] = '@function.inner',
+        ['ac'] = '@class.outer',
+        ['ic'] = '@class.inner',
       },
     },
     move = {
       enable = true,
       set_jumps = true, -- whether to set jumps in the jumplist
       goto_next_start = {
-            [']m'] = '@function.outer',
-            [']]'] = '@class.outer',
+        [']m'] = '@function.outer',
+        [']]'] = '@class.outer',
       },
       goto_next_end = {
-            [']M'] = '@function.outer',
-            [']['] = '@class.outer',
+        [']M'] = '@function.outer',
+        [']['] = '@class.outer',
       },
       goto_previous_start = {
-            ['[m'] = '@function.outer',
-            ['[['] = '@class.outer',
+        ['[m'] = '@function.outer',
+        ['[['] = '@class.outer',
       },
       goto_previous_end = {
-            ['[M'] = '@function.outer',
-            ['[]'] = '@class.outer',
+        ['[M'] = '@function.outer',
+        ['[]'] = '@class.outer',
       },
     },
     swap = {
       enable = true,
       swap_next = {
-            ['<leader>a'] = '@parameter.inner',
+        ['<leader>a'] = '@parameter.inner',
       },
       swap_previous = {
-            ['<leader>A'] = '@parameter.inner',
+        ['<leader>A'] = '@parameter.inner',
       },
     },
   },
@@ -531,7 +530,7 @@ require('nvim-tree').setup {
       glyphs = {
         folder = {
           arrow_closed = '+', -- arrow when folder is closed
-          arrow_open = '-',   -- arror when folder is open
+          arrow_open = '-', -- arror when folder is open
         },
       },
     },
@@ -585,16 +584,16 @@ cmp.setup {
     end,
   },
   mapping = cmp.mapping.preset.insert {
-        ['<C-k>'] = cmp.mapping.select_prev_item(), -- previous suggestion
-        ['<C-j>'] = cmp.mapping.select_next_item(), -- next suggestion
-        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-f>'] = cmp.mapping.scroll_docs(4),
-        ['<C-Space>'] = cmp.mapping.complete {},
-        ['<CR>'] = cmp.mapping.confirm {
+    ['<C-k>'] = cmp.mapping.select_prev_item(), -- previous suggestion
+    ['<C-j>'] = cmp.mapping.select_next_item(), -- next suggestion
+    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+    ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    ['<C-Space>'] = cmp.mapping.complete {},
+    ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = false,
     },
-        ['<Tab>'] = cmp.mapping(function(fallback)
+    ['<Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif luasnip.expand_or_jumpable() then
@@ -603,7 +602,7 @@ cmp.setup {
         fallback()
       end
     end, { 'i', 's' }),
-        ['<S-Tab>'] = cmp.mapping(function(fallback)
+    ['<S-Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
       elseif luasnip.jumpable(-1) then
@@ -646,7 +645,7 @@ rt.setup {
   },
   server = {
     settings = {
-          ['rust-analyzer'] = {
+      ['rust-analyzer'] = {
         checkOnSave = {
           command = 'clippy',
         },
@@ -700,11 +699,11 @@ sign { name = 'DiagnosticSignInfo', text = '' }
 
 local autopairs = require 'nvim-autopairs'
 autopairs.setup {
-  check_ts = true,                      -- enable treesitter
+  check_ts = true, -- enable treesitter
   ts_config = {
-    lua = { 'string' },                 -- don't add pairs in lua string treesitter nodes
+    lua = { 'string' }, -- don't add pairs in lua string treesitter nodes
     javascript = { 'template_string' }, -- don't add pairs in javascript template_string
-    java = false,                       -- don't check treesitter on java
+    java = false, -- don't check treesitter on java
   },
 }
 
