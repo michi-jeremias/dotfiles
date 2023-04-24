@@ -119,3 +119,7 @@ alias pbcopy="xclip -set clip"
 
 # Make truecolor work
 export COLORTERM=truecolor
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
