@@ -522,6 +522,7 @@ local servers = {
   -- pyright = {},
   -- rust_analyzer = {},
   taplo = {},
+  angularls = {},
   -- tsserver = {},
 
   lua_ls = {
