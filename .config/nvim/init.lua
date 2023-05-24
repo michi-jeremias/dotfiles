@@ -112,8 +112,14 @@ require('lazy').setup({
     'nvim-tree/nvim-web-devicons',
   },
 
+  {
+    -- improve UI
+    'stevearc/dressing.nvim',
+    opts = {},
+  },
+
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',          opts = {} },
+  { 'folke/which-key.nvim', opts = {} },
   {
     -- Adds git releated signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -142,7 +148,7 @@ require('lazy').setup({
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
     config = function()
-      vim.cmd([[colorscheme gruvbox]])
+      vim.cmd [[colorscheme gruvbox]]
       vim.cmd [[set background=dark]]
     end,
   },
@@ -208,7 +214,7 @@ require('lazy').setup({
   },
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim',         opts = {} },
+  { 'numToStr/Comment.nvim', opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
   { 'nvim-telescope/telescope.nvim', version = '*', dependencies = { 'nvim-lua/plenary.nvim' } },
@@ -356,7 +362,6 @@ vim.keymap.set('n', 'x', '"_x"')
 
 -- Delete word in insert mode
 vim.keymap.set('i', '<C-del>', '<C-o>dw')
-vim.keymap.set('i', '<leader><del>', '<C-o>dw')
 vim.keymap.set('i', '<C-BS>', '<C-w>')
 
 -- [[ Highlight on yank ]]
@@ -400,8 +405,7 @@ vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { des
 vim.keymap.set('n', '<leader>se', require('telescope.builtin').help_tags, { desc = '[S]earch H[e]lp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>ss', require('telescope.builtin').live_grep,
-  { desc = '[S]earch [S]tring (same as <leader>sg)' })
+vim.keymap.set('n', '<leader>ss', require('telescope.builtin').live_grep, { desc = '[S]earch [S]tring (same as <leader>sg)' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 
 -- [[ Configure Treesitter ]]
@@ -418,10 +422,10 @@ require('nvim-treesitter.configs').setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = '<c-space>',
-      node_incremental = '<c-space>',
+      init_selection = '<C-i>',
+      node_incremental = '<C-i>',
       scope_incremental = '<c-s>',
-      node_decremental = '<M-space>',
+      node_decremental = '<C-I>',
     },
   },
   textobjects = {
@@ -494,6 +498,7 @@ local on_attach = function(_, bufnr)
   end
 
   nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+  nmap('<F2>', vim.lsp.buf.rename, '[R]e[n]ame')
   nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
   nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
@@ -552,7 +557,7 @@ require('nvim-tree').setup {
       glyphs = {
         folder = {
           arrow_closed = '+', -- arrow when folder is closed
-          arrow_open = '-',   -- arror when folder is open
+          arrow_open = '-', -- arror when folder is open
         },
       },
     },
@@ -721,11 +726,11 @@ sign { name = 'DiagnosticSignInfo', text = '' }
 
 local autopairs = require 'nvim-autopairs'
 autopairs.setup {
-  check_ts = true,                      -- enable treesitter
+  check_ts = true, -- enable treesitter
   ts_config = {
-    lua = { 'string' },                 -- don't add pairs in lua string treesitter nodes
+    lua = { 'string' }, -- don't add pairs in lua string treesitter nodes
     javascript = { 'template_string' }, -- don't add pairs in javascript template_string
-    java = false,                       -- don't check treesitter on java
+    java = false, -- don't check treesitter on java
   },
 }
 
