@@ -1,0 +1,13 @@
+# asasdad
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+mouse = true
+gutters = ["diagnostics", "line-numbers", "diff", "spacer"]
+true-color = true
+rulers = [100]
+bufferline = "always"
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position", "file-encoding"]
