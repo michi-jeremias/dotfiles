@@ -9,5 +9,10 @@ true-color = true
 rulers = [100]
 bufferline = "always"
 
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding"]
