@@ -8,6 +8,7 @@ gutters = ["diagnostics", "line-numbers", "diff", "spacer"]
 true-color = true
 rulers = [100]
 bufferline = "always"
+color-modes = true
 
 [editor.cursor-shape]
 insert = "bar"
