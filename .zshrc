@@ -9,7 +9,6 @@ fi
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -113,6 +112,7 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/home/michi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export HELIX_RUNTIME=~/src/helix/runtime
 
 alias loc='git ls-files | xargs wc -l'
 alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'

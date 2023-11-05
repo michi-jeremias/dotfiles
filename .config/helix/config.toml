@@ -1,4 +1,3 @@
-# asasdad
 theme = "gruvbox"
 
 [editor]
@@ -17,3 +16,7 @@ select = "underline"
 
 [editor.statusline]
 right = ["diagnostics", "selections", "position", "file-encoding"]
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
