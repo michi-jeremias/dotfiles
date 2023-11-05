@@ -74,3 +74,11 @@ source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a
 # [language-server.rust-analyzer.config.check]
 # command = "clippy"
 
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# Installed with
+# Taplo, for TOML Files
+# cargo install taplo-cli --locked --features lsp
