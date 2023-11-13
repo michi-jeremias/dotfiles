@@ -8,6 +8,8 @@ true-color = true
 rulers = [100]
 bufferline = "always"
 color-modes = true
+auto-completion = true
+auto-format = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -18,5 +20,9 @@ select = "underline"
 right = ["diagnostics", "selections", "position", "file-encoding"]
 
 [editor.lsp]
-display-messages = true
+# displays messages below statusline
+# display-messages = true
 display-inlay-hints = true
+
+[keys.normal]
+"C-k" = "kill_to_line_end"

@@ -1,13 +1,14 @@
 [[language]]
 name = "rust"
-# scope = "source.rust"
-# injection-regex = "rust"
-# file-types = ["rs"]
+scope = "source.rust"
+injection-regex = "rust"
+file-types = ["rs"]
 roots = ["Cargo.toml", "Cargo.lock"]
 auto-format = true
 comment-token = "//"
 indent = { tab-width = 4, unit = "    " }
 diagnostic-severity = "Hint"
+language-servers = ["rust-analyzer"]
 
 [language.auto-pairs]
 '(' = ')'
@@ -32,7 +33,7 @@ transport = "tcp"
 # inlayHints.discriminantHints.enable = "fieldless"
 # inlayHints.lifetimeElisionHints.enable = "skip_trivial"
 # inlayHints.typeHints.hideClosureInitialization = true
-checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"]}
+checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::all"]}
 cargo = {allFeatures = true}
 procMacro = {enable = true}
 

@@ -112,10 +112,10 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/home/michi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-export HELIX_RUNTIME=~/src/helix/runtime
+export HELIX_RUNTIME=~/helix/runtime
 
 alias loc='git ls-files | xargs wc -l'
-alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
+alias gitconfig='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
 alias pbcopy="xclip -set clip"
 
 # Make truecolor work
@@ -124,3 +124,4 @@ export COLORTERM=truecolor
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+eval "$(starship init zsh)"
