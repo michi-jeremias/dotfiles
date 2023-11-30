@@ -104,11 +104,10 @@ $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
 
 $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
-$env.RUST_BACKTRACE = 'full'
-$env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
-# $env.EDITOR
-# $env.VISUAL`
-
+$env.RUST_BACKTRACE = 0
+$env.config.buffer_editor = '/home/michi/.cargo/bin/hx'
+$env.EDITOR = '/home/michi/.cargo/bin/hx'
+$env.VISUAL = '/home/michi/.cargo/bin/hx'
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 

@@ -16,6 +16,8 @@ language-servers = ["rust-analyzer"]
 '[' = ']'
 '"' = '"'
 '`' = '`'
+'<' = '>'
+'|' = '|'
 
 [language.debugger]
 command = "codelldb"
@@ -83,3 +85,15 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 # Installed with
 # Taplo, for TOML Files
 # cargo install taplo-cli --locked --features lsp
+
+[[language]]
+name = "kdl"
+scope = "source.kdl"
+file-types = ["kdl"]
+comment-token = "//"
+injection-regex = "kdl"
+
+[[grammar]]
+name = "kdl"
+source = { git = "https://github.com/amaanq/tree-sitter-kdl", rev = "3ca569b9f9af43593c24f9e7a21f02f43a13bb88" }
+

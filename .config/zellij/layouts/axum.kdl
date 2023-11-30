@@ -21,7 +21,7 @@ layout {
     }
 
     
-    pane_template name="edit_edit_bacon_term" {
+    pane_template name="edit_edit_edit_bacon_term" {
         pane split_direction="horizontal" {
             children
             pane split_direction="vertical" size="20%" {
@@ -68,9 +68,12 @@ layout {
     // Tabs
     
     tab name="hx" focus=true {
-        edit_edit_bacon_term split_direction="vertical" {
+        edit_edit_edit_bacon_term split_direction="vertical" {
             pane 
-            pane 
+            pane split_direction="horizontal" {
+                pane edit="Cargo.toml"
+                pane edit="tests/quick_dev.rs"
+            }
         }
     }
         
