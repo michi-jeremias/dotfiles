@@ -101,7 +101,8 @@ $env.NU_PLUGIN_DIRS = [
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
+# $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
 
 $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
 $env.RUST_BACKTRACE = 0
