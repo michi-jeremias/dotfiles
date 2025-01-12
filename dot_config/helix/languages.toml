@@ -1,0 +1,84 @@
+[[language]]
+name = "rust"
+# scope = "source.rust"
+# injection-regex = "rust"
+# file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
+auto-format = true
+# comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+diagnostic-severity = "Hint"
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+
+[language.debugger]
+command = "codelldb"
+name = "codelldb"
+port-arg = "--port {}"
+transport = "tcp"
+
+# [language-server.rust-analyzer]
+# command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+# inlayHints.bindingModeHints.enable = true
+# inlayHints.closingBraceHints.minLines = 10
+# inlayHints.closureReturnTypeHints.enable = "with_block"
+# inlayHints.discriminantHints.enable = "fieldless"
+# inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+# inlayHints.typeHints.hideClosureInitialization = true
+checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"]}
+cargo = {allFeatures = true}
+procMacro = {enable = true}
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+
+
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+[[language.debugger.templates]]
+name = "binary (terminal)"
+request = "launch"
+completion = [ { name = "binary", completion = "filename" } ]
+args = { program = "{0}", runInTerminal = true }
+
+[[language.debugger.templates]]
+name = "attach"
+request = "attach"
+completion = [ "pid" ]
+args = { pid = "{0}" }
+
+[[language.debugger.templates]]
+name = "gdbserver attach"
+request = "attach"
+completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
+args = { attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
+
+[[grammar]]
+name = "rust"
+source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9" }
+
+# [language-server.rust-analyzer.config.check]
+# command = "clippy"
+
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+# Installed with
+# Taplo, for TOML Files
+# cargo install taplo-cli --locked --features lsp

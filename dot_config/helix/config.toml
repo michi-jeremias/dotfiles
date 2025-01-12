@@ -1,0 +1,30 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+mouse = true
+gutters = ["diagnostics", "line-numbers", "diff", "spacer"]
+true-color = true
+rulers = [100]
+bufferline = "always"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position", "file-encoding"]
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+f = "file_picker_in_current_directory"
+F = "file_picker"
