@@ -102,7 +102,7 @@ $env.NU_PLUGIN_DIRS = [
 use ~/.cache/starship/init.nu
 
 # $env.HELIX_RUNTIME = ~/.config/helix/runtime
-$env.EDITOR = /usr/bin/hx
+$env.EDITOR = "nvim"
 # $env.VISUAL = /usr/bin/hx
 
 alias l = ls -la
