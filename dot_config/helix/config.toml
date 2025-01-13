@@ -1,13 +1,41 @@
 theme = "gruvbox"
 
+[keys.insert]
+C-backspace = "delete_word_backward"
+
+[keys.normal]
+D = "kill_to_line_end"
+C-backspace = "delete_word_backward"
+C-p = "jump_backward"
+C-n = "jump_forward"
+S-l = "jump_view_right"
+S-h = "jump_view_left"
+S-k = "jump_view_up"
+S-j = "jump_view_down"
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.select]
+X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+f = "file_picker_in_current_directory"
+F = "file_picker"
+q = ":bc"
+x = ":q"
+u = "switch_to_uppercase"
+l = "switch_to_lowercase"
+t = ":lsp-restart"
+
+[keys.normal.g]
+D = ["vsplit", "goto_definition"]
+
 [editor]
 line-number = "relative"
-mouse = true
-gutters = ["diagnostics", "line-numbers", "diff", "spacer"]
-true-color = true
-rulers = [100]
 bufferline = "always"
 color-modes = true
+popup-border = "all"
+cursorline = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -18,13 +46,4 @@ select = "underline"
 hidden = false
 
 [editor.statusline]
-right = ["diagnostics", "selections", "position", "file-encoding"]
-
-[editor.lsp]
-display-messages = true
-display-inlay-hints = true
-
-[keys.normal.space]
-i = ":toggle lsp.display-inlay-hints"
-f = "file_picker_in_current_directory"
-F = "file_picker"
+left = ["mode",  "spinner", "spacer", "version-control", "file-name"]
