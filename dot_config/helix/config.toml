@@ -36,6 +36,7 @@ bufferline = "always"
 color-modes = true
 popup-border = "all"
 cursorline = true
+true-color = true
 
 [editor.cursor-shape]
 insert = "bar"
