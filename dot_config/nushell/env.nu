@@ -8,7 +8,7 @@ def create_left_prompt [] {
     # Perform tilde substitution on dir
     # To determine if the prefix of the path matches the home dir, we split the current path into
     # segments, and compare those with the segments of the home dir. In cases where the current dir
-    # is a parent of the home dir (e.g. `/home`, homedir is `/home/user`), this comparison will 
+    # is a parent of the home dir (e.g. `/home`, homedir is `/home/user`), this comparison will
     # also evaluate to true. Inside the condition, we attempt to str replace `$home` with `~`.
     # Inside the condition, either:
     # 1. The home prefix will be replaced
@@ -98,17 +98,104 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-# $env.PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
+if $env.OS != 'Windows_NT' {
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
+    $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
+    $env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
+}
+# Windows
+$env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
+
+$env.RUST_BACKTRACE = 'full'
+# $env.EDITOR = C:\Users\micha\scoop\apps\nu\current\nu.exe
+$env.EDITOR = C:\Users\micha\scoop\shims\hx.exe
+# $env.VISUAL
+# -- yazi
+$env.YAZI_FILE_ONE = C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe
+
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
+
 use ~/.cache/starship/init.nu
 
-# $env.HELIX_RUNTIME = ~/.config/helix/runtime
-$env.EDITOR = "nvim"
-# $env.VISUAL = /usr/bin/hx
+# -- Custom functions
 
+
+# -- Alias
+# -- Docker
 alias l = ls -la
+alias du = docker compose up -d
+alias dub = docker compose up -d --build
+alias dbu = docker compose up -d --build
 alias dd = docker compose down
-alias du = docker compose up
 alias db = docker compose build
 
-# alias config = /usr/bin/git --git-dir=$env.HOME/.config --work-tree=$env.HOME
-alias cc = git $'--git-dir=($env.HOME)/.config-gitdir --work-tree=($env.HOME)'
+alias s = start .
+
+# -- Git
+def gc [name: string] {
+    git commit -m $'"($name)"'
+    }
+def ga [] {
+    git add -A
+    }
+def gp [] {
+    git push
+    }
+def gs [] {
+    git status
+    }
+def gd [] {
+    git diff
+}
+def gac [name: string] {
+    git add -A
+    git commit -m $'"($name)"'
+    }
+def gacp [name: string] {
+    git add -A
+    git commit -m $'"($name)"'
+    git push
+    }
+# alias gitconfig=/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi
+
+def cwe [name: string] {
+    cargo watch -q -c -x run -p --example $name
+    }
+
+def cwp [name: string] {
+    cargo watch -q -c -x run -p $name
+    }
+    
+def --env yy [...args] {
+    let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+    yazi ...$args --cwd-file $tmp
+        let cwd = (open $tmp)
+            if $cwd != "" and $cwd != $env.PWD {
+                cd $cwd
+            }
+            rm -fp $tmp
+        }
+def cc [...args] {
+    let config_dir = $'($env.HOMEPATH) + "/.config-gitdir"'
+    let work_tree = $env.HOMEPATH
+    git ...$args $'--git-dir=($config_dir)--work-tree=($work_tree)'
+    
+}
+# alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$env.HOMEPATH
+# alias cc = git --git-dir=\Users\micha\.config-gitdir --work-tree=\Users\micha
+
+# fzf for cd
+def --env ff [] {
+    # cd (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 5 | fzf --no-multi --height 60% --layout reverse --border)
+    cd (fd . -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 5 | fzf --no-multi --height 60% --layout reverse --border)
+}
+def --env ffs [] {
+    start (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+}
+def --env ffg [] {
+    cd (fd . --full-path 'C:\' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+}

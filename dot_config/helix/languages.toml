@@ -1,84 +1,86 @@
+[language-server]
+deno = { command = "deno", args = [ "lsp" ]}
+emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+
+[language-server.deno-lsp]
+command = "deno"
+args = ["lsp"]
+environment = { "DENO_UNSTABLE_SLOPPY_IMPORTS" = "1"}
+
+[language-server.deno-lsp.config.deno]
+enable = true
+unstable = true
+# # unstable = ["sloppy-imports"]
+# suggest.imports.hosts = { "https://deno.land" = true }
+
+[language-server.eslint]
+#
+
+args = ["--stdio"]
+command = "vscode-eslint-language-server"
+
+[language-server.eslint.config]
+# format = true
+nodePath = ""
+# onIgnoredFiles = "off"
+# packageManager = "yarn"
+quiet = false
+rulesCustomizations = []
+run = "onType"
+# useESLintClass = false
+validate = "on"
+codeAction = { disableRuleComment = { enable = true, location = "separateLine" }, showDocumentation = { enable = true } }
+# codeActionsOnSave = { mode = "all" }
+experimental = {}
+problems = { shortenToSingleLine = false }
+# workingDirectory = { mode = "auto" }
+
 [[language]]
-name = "rust"
-# scope = "source.rust"
-# injection-regex = "rust"
-# file-types = ["rs"]
-roots = ["Cargo.toml", "Cargo.lock"]
+# See https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#typescript
+name = "typescript"
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "ts" ] }
 auto-format = true
-# comment-token = "//"
-indent = { tab-width = 4, unit = "    " }
-diagnostic-severity = "Hint"
-
-[language.auto-pairs]
-'(' = ')'
-'{' = '}'
-'[' = ']'
-'"' = '"'
-'`' = '`'
-
-[language.debugger]
-command = "codelldb"
-name = "codelldb"
-port-arg = "--port {}"
-transport = "tcp"
-
-# [language-server.rust-analyzer]
-# command = "rust-analyzer"
-
-[language-server.rust-analyzer.config]
-# inlayHints.bindingModeHints.enable = true
-# inlayHints.closingBraceHints.minLines = 10
-# inlayHints.closureReturnTypeHints.enable = "with_block"
-# inlayHints.discriminantHints.enable = "fieldless"
-# inlayHints.lifetimeElisionHints.enable = "skip_trivial"
-# inlayHints.typeHints.hideClosureInitialization = true
-checkOnSave = {command = "clippy", extraArgs = ["--", "-W", "clippy::pedantic"]}
-cargo = {allFeatures = true}
-procMacro = {enable = true}
-
-[[language.debugger.templates]]
-name = "binary"
-request = "launch"
-
-
-[[language.debugger.templates.completion]]
-completion = "filename"
-name = "binary"
-
-[language.debugger.templates.args]
-program = "{0}"
-runInTerminal = true
-
-[[language.debugger.templates]]
-name = "binary (terminal)"
-request = "launch"
-completion = [ { name = "binary", completion = "filename" } ]
-args = { program = "{0}", runInTerminal = true }
-
-[[language.debugger.templates]]
-name = "attach"
-request = "attach"
-completion = [ "pid" ]
-args = { pid = "{0}" }
-
-[[language.debugger.templates]]
-name = "gdbserver attach"
-request = "attach"
-completion = [ { name = "lldb connect url", default = "connect://localhost:3333" }, { name = "file", completion = "filename" }, "pid" ]
-args = { attachCommands = [ "platform select remote-gdb-server", "platform connect {0}", "file {1}", "attach {2}" ] }
-
-[[grammar]]
-name = "rust"
-source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "0431a2c60828731f27491ee9fdefe25e250ce9c9" }
-
-# [language-server.rust-analyzer.config.check]
-# command = "clippy"
-
+language-servers = ["typescript-language-server",  "eslint"]
 
 [[language]]
-name = "toml"
-formatter = { command = "taplo", args = ["fmt", "-"] }
+name = "html"
+formatter = { command = 'prettier', args = ["--write", "--parser", "html"] }
+auto-format = true
+language-servers = ["vscode-html-language-server", "angular"]
+# 
+[[language]]
+name = "tsx"
+# language-servers = [ "deno", "eslint", "emmet-ls"]
+language-servers = [ "deno",  "emmet-ls"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "typescript" ] }
+auto-format = true
 
-# Installed with
-# Taplo, for TOML Files
-# cargo install taplo-cli --locked --features lsp
+[[language]]
+name = "javascript"
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "emmet-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "html"] }
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "html" ] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "emmet-ls" ]
+# formatter = { command = 'prettier', args = ["--parser", "css"] }
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "css" ] }
+auto-format = true
+
+[[language]]
+name = "json"
+# formatter = { command = "prettier", args = [ "--parser", "json" ] }
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "json" ] }
+auto-format = true
+
+# [[language]]
+# name = "sql"
+# language-servers = ["sql-language-server"]
+# auto-format = true
+
