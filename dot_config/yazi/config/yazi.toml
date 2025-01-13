@@ -1,0 +1,17 @@
+[manager]
+show_hidden = true
+sort_by = "extension"
+sort_dir_first = true
+linemode = "size"
+
+[open]
+prepend_rules = [
+    { name = "*.xlsx", use = "libre_calc" },
+  ]
+
+[opener]
+edit = [
+  { run = 'hx "$@"', block = true, for = 'unix'},
+  { run = "hx %*", block = true, for = 'windows'},
+]
+libre_calc = [{run = "scalc %*", block=false, for='windows'}]
