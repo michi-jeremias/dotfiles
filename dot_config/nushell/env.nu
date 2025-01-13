@@ -107,14 +107,16 @@ if $env.OS != 'Windows_NT' {
     $env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
 }
 # Windows
-$env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
+if $env.OS == 'Windows_NT' {
+    $env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
+    $env.EDITOR = 'C:\Users\micha\scoop\shims\hx.exe'
+    $env.YAZI_FILE_ONE = 'C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe'
+}
 
 $env.RUST_BACKTRACE = 'full'
 # $env.EDITOR = C:\Users\micha\scoop\apps\nu\current\nu.exe
-$env.EDITOR = C:\Users\micha\scoop\shims\hx.exe
 # $env.VISUAL
 # -- yazi
-$env.YAZI_FILE_ONE = C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe
 
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
