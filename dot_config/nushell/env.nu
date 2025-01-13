@@ -98,7 +98,7 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
-if $env.OS != 'Windows_NT' {
+if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
@@ -107,7 +107,7 @@ if $env.OS != 'Windows_NT' {
     $env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
 }
 # Windows
-if $env.OS == 'Windows_NT' {
+if ('OS' in $env) and $env.OS == 'Windows_NT' {
     $env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
     $env.EDITOR = 'C:\Users\micha\scoop\shims\hx.exe'
     $env.YAZI_FILE_ONE = 'C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe'
