@@ -157,6 +157,10 @@ keybinds {
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
+        bind "Alt 1" { GoToTab 1; SwitchToMode "Normal"; }
+        bind "Alt 2" { GoToTab 2; SwitchToMode "Normal"; }
+        bind "Alt 3" { GoToTab 3; SwitchToMode "Normal"; }
+        bind "Alt 4" { GoToTab 4; SwitchToMode "Normal"; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -221,7 +225,7 @@ plugins {
 //   - true (default)
 //   - false
 //
-    pane_frames false
+    // pane_frames true
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -254,6 +258,9 @@ plugins {
 // Default: default
 //
 // theme "default"
+// theme "tokyo-night"
+theme "tokyo-night-storm"
+// theme "catppuccin-mocha"
 
 // The name of the default layout to load on startup
 // Default: "default"
