@@ -758,4 +758,75 @@ $env.config = {
 
 # alias loc=git ls-files | xargs wc -l
 # alias pbcopy="xclip -set clip"
-use ~/.cache/starship/init.nu
+# use ~/.cache/starship/init.nu
+# 
+# -- Alias
+# -- Docker
+alias l = ls -la
+alias du = docker compose up
+alias dud = docker compose up -d
+alias dub = docker compose up -d --build
+alias dbu = docker compose up -d --build
+alias dd = docker compose down
+alias db = docker compose build
+
+alias s = start .
+
+# -- Git
+def gc [name: string] {
+    git commit -m $'"($name)"'
+    }
+def ga [] {
+    git add -A
+    }
+def gp [] {
+    git push
+    }
+def gs [] {
+    git status
+    }
+def gd [] {
+    git diff
+}
+def gac [name: string] {
+    git add -A
+    git commit -m $'"($name)"'
+    }
+def gacp [name: string] {
+    git add -A
+    git commit -m $'"($name)"'
+    git push
+    }
+
+def cwe [name: string] {
+    cargo watch -q -c -x run -p --example $name
+    }
+
+def cwp [name: string] {
+    cargo watch -q -c -x run -p $name
+    }
+    
+def --env yy [...args] {
+    let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+    yazi ...$args --cwd-file $tmp
+        let cwd = (open $tmp)
+            if $cwd != "" and $cwd != $env.PWD {
+                cd $cwd
+            }
+            rm -fp $tmp
+        }
+
+# fzf for cd
+def --env ff [] {
+    # cd (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 5 | fzf --no-multi --height 60% --layout reverse --border)
+    cd (fd . -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 5 | fzf --no-multi --height 60% --layout reverse --border)
+}
+def --env ffs [] {
+    start (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+}
+def --env ffg [] {
+    cd (fd . --full-path 'C:\' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+}
+
+
+

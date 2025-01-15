@@ -1,0 +1,8736 @@
+which nu
+scoop install starship
+l
+mkdir ~/.cache/starship
+use ~/.cache/starship/init.nu
+l
+use ~/.cache/starship/init.nu
+l
+git
+scoop install git
+git
+ls
+l
+$env.nu
+which nbu
+which nu
+.
+cd .config\
+ls
+$nu.config-path
+explorer C:\Users\micha\AppData\Roaming\nushell
+$nu.env-path
+l
+exit
+l
+exit
+mkdir app
+cd app
+git clone git@github.com:michi-jeremias/google_oauth_simple.git
+cd ..
+git clone git@github.com:michi-jeremias/medcom-paramsync.git
+l
+cd medcom-paramsync\
+l
+cd ..
+mv medcom-paramsync\ app
+l
+mkdir medcom-paramsync
+mv app medcom-paramsync\
+l
+cd medcom-paramsync\
+l
+cd Documents\Bitbucket\
+l
+git clone git@bitbucket.org:medcomat/dbtool.git
+rustc
+$env.path
+$env.Path
+cargo
+cd Documents\Bitbucket\
+l
+cd dbtool\
+l
+cargo build
+cd ..
+l
+npm
+exit
+npm
+npm i -g @angular/cli
+npm install -g npm@10.5.0
+l
+exit
+cd Documents\Github\
+l
+cd medcom-paramsync\
+l
+cd app
+l
+cargo build
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo install cargo-watch
+cargo watch --quiet --clear --watch src/ --exec run
+l
+cd ~
+cd Documents\
+l
+cd Github\
+l
+mkdir angular
+cd angular\
+git clone git@github.com:michi-jeremias/ng-zorro.git
+l
+cd ng-zorro\
+l
+code .
+l
+npm install
+ng serve
+cd ..
+;
+l
+git clone git@github.com:michi-jeremias/angular-tour-of-heroes.git
+l
+exit
+cd Documents\Github\
+cd ..
+cd Bitbucket\
+l
+cd dbtool\
+l
+cargo build
+eit
+exit
+$env.Path
+$env
+cd Documents\Bitbucket\dbtool\
+cargo build
+scoop install mysql
+l
+exit
+cd Documents\Bitbucket\dbtool\
+cargo build
+cargo build --bin dbtool_lr
+$env.MYSQLCLIENT_LIB_DIR
+$env.Path
+exit
+$env.Path
+exit
+$env.Path
+cd Documents\
+cd Bitbucket\
+cd dbtool\
+cargo build
+cd Documents\Bitbucket\dbtool\
+cargo build
+cargo clean
+cargo build
+exit
+$env
+cd Documents\Bitbucket\dbtool\
+cargo clean
+cargo build
+psql
+cd c:
+cd c:\Medcom\PostgreSQL\16\bin\
+l
+psql.exe -U postgres -c "CREATE DATABASE lc_matschiner;"
+l
+l psql
+l *psql*
+psql.exe
+.\psql.exe
+.\psql.exe -U postgres -c "create database lc_matschiner;"
+.\psql.exe -U postgres -c "grant all privileges on lc_matschiner to labrequest;"
+.\psql.exe -U postgres -c "grant all privileges on database lc_matschiner to labrequest;"
+.\psql.exe -U postgres -d lc_matschiner -f matschiner.sql
+cargo run --bin dbtool_lr --
+cargo clean
+cargo build
+cargo run --bin dbtool_lr --
+cargo run --bin dbtool_lr
+$env.PG_LIB_DIR
+$env.PQ_LIB_DIR
+exit
+exit
+cd Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_wr
+cargo run --bin dbtool_lr
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr
+scoop install openssl
+cargo run --bin dbtool_lr
+exit
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr
+scoop install libint9
+scoop install libintl9
+scoop install libintl-9
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr
+cargo run --bin dbtool_lr --help
+cargo run --bin dbtool_lr -- --help
+cargo run --bin dbtool_lr -- -d lc_matschiner
+explorer .
+ping google.at
+cargo run --bin dbtool_wr -- -s live
+cargo run --bin dbtool_wr -- -s live stats
+cargo run --bin dbtool_wr -- -s live stats print
+cargo run --bin dbtool_wr -- -s live stats print 01-02-2024 29-02-2024
+npm i -g @google/clasp
+cd ..
+cd Github\
+l
+git clone git@github.com:michi-jeremias/OrderProcessor.git
+l
+exit
+pg_dump -h localhost -U labrequest labrequest > labrequest.sql
+pg_dump -h localhost -U labrequest labrequest -f labrequest.sql
+pg_dump -h localhost -U labrequest -d labrequest > labrequest.sql
+pg_dump -h localhost -U labrequest labrequest > labrequest.sql
+l
+psql.exe -U postgres -c "CREATE DATABASE lc_schnabl;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON lc_schnabl TO labrequest;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_schnabl TO labrequest;"
+psql.exe -U postgres -d lc_schnabl -f schnabl.sql
+dbtool_lr.exe
+l
+\.dbtool_lr.exe
+dbtool_lr.exe
+cd ..
+cargo run --bin dbtool_lr -- -d lc_schnabl
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_modaressy;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_modaressy TO labrequest;"
+psql.exe -U postgres -d lc_schnabl -f C:\Users\micha\Desktop\labcomplete\Modaressy Kambiz\modarressy_kambiz_20240305.sql
+psql.exe -U postgres -d lc_schnabl -f modarressy_kambiz_20240305.sql
+cargo run --bin dbtool_lr -- -d lc_modaressy
+psql.exe -U postgres -d lc_modaressy -f modarressy_kambiz_20240305.sql
+psql.exe -U postgres -d lc_modaressy -f modarressy_kambiz_20240305.sql
+cargo run --bin dbtool_lr -- -d lc_modaressy
+explorer .
+cargo run --bin dbtool_wr -- -s live requests
+cd ~
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_wr -- -s live requests
+cargo run --bin dbtool_wr -- -s live requests export
+cargo run --bin dbtool_lr -- -d lc_modaressy
+explorer .
+$nu.config-path
+$nu.config
+$nu.config-path
+scoop install helix
+l
+hx $nu.config-path
+hx ~\.cache\starship\init.nu
+code .
+l
+cargo watch --quiet --clear --watch src/ --exec run
+l
+cd app
+cd app
+code .
+l
+cd ..
+l
+cd angular\
+l
+cd ng-zorro\
+l
+code .
+git branch
+git branc -l
+git branch -l
+git branch -h
+git branch -l
+git branch -l -r
+git checkout branch -r google_oidc_login
+git checkout branch -b google_oidc_login
+git checkout -b google_oidc_login
+git status
+ng serve
+git checkout -b main
+git -b main
+git branch
+git branch main
+git checkout main
+git status
+l
+cd src\app\
+l
+cd service\
+l
+ng g s auth
+npm i angular-auth-oidc-client
+npm install
+code .
+l
+cd src\app
+hx AppData\Roaming\nushell\env.nu
+$env.OS
+hx AppData\Roaming\nushell\env.nu
+exit
+hx AppData\Roaming\nushell\env.nu
+cd Documents\Github\angular\ng-zorro\
+code .
+cd Documents\Github\medcom-paramsync\
+code .
+cd app
+code .
+ng serve
+ng serv e
+ng g c logindetails
+mkdir components
+cd components\
+ng g c logindetails
+cd ..
+rm components\
+rm -r components\
+l
+cd src\app\
+mkdir components
+cd components\
+ng g c logindetails
+cd logindetails\
+ng g c loginbutton
+ng g c userinfo
+ng serve
+code .
+l
+cd src\app\
+cd components\
+l
+ng g c auth
+cd Documents\Github\angular\
+l
+cd hotelinventoryapp\
+l
+code .
+cd auth\
+l
+ng g c logoutbutton
+cd ..
+cd pages\
+l
+ng g c authstatus
+npm install
+npm audit
+npm audit fix
+ng serve
+ng serve
+git clone git@bitbucket.org:medcomat/pdf-templates.git
+cd pdf-templates\
+code .
+deno task dev
+scoop install deno
+deno
+ipconfig
+exit
+psql.exe -U postgres -c "CREATE DATABASE lc_grigorova;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_grigorova TO labrequest;"
+psql.exe -U postgres -d lc_grigorova -f dump.sql
+cd ~\Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_lr -- -d lc_grigorova
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_ehrgott;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_ehrgott TO labrequest;"
+l
+psql.exe -U postgres -d lc_ehrgott -f ehrgottME250055.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_ehrgott
+explorer .
+git status
+git add -A
+git commit -m "working on auth"
+git config --global user.email "michael.jeremias.home@gmail.com"
+git config --global user.name "Michael Jeremias"
+git push
+l
+git commit -m "working on auth"
+git push
+git status
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo watch --quiet --clear --watch src/ --exec run
+exit
+cd Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_wr -- -s live requests export ME522032
+cargo run --bin dbtool_wr -- -s live profiles export ME522032
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_iscan;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_iscan TO labrequest;"
+exit
+cd `Desktop\labcomplete\Danzer Anton\`
+cd ..
+l
+mkdir "Iscan-Tueter Dilek"
+cd `Iscan-Tueter Dilek\`
+l
+psql.exe -U postgres -d lc_iscan -f iscan_20240308.sql
+exit
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_iscan
+explorer .
+exit
+psql.exe -U postgres -c "CREATE DATABASE lc_ochsenhofer;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_ochsenhofer TO labrequest;"
+cd `Desktop\labcomplete\Ochsenhofer Andreas\`
+l
+psql.exe -U postgres -d lc_ehrgott -f ochsenhofer_20240314.sql
+cd ~\Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_lr -- -d lc_ochsenhofer
+cd `~\Desktop\labcomplete\Ochsenhofer Andreas\`
+l
+psql.exe -U postgres -d lc_ochsenhofer -f ochsenhofer_20240314.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_ochsenhofer
+explorer .
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_wr -- -s live profiles export MEHANFKW
+cargo run --bin dbtool_wr -- -s live requests export MEHANFKW
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_hoffmann;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_hoffmann TO labrequest;"
+psql.exe -U postgres -d lc_hoffmann -f hoffmann_karl_20240318.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_hoffmann
+explorer .
+exit
+clasp pull
+git status
+clasp clone
+clasp login
+clasp pull
+clasp clone
+clasp clone https://script.google.com/home/projects/1hVlPMSAK3ccbDK030jY_vVt5fpOxvLXAhzR49dgKq8_LvAO6nteh_f9n
+clasp push
+git status
+git add -A
+git commit -m "odoo tag LG"
+git push
+git status
+psql.exe -U postgres -c "CREATE DATABASE lc_sami;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_sami TO labrequest;"
+l
+psql.exe -U postgres -d lc_sami -f sami_ariane_20240320.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_sami
+explorer .
+clasp push
+git add -A
+git commit -m "disable odoo labgroups"
+git push
+cargo watch --quiet --clear --watch src/ --exec run
+cargo wa
+cargo install sqlx-cli
+cd ..
+l
+cd src
+l
+cd app\
+l
+ipconfig
+sqlx-cli database create
+cargo install sqlx-cli
+sqlx database create
+sqlx migrate add init
+sqlx migrate run
+pip install sqlfluff
+sqlx migrate run
+sqlx migrate add drive_files
+sqlx migrate add drive_files -r
+sqlx migrate add -r drive_files
+sqlx migrate add -r init
+sqlx migrate run
+sqlx database create
+sqlx migrate run
+sqlx migrate revert
+sqlx migrate run
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo watch --quiet --clear --watch src/ --exec run
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo add reqwest
+cargo add reqwest -F json
+psql.exe -U postgres -c "CREATE DATABASE lc_bieber;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_bieber TO labrequest;"
+l
+psql.exe -U postgres -d lc_bieber -f bieber.sql
+psql.exe -U postgres -d lc_bieber -f bieberjulia.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_bieber
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_ehrgott2;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_ehrgott2 TO labrequest;"
+l
+psql.exe -U postgres -d lc_ehrgott2 -f ehrgottME250055.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_ehrgott2
+explorer .
+$nu.config-path
+hx $nu.config-path
+hx $nu.env-path
+ls -la
+l
+hx $nu.env-path
+scoop updater
+scoop update
+l
+which hx
+which labrequest
+which labrequest.exe
+$env.PATH
+$env.Path
+hx $nu.env-path
+git status
+git add .gitignore
+git commit -m ".vscode"
+git status
+git add .gitignore
+git commit -m ".env"
+git status
+git add .gitignore
+git commit -m ".env"
+git status
+git rm .env
+git add -A
+git commit -m "mc for GoogleDriveResponse"
+git push
+l
+ng g c googledrive
+l
+pwd
+cd src\app\
+l
+cd pages\
+l
+ng g c googledrive
+l
+cd googledrive\
+l
+ng g
+ng -help
+ng --help
+ng generate --help
+cd ..
+l
+cd service\
+lk
+l
+ng g s googledrive
+ssh
+ssh odoo.medcom.at
+l
+cd .ssh\
+l
+ssh medcom-adm@212.89.154.69
+ssh -help
+ssh medcom-adm@212.89.154.69 -i old\id_rsa_old
+ssh medcom-adm@212.89.154.69 -i id_rsa
+ssh medcom-adm@212.89.154.69 -i bitbucket_medcom
+cargo wa
+ng serve
+cargo watch --quiet --clear --watch src/ --exec run
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo add http
+git status
+git add -A
+git commit -m "google drive"
+git push
+git status
+git add -A
+git commit -m "google drive, cors layer config"
+git push
+git pull
+git pull
+l
+cd src\app\components\auth\
+l
+cp auth.component.html authold.component.html
+ng g @angular/core:control-flow auth.component.html
+ng g @angular/core:control-flow
+cd ..
+ng g @angular/core:control-flow
+ng serve
+git status
+git switch -c authcomponent
+git switch main
+git status
+git stash
+git stash branch authcomponent stash@{0}
+git branch -d authcomponent
+git stash branch authcomponent stash@{0}
+git checkout main
+git status
+git checkout main
+git status
+git checkout authcomponent
+git status
+git add -A
+git commit -m "changing authcomponent"
+git checkout main
+curl -sSf https://www.googleapis.com/drive/v3/files -H "Authorization: Bearer ya29.a0Ad52N381dFXP1AHu0XRKX1w_tuxhr4TEMJE-Z_vgHyg1JCwgEO4JtYUpxrDzSb3OR1lCcNNKrs7RgNLJD5nXSI-yup4A2ZcYBTLGPrfHxoP8paFeIM8IZ56XpFrIeEBglDnWk8JnzEmHJJC8w8gFZ96PlvgbznerwEt2aCgYKAYsSARISFQHGX2MiDdis6OK0yBCBeAu7A_LuAA0171"
+curl -sSf https://www.googleapis.com/drive/v3/files -H "Authorization: Bearer ya29.a0Ad52N3_4w1LyXL8s9qf-BeO5MIt0rH1axjNsgoqbpiC2L1jt7sVQbWFJzDvTBq768qmsqZN9N_xemv_AA2aEgAxEv-KwbKo4ZB_226EMMtJfovAQGFAvNusou9inkoPjI7_o2lfbgv1RFYRVeZW3KgGpv-GN7lNBuOFbaCgYKAdcSARISFQHGX2Mi0tfSv2LBjezqQ3rPyQlvxQ0171"
+git status
+git add -A
+git commit -m "clean authcomponent"
+git push
+git status
+git pull
+git status
+ng serve
+l
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_wr -- -s live requests export MEDBAUER
+cargo run --bin dbtool_wr -- -s live profiles export MEDBAUER
+cargo run --bin dbtool_wr -- -s live profiles export ME405907
+cargo run --bin dbtool_wr -- -s live requests export ME405907
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_pour;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_pour TO labrequest;"
+psql.exe -U postgres -d lc_pour -f pour.sql
+cd Documents\Bitbucket\dbtool\
+cd c:\Documents\Bitbucket\dbtool\
+c:
+cd ~
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_pour
+explorer .
+curl -sSf https://www.googleapis.com/drive/v3/files -H "Authorization: Bearer ya29.a0Ad52N38HfhAO-9CIE1t2P6Y_s_y8J3DlpMxwFaqcg1mphjgP7N8_XT_R9Dfqsm2lBZZAQ2-E0HQMwAwK9sI9fnFuIcUBlHfmgFxW6XeldJI_H6q61OQ5Lw2iyJwUHTANeg2hY9HU7gmRJbBIxxXMWKpIfQLayUZtyOlZaCgYKAegSARISFQHGX2Mi8Whtv0owZu-ET1-lPViiAQ0171"
+git status
+git add -A
+git commit -m "auth finished"
+git push
+git push --help
+git push --force
+git add -A
+git commit -m "modelcontroller with reqwest::Url"
+git push
+git status
+git add -A
+git commit -m "custom error for parsing urls"
+git push
+sqlx migrate down
+sqlx migrate revert
+sqlx migrate
+sqlx migrate run
+git status
+git add -A
+git commit -m "using refreshToken"
+git push
+cargo run --bin dbtool_wr -- -s test requests export MEMEDCOM
+psql.exe -U postgres -c "CREATE DATABASE lc_krummboeck;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_krummboeck TO labrequest;"
+psql.exe -U postgres -d lc_krummboeck -f krumboeckvogel.sql
+cd Documents\Bitbucket\dbtool\
+c:
+cd ~
+cd Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_lr -- -d lc_krummboeck
+l
+cargo run --bin dbtool_lr -- -d lc_krummboeck
+explorer .
+cargo run --bin dbtool_lr -- -d lc_krummboeck
+explorer .
+git status
+git add -A
+git commit -m "debug print for empty parameter short name"
+git push
+exit
+exit
+git status
+git add migrations\
+git commit -m "restructure db model for google drive file"
+git status
+git add -A
+git commit -m "refactor"
+git push
+git status
+git add -A
+git commit -m "readme"
+git push
+cargo add tracing
+cargo add tracing-subscriber -F env-filter
+cargo clean
+cargo watch --quiet --clear --watch src/ --exec run
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+git status
+git add .cargo\
+git commit -m "config.toml for env variables within the cargo container"
+git status
+git add src\web\debug_web\
+git rm src\web\debug
+git add src\web\debug
+git commit -m "rename to avoid conflict with crate"
+git add -A
+git commit -m "replace debug print with info! and debug! macros from tracing"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_wassermann;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_wassermann TO labrequest;"
+psql.exe -U postgres -d lc_wassermann -f labrequest.sql
+cd ~
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_wassermann
+explorer .
+git status
+git add -A
+git commit -m "refactor"
+git push
+git status
+git add -A
+git commit -m "middleware that extracts the access token"
+git push
+git status
+git add -A
+git commit -m "debug auth data"
+npm install ngx-cookie-service
+npm audit fix
+git status
+git add -A
+git commit -m "adding cookies"
+git push
+git status
+git add -A
+git commit -m "debug cookies"
+git push
+git add -A
+git commit -m "remove cookies"
+git status
+git add -A
+git commit -m "added silent-renew.html"
+git push
+sqlx migrate revert
+sqlx migrate run
+git status
+git add -A
+git commit -m "moved access token to Ctx"
+git push
+git add -A
+git commit -m "refactor Ctx resolver"
+git push
+git status
+git add -A
+git commit -m "differentiate client and server errors"
+git push
+ng serve
+git status
+cargo wa
+which history.txt
+cd .config\
+l
+cd ..
+$nu.config-path
+hx $nu.config-path
+cd $nu.config-path
+$nu.config-path
+cd C:\Users\micha\AppData\Roaming\nushell
+l
+hx history.txt
+cd Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+code .
+cargo run --bin dbtool_wr -- -s test requests export MEMEDCOM
+cargo run --bin dbtool_wr -- -s live stats print 01-02-2024 29-02-2024
+ipconfig
+cargo run --bin dbtool_wr -- -s live stats print 01-02-2024 29-02-2024
+ping webrequest-stage-db-01.c07cgehidhqe.eu-central-1.rds.amazonaws.com
+ping webrequest-prod-db-01.c07cgehidhqe.eu-central-1.rds.amazonaws.com
+cargo run --bin dbtool_wr -- -s live stats print 01-02-2024 29-02-2024
+tracert webrequest-prod-db-01.c07cgehidhqe.eu-central-1.rds.amazonaws.com
+l
+mysql
+mysql -h webrequest-prod-db-01.c07cgehidhqe.eu-central-1.rds.amazonaws.com -P 3306 -u medcom_readonly -p
+l
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo run --bin dbtool_lr -- -d lc_wassermann
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo update
+cargo clean
+exit
+cargo clean
+cargo build
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+scoop update
+scoop install openssl
+scoop update openssl
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo add sqlx
+cargo add sqlx -F mysql
+cargo add tokio
+cargo add tokio -F rt-multi-thread
+cargo add tokio -F macros
+cargo build
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo add tokio -F runetime-tokio
+cargo run --bin dbtool_wr -- -s live requests export ME738605
+cargo run --bin dbtool_wr -- -s live
+cargo run --bin dbtool_wr --
+cargo clean
+cargo run --bin dbtool_wr --
+cargo run --bin dbtool_wr -- -s live
+cargo run --bin dbtool_wr -- -s live requests export MEMEDCOM
+cargo run --bin dbtool_wr -- -s text requests export MEMEDCOM
+cargo run --bin dbtool_wr -- -s test requests export MEMEDCOM
+git clone git@bitbucket.org:medcomat/dbtool.git
+l
+cd dbtool\
+l
+cargo run --bin dbtool_wr -- -s test requests export MEMEDCOM
+cargo add serde_with
+git status
+git add -A
+git commit -m "server log line"
+git push
+git status
+git add -A
+git commit -m "refactor"
+git push
+git status
+git add -A
+git commit -m "refactor"
+git add -A
+git commit -m "refactor"
+git push
+cargo add sqlx -F postgres -F uuid -F time
+psql.exe -U postgres -c "CREATE DATABASE lc_oppeck;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_oppeck TO labrequest;"
+psql.exe -U postgres -d lc_oppeck -f labrequest.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_oppeck
+explorer .
+psql
+cargo add derive_more
+git status
+git add src\_dev_utils\
+git add sql\
+git commit -m "use a local dev db that automatically resets"
+git status
+git add .cargo\config.toml
+git commit -m "use a local dev db that automatically resets"
+git status
+git add -A
+git commit -m "refactor error"
+git push
+git status
+git add -A
+git commit -m "add db to model layer"
+git push
+clasp push
+git add -A
+git commit -m "add docType to customer info"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_hockl;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_hockl TO labrequest;"
+psql.exe -U postgres -d lc_hockl -f 2496_hockl.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_winkler;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_winkler TO labrequest;"
+psql.exe -U postgres -d lc_winkler -f 2499_winkler.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_eichner;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_eichner TO labrequest;"
+psql.exe -U postgres -d lc_eichner -f 2502_eichner.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_rinnerberger;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_rinnerberger TO labrequest;"
+psql.exe -U postgres -d lc_rinnerberger -f 2767_rinnerberger.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_maschek;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_maschek TO labrequest;"
+psql.exe -U postgres -d lc_maschek -f 2867_maschek.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_pfaller;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_pfaller TO labrequest;"
+psql.exe -U postgres -d lc_pfaller -f 5016_pfaller.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_die_hausaerzte;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_die_hausaerzte TO labrequest;"
+psql.exe -U postgres -d lc_die_hausaerzte -f 5281_diehausaerzte.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_prey;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_prey TO labrequest;"
+psql.exe -U postgres -d lc_prey -f 5331_prey.sql
+psql.exe -U postgres -c "CREATE DATABASE lc_sonne;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_sonne TO labrequest;"
+psql.exe -U postgres -d lc_sonne -f 5654_sonne.sql
+cd ~\Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_lr -- -d lc_hockl
+explorer .
+cargo run --bin dbtool_lr -- -d lc_winkler
+cargo run --bin dbtool_lr -- -d lc_eichner
+cargo run --bin dbtool_lr -- -d lc_rinnerberger
+cargo run --bin dbtool_lr -- -d lc_maschek
+cargo run --bin dbtool_lr -- -d lc_pfaller
+cargo run --bin dbtool_lr -- -d lc_die_hausaerzte
+cargo run --bin dbtool_lr -- -d lc_prey
+cargo run --bin dbtool_lr -- -d lc_sonne
+git status
+git add src\web\mw_auth.rs src\model\mod.rs
+git status
+git add src\ctx\mod.rs
+git add src\model\error.rs
+git commit -m "make token in ctx an Option"
+git push
+git status
+git add src\_dev_utils\
+git add -A
+git commit -m "create a test env for unit testing"
+git push
+git status
+git log
+git reset --hard d2bc0a7e32d67fa37b86a51615a8dca15909ce12
+cargo watch --quiet --clear --watch src/ --watch .cargo --exec run
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+cargo watch --quiet --clear --watch crates/ --watch .cargo/ --exec run -p web-server
+cargo run -p web-server
+cargo clean
+l
+cd ..
+l;
+cargo run -p web-server
+cargo clean
+pwd
+cargo run -p web-server
+l
+rm -r app
+cd crates\
+cargo run -p web-server
+cd ..
+cargo run -p web-server
+cargo build -p lib-core
+cargo build -p libcore
+rustc -v
+rustc --version
+cargo build -p libcore
+cargo build -p lib-core
+git commit -m "disable odoo csv for pat eintrag"
+clasp push
+git push
+git add -A
+git commit -m "disable odoo csv for pat eintrag"
+git push
+cargo build -p lib-core
+cargo clean
+cargo build -p lib-core
+cargo build -p lib-utils
+cargo build -p web-server
+cargo watch --quiet --clear --watch crates/ --watch .cargo/ --exec run -p web-server
+cargo run -p web-server
+cargo run -p web-server --example quick_Dev
+cargo run -p web-server --example quick_dev
+cargo run -p web-server
+git status
+git add -A
+git commit -m "refactor into libs, services; add mw_req_stamp"
+git push
+git push --force
+psql.exe -U postgres -c "CREATE DATABASE lc_saller;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_saller TO labrequest;"
+psql.exe -U postgres -d lc_saller -f labrequest.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_saller
+explorer .
+sqlx migrate revert
+sqlx migrate run
+sqlx migrate revert
+sqlx migrate run
+git status
+git add -A
+git commit -m "refactor google module in lib_core::model"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_strobl;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_strobl TO labrequest;"
+psql.exe -U postgres -d lc_strobl -f strobl_20240409.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_strobl
+explorer .
+psql.exe -U postgres -c "CREATE DATABASE lc_prohaska;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_prohaska TO labrequest;"
+psql.exe -U postgres -d lc_prohaska -f prohaska_roswitha_20240411.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_prohaska
+explorer .
+clasp push
+git add -A
+git commit -m "update info panel for PAT entries"
+git push
+cargo run --bin dbtool_wr -- -s live requests export ME590118
+rustc --explain E0277
+git status
+git add -A
+git commit -m "refactor everything into libs and services - working"
+git push
+cargo watch --quiet --clear --watch crates/ --watch .cargo/ --exec run -p web-server
+git status
+git add -A
+git commit -m "prepare webrequest data retrieval"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_gauff;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_gauff TO labrequest;"
+psql.exe -U postgres -d lc_gauff -f prohaska_roswitha_20240411.sql
+psql.exe -U postgres -d lc_gauff -f gp_gauff_manurung_20240415.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_gauff
+explorer .
+git rm .env
+git status
+git commit -m "remove .env"
+git status
+l
+cd crates
+l
+cd libs
+l
+cargo new lib-webrequest --lib --vcs none
+git status
+git add -A
+git commit -m "lib-webrequest start"
+git push
+git pull
+cargo run --bin dbtool_wr -- -s live requests export ME590118
+l
+cd lib-core\
+l
+cargo add sea-qyery
+cargo add sea-query
+cargo add sea-query-binder
+cargo add sea-query-binder -F sqlx-postgres -F sqlx-mysql -F with-uuid -F with-time
+git status
+git add -A
+git commit -m "lib-webrequest"
+git push
+git pull
+cd lib-core\
+l
+cd crates\libs\lib-core\
+cargo add modql
+cargo add modql -F with-sea-query
+ping www.mpw.gov.kw
+ping befunde.enml.at
+ping enml.at
+ping labuniq.at
+ping labuniq.com
+git add -A
+git commit -m "webrequest db"
+git push
+l
+cd src\app\pages\
+l
+ng g c webrequest
+cd ..
+cd service\
+ng g s webrequest
+git status
+git add -A
+git commit -m "webrequest profiles"
+git push
+git status
+git add -A
+git commit -m "webrequest profiles"
+git push
+cargo watch --quiet --clear --watch crates/ --watch .cargo/ --exec run -p web-server
+psql.exe -U postgres -c "CREATE DATABASE lc_steingoetter;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_steingoetter TO labrequest;"
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -h 192.168.100.16 -d lc_gauff
+cargo run --bin dbtool_lr -- -- 192.168.100.16 -d lc_gauff
+cargo run --bin dbtool_lr -- -i 192.168.100.16 -d lc_gauff
+cargo run --bin dbtool_lr -- -i 192.168.100.16 -d lc_steingoetter
+cargo run --bin dbtool_lr -- -i 192.168.100.16 -d lr_steingoetter
+explorer .
+psql.exe -U postgres -d lc_steingoetter -f d.sql
+cd ~\Documents\Bitbucket\dbtool\
+exit
+exit
+psql.exe -U postgres -c "CREATE DATABASE lc_steingoetter;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_steingoetter TO labrequest;"
+psql.exe -U postgres -d lc_steingoetter -f d.sql
+cd ~\Documents\Bitbucket\dbtool\
+l
+cargo run --bin dbtool_lr -- -d lc_steingoetter
+psql.exe -U postgres -c "CREATE DATABASE lc_kopetzky;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_kopetzky TO labrequest;"
+psql.exe -U postgres -d lc_kopetzky -f kopetzky.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_kopetzky
+explorer .
+git add -A
+git commit -m "webrequest doctors"
+git push
+cd ..
+ng serve
+psql.exe -U postgres -c "CREATE DATABASE lc_denia;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_denia TO labrequest;"
+psql.exe -U postgres -d lc_denia -f backup.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_denia
+explorer .
+git status
+git add -A
+git commit -m "display webrequest doctors, search meaddress, filter active/inactive"
+git push
+git status
+git add -A
+git commit -m "webrequest doctors"
+git push
+git status
+git add -A
+git commit -m "webrequest profiles"
+git push
+git status
+ng serve
+psql.exe -U postgres -c "CREATE DATABASE lc_mayerhofer;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_mayerhofer TO labrequest;"
+psql.exe -U postgres -d lc_mayerhofer -f mayerhofer-gallenbacher_nika_20240422.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_mayerhofer
+explorer .
+l
+cd crates\services\
+l
+cd web-server\
+l
+cd src\
+bacon
+cargo install --locked bacon
+git add -A
+git commit -m "rpc router"
+git push
+bacon
+git add -A
+git commit -m "rpc router"
+git push
+git status
+git add -A
+git commit -m "rpc router not functional"
+git push
+cd ..
+l
+cd libs\
+cargo new lib-rpc --lib --vcs none
+git add -A
+git commit -m "rpc router working"
+git push
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+l
+cd crates\services\
+cd web-server\
+git add -A
+git commit -m "rpc filters"
+git push
+git status
+git add -A
+git commit -m "implement From and Into for profiles"
+git push
+cargo watch --quiet --clear --watch examples/ --exec "run --example quick_dev -- --nocapture"
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+pwd
+cd crates\
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+l
+cd ..
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+ng serve
+cargo build
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+cargo clean
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch services/ --exec run -p web-server
+cargo watch --quiet --clear --watch .cargo/ --watch services/ --exec run -p web-server
+rustc --explain E0119
+clear
+git add -A
+git commit -m "moved into implementations to the data processing modules"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_stadlbauer;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_stadlbauer TO labrequest;"
+cd C:\Users\micha\Desktop\labcomplete
+psql.exe -U postgres -d lc_stadlbauer -f stadlbauer.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_stadlbauer
+explorer .
+git add -A
+git commit -m "moved into implementations to the data processing modules"
+git push
+ng serve
+psql.exe -U postgres -c "CREATE DATABASE lc_hakimzadeh;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_hakimzadeh TO labrequest;"
+psql.exe -U postgres -d lc_hakimzadeh -f hakimzadeh_sara_20240425.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_hakimzadeh
+explorer .
+git add -A
+git commit -m "download profiles"
+git push
+git add -A
+git commit -m "no profiles: show error to user"
+git push
+git add -A
+git commit -m "adding ImportRequests"
+git push
+git status
+git add -A
+git commit -m "adding ImportRequests"
+git push
+clasp status
+cargo watch --quiet --clear --watch .cargo/ --watch services/ --exec run -p web-server
+clasp push
+git add -A
+git commit -m "add CAS (CAS) and Uni-Med (MS-MedSOFT)"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_taskiran;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_taskiran TO labrequest;"
+psql.exe -U postgres -d lc_taskiran -f taskiran_20240429.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_taskiran
+explorer .
+code
+git status
+git add -A
+git commit -m "updating db query for requests"
+git push
+git status
+git add -A
+git commit -m "updating filters"
+git push
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -i 192.168.100.16 -d lc_nouri
+explorer .
+cd C:\Users\micha\Desktop\labcomplete\Nouri Alireza\bis 2024-05-02
+psql.exe -U postgres -c "CREATE DATABASE lc_nouri2;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_nouri2 TO labrequest;"
+psql.exe -U postgres -d lc_nouri2 -f nouri_20240502.sql
+cargo run --bin dbtool_lr -- -d lc_nouri2
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_nouri2
+explorer .
+git add -A
+git commit -m "patient finished"
+git push
+git add -A
+git commit -m "insuranceinfo finished"
+git push
+git status
+git add -A
+git commit -m "insuranceinfo finished"
+git push
+git status
+git add -A
+git commit -m "new filter"
+git push
+git add -A
+git commit -m "almost finished with requests"
+git push
+npm install
+npm -v
+npm install
+deno fmt
+deno lint
+git status
+git add -A
+git commit -m "parFaBillShort for ENML transfer"
+git push
+deno fmt
+git add -A
+git commit -m "format"
+git push
+deno fmt
+deno lint
+cargo watch --quiet --clear --watch .cargo/ --watch services/ --exec run -p web-server
+cargo watch --quiet --clear --watch .cargo/ --watch crates/services/ --exec run -p web-server
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo run --bin dbtool_wr -- -s test requests export ME872382
+cargo add zip
+cargo add zip --package lib-core
+cargo add zip --package services
+git status
+clasp push
+git add -A
+git commit -m "Innomed Bitsche company, product"
+git push
+clasp push
+git add -A
+git commit -m "Innomed Bitsche company, product"
+git push
+clasp push
+git add -A
+git commit -m "Innomed Bitsche company, product"
+git push
+clear
+git status
+git add -A
+git commit -m "zip chunked requests and serve static file"
+git push
+git add -A
+git commit -m "make the filter for id in RequestBmc mandatory"
+git push
+git status
+git add -A
+git commit -m "fix returned download link"
+git push
+git status
+git add -A
+git commit -m "serialize PrimitiveDateTime in human readable format"
+git push
+git status
+git add -A
+git commit -m "remove duplicate error handling"
+git push
+ng serve
+cargo watch --quiet --clear --watch libs/ --watch .cargo/ --watch crates/ --exec run -p web-server
+git add -A
+git commit -m "OffsetDateTime instead of PrimitiveDateTime and parse to Rfc3339 when serializing"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_gassner;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_gassner TO labrequest;"
+psql.exe -U postgres -d lc_gassner -f gassner.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_gassner
+explorer .
+git status
+git diff
+git add -A
+git commit -m "remove custom format_description macro"
+git push
+git add -A
+git commit -m "working on silent renew; bug icon for sider"
+git push
+git status
+psql.exe -U postgres -c "CREATE DATABASE lc_assadi;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_assadi TO labrequest;"
+psql.exe -U postgres -d lc_assadi -f backup_assadi.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_assadi
+explorer .
+l
+cd src\
+l
+cd app\
+cd pages\
+l
+ng g c wr-labs
+ng g c webrequestlabs
+ng serve
+git add -A
+git commit -m "refactor; webrequestlab"
+git push
+git add -A
+git commit -m "webrequestlabs"
+git push
+git status
+git add -A
+git commit -m "webrequestlabs with modal and csv download"
+git push
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git add -A
+git commit -m "refactor"
+git push
+psql.exe -U postgres -c "CREATE DATABASE lc_tegischer;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_di TO labrequest;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_tegischer TO labrequest;"
+psql.exe -U postgres -d lc_tegischer -f tegischer_sonja_20240603.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_tegischer
+explorer .
+cargo run --bin dbtool_lr -- -d lc_tegischer
+explorer .
+npm update
+deno upgrade
+deno task dev
+git switch -c schmoigl-genanalyse
+git status
+git branch -a
+git push --set-upstream origin schmoigl-genanalyse
+git status
+git add -A\
+git add -A
+git commit -m "schmoigl genanalyse"
+git push
+deno fmt
+deno lint
+git add -A
+git commit -m "fmt"
+git push
+deno task dev
+deno fmt
+deno lint
+git add -A
+git commit -m "schmoigl genanalyse 1"
+git push
+git pull
+git config pull.rebase false
+git pull
+git switch main
+git switch master
+git status
+deno task dev
+git fetch --all
+git reset --hard origin/schmoigl-genanalyse
+git switch master
+git pull
+git status
+cmd
+ipconfig
+ng serve
+ng serve --host 0.0.0.0:4200
+deno task dev
+deno fmt
+git status
+git add assets\kraus.png
+git add src\kraus*
+git status
+git add src\main.ts
+git commit -m "kraus logo, adresse"
+git status
+git add src\demo*
+git commit -m "demo update"
+git diff
+git diff src\schmoigl-styles.ts
+git push
+git branch -a
+git switch schmoigl-genanalyse
+git status
+git add src\schmoigl-styles.ts
+git commit -m "smallMedium fontsize"
+deno fmt
+git push
+git switch schmoigl-genanalyse
+git status
+git add -A
+deno fmt
+git add -A
+git commit -m "smallMedium fontsize"
+git push
+git switch schmoigl-genanalyse
+git status
+git add src\helpers.ts
+git commit -m "add borderColor and borderWidth options for checkbox"
+deno task dev
+git status
+git add assets\*
+git add src\schmoigl-*
+deno fmt
+git add assets\*
+git add src\schmoigl-*
+git commit -m "schmoigl einverstaendniserklaerung1, einverstaendniserklaerung3, einverstaendniserklaerung-patienten"
+git push
+deno fmt --check
+deno fmt --check src\helpers.ts
+deno fmt src\helpers.ts
+git status
+deno fmt
+git status
+git add src\main.ts src\helpers.ts
+git rm src/schmoigl-einverstaendniserklaerung-1.ts
+git status
+git commit -m "fmt"
+git push
+deno lint
+deno fmt
+git status
+git add src\schmoigl-einverstaendniserklaerung3.ts
+git commit -m "remove unused imports"
+git push
+clasp push
+git add -A
+git commit -m "fix Unimed product name"
+git push
+ng serve
+git status
+git add -A
+git commit -m "labstats"
+git push
+git status
+git add -A
+git commit -m "labstats"
+git push
+git status
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ng serve
+ipconfig
+ng serng serve --host 0.0.0.0:4200
+ng serve --host 0.0.0.0:4200
+ng serve --host 192.168.100.59:4200
+ipconfig
+ng serve --host 0.0.0.0:4200
+ng serve --host 0.0.0.0:4200 --disable-host-check
+psql.exe -U postgres -c "CREATE DATABASE lc_forster;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_forster TO labrequest;"
+psql.exe -U postgres -d lc_forster -f forster.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_forster
+explorer .
+git add -A
+git commit -m "refactor rpc into lib_rpc"
+git push
+git status
+git add -A
+git commit -m "refactor rpc into lib_rpc"
+git push
+git add -A
+git commit -m "removed unused variables"
+git push
+git status
+git add -A
+git status
+git commit -m "rpc and stats"
+git push
+git add -A
+git commit -m "modify start and end time to match start/end of the day"
+git push
+ng serve --host 0.0.0.0
+psql.exe -U postgres -c "CREATE DATABASE lc_zoechmann;"
+psql.exe -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE lc_zoechmann TO labrequest;"
+psql.exe -U postgres -d lc_zoechmann -f zoechmann.sql
+cd ~\Documents\Bitbucket\dbtool\
+cargo run --bin dbtool_lr -- -d lc_zoechmann
+explorer .
+scoop update
+scoop update helix
+deno task dev
+git clone git@bitbucket.org:medcomat/medcom-help.git
+yarn install
+scoop install yarn
+yarn install
+yarn
+npm
+npm install yarn
+yarn -v
+yarn
+npm install -g yarn
+yarn --version
+yarn install
+git status
+git diff package.json
+npm uninstall yarn
+git status
+yarn
+yarn start
+yarn start
+git status
+git diff yarn.lock
+git status
+git add docs\labcomplete\Technisches\verwendete-domaenen.mdx
+git commit -m "verwendete domaenen"
+git push
+git status
+git revert yarn.lock
+git checkout -- yarn.lock
+git status
+git checkout -- package-lock.json
+exit
+git pull
+deno lint
+deno fmt
+git status
+git add src\schmoigl-*
+git commit -m "schmoigl genanalyse"
+git push
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git status
+git add -A
+git commit -m "refactor"
+git push
+ng serve
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ipconfig
+ng serve --host 0.0.0.0
+ng serve --host 0.0.0.0:4200 --disable-host-check
+ng serve --host 0.0.0.0:4200
+ng serve --host 0.0.0.0
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git status
+git add crates\libs\lib-medcom\src\model\webrequest\utils.rs
+git commit -m "handle unexpected date formats
+<\n>"
+git push
+git add crates\libs\lib-medcom\src\model\webrequest\utils.rs
+git commit -m "handle unexpected date formats"
+git push
+mysql -h webrequest-prod-db-01.c07cgehidhqe.eu-central-1.rds.amazonaws.com -P 3306 -u medcom_readonly -p
+git pull
+git branch -a
+git checkout master
+git checkout -- src\demo-ais-document.ts
+git checkout -- src\demo-transfer-document.ts
+git checkout master
+git pull
+deno task dev
+deno fmt
+deno lint
+git status
+git diff src\main.ts
+git add -A
+git commit -m "parFaLgCount"
+git push
+git branch -a
+git checkout schmoigl-genanalyse
+git checkout master
+deno lint
+deno fmt src\schmoigl-einverstaendniserklaerung1.ts
+git status
+git add src\schmoigl-einverstaendniserklaerung1.ts
+git commit -m "group data together"
+git push
+deno fmt src\schmoigl-einverstaendniserklaerung3.ts
+deno lint
+deno lint src\schmoigl-einverstaendniserklaerung3.ts
+deno task dev
+deno lint src\schmoigl-einverstaendniserklaerung3.ts
+deno fmt src\schmoigl-einverstaendniserklaerung3.ts
+git add src\schmoigl-einverstaendniserklaerung3.ts
+git commit -m "group data together in schmoigl-einverstaendniserklaerung3.ts"
+git push
+git checkout schmoigl-genanalyse
+git checkout master
+deno task dev
+git status
+deno fmt
+deno lint src\enml-quantiferon.ts
+git add -A
+git commit -m "enml-quantiferon"
+git push
+git status
+git add -A
+git commit -m "enml kosak"
+git push
+deno task dev
+git status
+git add -A
+git commit -m "kosak zuweisung"
+git push
+git status
+deno fmt src\enml-einverstaendnis-covid.ts
+git lint
+deno lint
+deno lint src\enml-einverstaendnis-covid.ts
+git status
+git add src\enml-einverstaendnis-covid.ts src\main.ts
+git status
+git add assets\pdf-templates\enml-einverstaendnis-covid.pdf
+git commit -m "enml einverstaendnis covid"
+git push
+git status
+git add src\enml-einverstaendnis-covid.ts
+git commit -m "enml einverstaendnis covid"
+git push
+git status
+git fmt
+deno fmt
+deno lint
+git status
+git add assets\pdf-templates\renner-zuweisung.pdf
+git add src\renner-zuweisung.ts
+git add src\main.ts
+git commit -m "renner zuweisung
+<\n>"
+git status
+git add src\kosak-zuweisung.ts
+git add src\enml-einverstaendnis-covid.ts
+git commit -m "format"
+git push
+git status
+git add -A
+git fmt
+deno fmt
+git commit -m "renner-zuweisung renamed to renner-anforderung"
+git status
+git add -A
+deno fmt
+git add -A
+git commit -m "renner-zuweisung"
+git push
+deno lint
+deno lint src\renner-zuweisung.ts
+deno fmt src\renner-zuweisung.ts
+git add -A
+git commit -m "format"
+git push
+git status
+git add -A
+deno fmt
+git add -A
+deno lint
+git commit -m "fix widgets
+<\n>"
+deno fmt
+git add -A
+git commit -m "shorten imcl genanalyse"
+git push
+cargo run
+cargo run --example google
+profile
+cargo run --example google
+git status
+git add -A
+git commit -m "get a refresh token and use it to get a new access token"
+git push
+git pull
+clear
+git pull
+git config pull.rebase false
+git pull
+git status
+git add -A
+git commit -m "merge"
+git push
+cargo run --example google
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ng serve --host 0.0.0.0
+ssh medcom-adm@212.89.154.69 -i bitbucket_medcom
+ssh-keygen.exe
+ssh-keygen.exe -t ed25519
+l
+ssh-keygen.exe -t ed25519
+ssh medcom-adm@212.89.154.69 -i id_ed25519
+ssh medcom-adm@212.89.154.69 -i infoserve
+ssh medcom-adm@212.89.154.69 -i id_ed25519
+deno fmt
+git add -A
+git commit -m "enml-kraus-zuweisung"
+git push
+deno fmt
+git add -A
+git commit -m "enml-kraus-zuweisung"
+git push
+sqlx migrate run
+sqlx migrate revert
+sqlx migrate revert --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx migrate run --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx migrate revert --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx migrate run
+sqlx migrate run --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx migrate revert --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx database create --database-url postgres://app_user:dev_only_pwd@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo test test_first_ok
+cargo test test_first_ok -p lib-core --lib
+exit
+git status
+git add -A
+git commit -m "auth"
+git push
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo test test_first_ok -p lib-core --lib
+git add -A
+git commit -m "user"
+git push
+cargo test test_first_ok
+cargo test
+git status
+git add -A
+git commit -m "clean web service"
+git push
+git status
+git diff crates\libs\lib-core\src\model\webrequest\user.rs
+git add -A
+git commit -m "implement user"
+git push
+ng serve --host 0.0.0.0
+git pull
+deno fmt
+deno lint
+git add -A
+git commit -m "fix missing barcode"
+git push
+deno task dev
+cargo watch -q -c -x "test text_token_display"
+deno fmt
+deno lint
+git add -A
+git commit -m "additional fields and checkboxes schmoigl-einverstaendniserklaerung3"
+git push
+git add -A
+git commit -m "filter null values for pvorname and pgeschlecht"
+git push
+cargo watch -q -c -x "test text_token_display"
+cargo test test_token_display
+cargo test token
+ipconfig
+git satus
+git status
+git add -A
+git commit -m "routes_login"
+git push
+docker
+git pull
+git clone git@github.com:maxcountryman/axum-login.git
+cd axum-login\
+l
+cd examples\
+l
+cd oauth2\
+l
+code .
+cargo run
+cargo run -p example-oauth2
+cd ..
+code .
+cargo run -p example-oauth2
+cargo clean
+cargo run -p example-oauth2
+cargo run -p example-sqlite
+cargo run -p example-oauth2
+cargo watch --quiet --clear --watch examples/oauth2 --exec run -p example-oauth2
+cargo watch --quiet --clear --watch examples --exec run -p example-oauth2
+l
+cd examples\
+l
+cd ..
+cargo run -p example-oauth2
+l
+cargo run -p example-oauth2
+cargo clean
+cargo run -p example-oauth2
+cargo run -p example-oauth2-google
+cargo run -q -p example-oauth2-google
+cargo watch -q -x run -p example-oauth2-google
+cargo watch --quiet --clear --watch examples --exec run -p example-oauth2-google
+cargo watch --quiet --clear --watch examples --exec run -p examples/example-oauth2-google
+cargo watch --quiet --clear --watch examples --exec run examples/example-oauth2-google
+cargo watch --quiet --clear --watch examples --exec run example-oauth2-google
+cargo watch --quiet --clear --watch examples --exec run -p examples/example-oauth2-google
+cargo run -p example-oauth2-google
+l
+cd examples\
+l
+cd oauth2-google\
+cargo watch --quiet --clear --watch examples --exec run -p example-oauth2-google
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo run -p example-oauth2
+cd examples\
+cd oauth2\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2
+cd ..
+git checkout master
+cd ..
+git checkout master
+l
+git checkout main
+git reset --hard origin/axum-login
+git clone git@github.com:maxcountryman/axum-login.git
+cd axum-login\
+code .
+cd examples\
+cd sqlite\
+cargo watch --quiet --clear --watch src --exec run -p example-sqlite
+cd examples\oauth2\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cd examples\oauth2-google\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo watch --quiet --clear --watch src --exec run -p example-sqlite
+cd ..
+cd sqlite\
+cd examples\multi-auth\
+l
+cargo run -p example-multi-auth
+cargo watch --quiet --clear --watch src --exec run -p example-sqlite
+cargo watch --quiet --clear --watch src --exec run -p example-multi-auth
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cd ..
+l
+cd oauth2\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2
+cargo run --example google
+cargo run --example example-oauth2-google
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cd examples\oauth2-google\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+psql.exe -U postgres
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo clean
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/axum_login
+cd examples\oauth2-google\
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/axum_login
+sqlx database create --database-url postgres://postgres:postgres@localhost/axum_login
+sqlx migrate add -r init
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/axum_login
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+l
+cargo add tower-sessions-sqlx-store
+cargo add tower-sessions-sqlx-store -F postgres
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo clean
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+bacon
+wsl --update
+exit
+wsl --install
+wsl --update
+docker
+docker pull postgres:16.3-alpine3.20
+docker scout quickview postgres:16.3-alpine3.20
+docker run --name postgres-axum-login -e POSTGRES_PASSWORD=postgres -d postgres
+docker run --name postgres-axum-login -e POSTGRES_PASSWORD=postgres -d postgres:16.3-alpine3.20
+mkdir axum-login-docker
+cd axum-login-docker\
+l
+hx docker-compose.yaml
+l
+docker-compose.exe up -d
+docker-compose ps
+hx docker-compose.yaml
+docker-compose down
+docker-compose ps
+hx docker-compose.yaml
+docker-compose.exe up -d
+hx docker-compose.yaml
+docker-compose.exe up -d
+docker-compose.exe down
+docker-compose.exe up -d
+docker-compose ps
+clasp pull
+scoop update helix
+docker network ls
+docker inspect axum-login-docker_default
+docker-compose down
+l
+hx docker-compose.yaml
+docker-compose up
+hx docker-compose.yaml
+docker-compose up
+docker-compose up -d
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+l
+cd examples\oauth2-google\
+l
+scoop install dbeaver
+docker-compose down
+docker-compose up -d
+l
+hx docker-compose.yaml
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+l
+hx docker-compose.yaml
+docker-compose up -d
+hx docker-compose.yaml
+l
+hx load_dump.nu
+l
+docker-compose down
+source load_dump.nu
+docker-compose down
+hx load_dump.nu
+cargo run --bin c:\Users\micha\Documents\Bitbucket\dbtool\dbtool_lr -- -d lc_zoechmann
+l
+cd Documents\Bitbucket\dbtool\
+cargo build
+cargo build --release
+l
+lk
+l
+dbtool_lr.exe
+dbtool_lr.exe -d labrequest_imcl
+dbtool_lr.exe -p 5434 -d postgres
+hx load_dump.nu
+l
+source load_dump.nu
+l
+explorer .
+source load_dump.nu backup_kamptner.sql
+nu load_dump.nu backup_kamptner.sql
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+l
+hx docker-compose.yaml
+hx load_dump.nu
+docker-compose up -d
+docker-compose ps
+dbtool_lr -p 5434 -d postgres
+dbtool_lr -p 5434 -d postgres -u postgres
+hx load_dump.nu
+psql.exe -U postgres -p 5434 -c "CREATE ROLE labrequest SUPERUSER;"
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+nu load_dump.nu backup_kamptner.sql
+hx load_dump.nu
+docker-compose down
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+hx load_dump.nu
+docker-compose down
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+hx load_dump.nu
+l
+hx docker-compose.yaml
+hx load_dump.nu
+psql
+psql -h
+psql --help
+hx load_dump.nu
+docker-compose down
+nu load_dump.nu backup_kamptner.sql
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+docker-compose down
+hx load_dump.nu
+nu load_dump.nu backup_kamptner.sql
+l
+explorer .
+l\
+l
+mv load_dump.nu get_from_lr.nu
+kl
+k
+l
+nu get_from_lr.nu troll.sql
+docker-compose down
+nu get_from_lr.nu troll.sql
+docker-compose down
+nu get_from_lr.nu troll.sql
+docker-compose down
+nu get_from_lr.nu troll.sql
+docker-compose down
+nu get_from_lr.nu troll18062019.sql
+hx load_dump.nu
+hx get_from_lr.nu
+hx docker-compose.yaml
+hx get_from_lr.nu
+docker-compose down
+nu get_from_lr.nu troll18062019.sql
+cargo build --release
+cargo clean
+cargo build --release
+sleep 5
+sleep(5)
+sleep 5
+sleep 5sec
+hx get_from_lr.nu
+docker-compose down
+nu get_from_lr.nu troll18062019.sql
+nu get_from_lr.nu troll.sql
+docker-compose down
+hx get_from_lr.nu
+nu get_from_lr.nu troll.sql
+l
+nu get_from_lr.nu troll18062019.sql
+cd AppData\Roaming\nushell\
+k
+l
+explorer .
+l
+hx docker-compose.yaml
+nu get_from_lr.nu troll18062019.sql
+nu lr_export.nu troll18062019.sql
+hx docker-compose.yaml
+nu lr_export.nu troll18062019.sql
+docker-compose down
+hx docker-compose.yaml
+cp docker-compose.yaml docker-compose.bak
+hx docker-compose.yaml
+rm docker-compose.bak
+l
+cp lr_export.nu lr_export.bak
+hx lr_export.nu
+nu lr_export.nu troll18062019.sql
+l
+hx lr_export.nu
+l
+psql -c commands.sql
+psql -u postgres -c commands.sql
+l
+hx lr_export.nu
+psql -U postgres -c commands.sql
+psql -U postgres -f commands.sql
+hx lr_export.nu
+docker-compose down
+nu lr_export.nu troll18062019.sql
+hx lr_export.nu
+l
+rm *.json
+l
+rm lr_export.bak
+hx lr_export.nu
+l
+hx docker-compose.yaml
+ng version
+ng serve
+docker-compose up -d
+hx $nu.config-path
+hx $nu.env-path
+nu config reload
+source $nu.config-path
+source $nu.env-path
+dd
+exit
+dd
+du
+dd
+docker-compose ps
+docker container ps
+l
+cd angu
+cd angular\
+l
+cd ..
+rm -r angular
+l
+du
+l
+dd
+rm -r angular
+l
+dd
+du
+l
+ng serve --host 0.0.0.0
+docker inspect dbtool-frontend
+docker ps
+docker-compose ps
+du
+dd
+du
+docker-compose ps
+dd
+du
+npm install
+dd
+du
+git status
+git add -A
+git commit -m "docker-compose.yaml, Dockerfile"
+git push
+git status
+cd Documents\Github\angular\
+l
+cd dbtool-frontend\
+l
+dd
+cd Documents\Github\angular\
+cd dbtool-frontend\
+dd
+ng serve --host 0.0.0.0
+cd Documents\Github\medcom-paramsync\
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+hx docker-compose.yaml
+cd ..
+cd medcom-hq\
+l
+hx docker-compose.yaml
+l
+du
+hx docker-compose.yaml
+du
+hx docker-compose.yaml
+l
+mv medcom-hq-backend\ backend
+l
+hx docker-compose.yaml
+du
+hx docker-compose.yaml
+l
+cd backend\
+l
+cd Documents\Github\medcom-hq\
+l
+hx Dockerfile
+hx docker-compose.yaml
+l
+du
+l
+cargo fetch
+hx docker-compose.yaml
+du
+hx docker-compose.yaml
+dd
+hx docker-compose.yaml
+du
+dd
+du
+docker-compose ps
+dd
+l
+hx docker-compose.yaml
+du
+cd $nu.config-path
+$nu.config-path
+cd c:\Users\micha\AppData\Roaming\nushell\
+l
+hx history.txt
+explorer .
+cargo run
+rustc --version
+dd
+du
+dd
+du
+dd
+du
+cargo install --locked cargo-chef
+rustc --version
+rustc --update
+rustc update
+rustup update
+rustc --version
+dd
+du
+l
+docker-compose ps
+cargo clean
+cargo build --release --bin backend
+cargo build --release --bin web-server
+dd
+du
+l
+target\release\web-server.exe
+docker-compose logs
+clear
+docker-compose logs
+docker-compose logs | save logs.txt
+l
+code logs.txt
+dd
+du
+docker-compose logs | save logs.txt
+docker-compose logs | save logs.txt -f
+cargo build
+dd
+docker-compose down
+du
+docker-compose logs | save logs.txt -f
+dd
+du
+docker-compose logs | save logs.txt -f
+l
+rm logs.txt
+dd
+du
+docker-compose logs | save logs.txt -f
+du
+dd
+docker-compose logs -f --tail 100
+docker-compose logs | save logs.txt -f
+du
+docker-compose logs | save logs.txt -f
+dd
+docker-compose logs | save logs.txt -f
+du
+dd
+du
+docker-compose logs | save logs.txt -f
+dd
+docker-compose logs | save logs.txt -f
+du
+dd
+du
+dd
+du
+l
+cd backend\
+k
+l
+cd ,,
+cd ..
+docker system prune
+du
+dd
+docker-compose build
+docker login
+docker-compose build
+dd
+docker build
+docker-compose build
+docker-compose logs | save logs.txt -f
+du
+docker-compose logs | save logs.txt -f
+dd
+docker-compose build
+dd
+docker-compose build
+l
+cd target\
+l
+cd release\
+l
+cd ..
+l
+cd medcom-hq\
+l
+docker-compose build
+hx $nu.config-path
+hx $nu.env-path
+du
+dd
+db
+cd Documents\Github
+l
+cd medcom-hq\
+k
+l
+db
+du
+docker-compose logs | save logs.txt -f
+dd
+db
+du
+web-server.exe
+l
+./web-server.exe
+db
+du
+dd
+du
+dd
+db
+du
+git clone https://github.com/docker/docker-rust-hello
+docker init
+l
+hx Dockerfile
+cd ~\.config\
+l
+cd ~
+l
+cd `World of Warcraft\`
+l
+cd ..
+l
+cd AppData\
+l
+$env.AppData
+$env.APPDATA
+cd Roaming\
+kl
+l
+cd helix\
+l
+touch config.toml
+hx config.toml
+docker build --tag docker-rust-image .
+code .
+cargo build
+cargo update -p time
+cargo build
+docker build --tag docker-rust-image .
+docker images
+docker tag docker-rust-image:latest docker-rust-image:v1.0.0
+docker images
+docker rmi docker-rust-image:v1.0.0
+docker images
+curl http://localhost:8000
+docker run docker-rust-image
+docker run docker-rust-image -p 8000:8000
+docker run docker-rust-image --publish 8000:8000
+curl http://localhost:3001
+docker run --publish 3001:8000 docker-rust-image
+docker run -d -p 3001:8000 docker-rust-image
+docker ps
+docker stop funny_kirch
+docker ps 
+docker ps -a
+docker restart funny_kirch
+docker ps
+docker stop funny_kirch
+docker ps -a
+docker rm funny_kirch
+docker ps -a
+docker rm objective_khayyam
+docker rm sad_var
+docker rm sad_varahamihira
+docker rm quizzical_germain
+docker ps -a
+docker rm funny_brahmagupta
+docker ps -a
+docker run -n docker-rust-container -d -p 3001:8000 docker-rust-image
+docker run --name docker-rust-container -d -p 3001:8000 docker-rust-image
+docker ps
+l
+cd backend\
+l
+mv Dockerfile Dockerfile2
+l
+docker init
+l
+docker run -n medcom-backend -d -p 3001:8080 docker-rust-image
+docker run --name medcom-backend -d -p 3001:8080 docker-rust-image
+docker run --name medcom-backend -p 3002:8080 docker-rust-image
+docker ps
+docker ps -a
+docker rm medcom-backend
+docker ps -a
+curl http://localhost:3002
+docker run --name medcom-backend -p 3002:8080 docker-rust-image
+docker ps -a
+docker rm medcom-backend
+docker run --name medcom-backend -p 8080:8080 docker-rust-image
+docker rm medcom-backend
+l
+docker run --name medcom-backend -p 8080:8080 docker-rust-image
+docker rm medcom-backend
+docker build --tag docker-rust-backend .
+docker ps
+docker images
+docker rmi 4aa3799dbce6
+docker rmi postgres
+docker rmi b76db976c2fc
+docker images
+docker ps
+docker volume create db-data
+docker volume ps
+docker volume ls
+docker network create postgresnet
+docker run --rm -d -mount "type=volume,src=db-data,target=/var/lib/postgresql/data" -p 5436:5432 --network postgresnet --name db -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=example postgres
+docker run --rm -d --mount "type=volume,src=db-data,target=/var/lib/postgresql/data" -p 5436:5432 --network postgresnet --name db -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=example postgres
+docker exec -it db psql -U postgres
+docker exec
+docker exec --help
+docker exec -e
+docker exec -e list
+cd ..
+git clone https://github.com/docker/docker-rust-postgres
+cd docker-rust-postgres\
+docker init
+l
+code Dockerfile
+code .
+docker build --help
+docker build -t rust-backend-image .
+cargo build
+docker build -t rust-backend-image .
+l
+docker run --help
+docker run --help | grep rm
+scoop install grep
+docker run --help | grep rm
+docker run --help 
+docker run --rm -d --network postgresnet --name docker-develop-rust-container -p 3001:8000 -e PG_DBNAME=example -e PG_HOST=db -e PG_USER=postgres -e PG_PASSWORD=mysecretpassword -e ADDRESS=0.0.0.0:8000 -e RUST_LOG=debug rust-backend-image
+docker container ps
+docker container stop docker-rust-image
+docker container stop docker-rust-container
+docker container rm docker-rust-container
+docker container ps
+docker run --rm -d --network postgresnet --name docker-develop-rust-container -p 3001:8000 -e PG_DBNAME=example -e PG_HOST=db -e PG_USER=postgres -e PG_PASSWORD=mysecretpassword -e ADDRESS=0.0.0.0:8000 -e RUST_LOG=debug rust-backend-image
+curl http://localhost:3001
+curl http://localhost:3001/users
+docker container ps
+docker container stop docker-develop-rust-container
+docker container remove docker-develop-rust-container
+docker container ps
+docker container ps -a
+cd ..
+l
+cd docker-rust-postgres\
+curl http://localhost:3001/users
+curl http://localhost:8000/users
+docker compose up --build
+docker compose up -d --build
+curl http://localhost:8000/users
+dd
+docker compose up -d --build
+dd
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+docker init
+l
+docker build -t web-server
+k
+l
+docker build -t web-server
+docker build -t web-server .
+cargo build --locked --release
+docker build -t web-server .
+l
+docker volume ls
+docker volume rm docker-rust-postgres_db-data
+docker volume prune
+l
+docker volume ls
+docker build -t web-server .
+docker container ps -a
+docker images
+cargo clean
+docker system df
+docker system 
+cd Documents\Github
+l
+cd medcom-hq\
+k
+l
+docker system df
+docker ps -a
+docker
+l
+docker ps 
+docker ps -a
+docker container ps -a
+docker container prune
+docker image list
+docker image rm docker-rust-image
+docker image list
+docker image rm postgres
+docker image prune
+cd AppData\Local\
+l
+l | grep wsl
+cd Docker\
+l
+cd wsl\
+l
+cd ,,
+cd ..
+explorer .
+l
+cd backend\
+docker compose up --build
+cd backend\
+l
+docker compose up --build
+dd
+du
+dd
+docker compose up --build
+docker container ps
+docker container ps -a
+docker exec -it backend-server sh
+docker compose up --build
+docker exec -it backend-server sh
+docker container ps -a
+docker compose up --build
+docker logs
+docker container ps -a
+docker logs backend-server
+pwd
+cd C:\Users\micha\Documents\Github\medcom-hq\backend
+docker logs backend-server -f
+docker compose up --build
+du
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+docker compose up --build
+docker host
+docker compose up --build
+docker compose up --build 
+docker exec -it backend-server /bin/sh
+docker container ps -a
+docker container ps
+docker exec -it backend-db-1 /bin/sh
+docker container ps
+docker compose up --build 
+l
+docker build -t web-server .
+docker run --rm -d --network common-net --name web-server -p 8080:8080 -e ADDRESS=0.0.0.0:8000 -e RUST_LOG=debug web-server
+docker run --rm -d --name web-server -p 8080:8080 -e ADDRESS=0.0.0.0:8000 -e RUST_LOG=debug web-server
+docker exec -it web-server /bin/sh
+docker container ps
+docker ps
+docker run --rm --name web-server -p 8080:8080 -e ADDRESS=0.0.0.0:8000 -e RUST_LOG=debug web-server
+docker ps -a
+docker container rm backend-server
+docker container rm backend-server-1
+docker container ps -a
+docker ps -la
+docker logs backend-server-1
+docker logs backend-server-1 -f
+docker logs 6e7e934c5c96
+docker compose up --build 
+docker image ls
+docker image prune
+docker image ;s
+docker image ls
+docker image rm backend-server
+docker image rm web-server
+docker image rm backend-server
+docker container ps -a
+docker container rm backend-server-1
+docker container ps -a
+docker image rm backend-server
+docker image ls
+docker compose up --build 
+docker container ps -a
+docker exec -it backend-db-1
+docker exec -it backend-db-1 psql
+docker compose up --build 
+git status
+code .
+l
+docker init
+dd
+docker container ps -a
+docker image ls
+docker image rm 2b34afeaa48e
+docker compose up --build 
+docker init
+cd C:\Users\micha\Documents\Github\angular\dbtool-frontend\
+k
+l
+docker build -t dbtool-frontend
+docker buildx build -t dbtool-frontend .
+l
+cd dbtool-frontend\
+docker buildx build -t dbtool-frontend .
+node --max-old-space-size=4096 \
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --prod --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng buildx build --omit=dev --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --omit=dev --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --stats-json
+webpack-bundle-analyzer dist/stats.json
+node webpack-bundle-analyzer dist/stats.json
+npm install --save-dev webpack-bundle-analyzer
+node webpack-bundle-analyzer dist/stats.json
+webpack-bundle-analyzer dist/stats.json
+npm install --save-dev webpack-bundle-analyzer
+webpack
+npx
+npx webpack-bundle-analyzer dist/stats.json
+npx webpack-bundle-analyzer dist/dbtool-frontend/stats.json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --omit=dev --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build prod --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --prod --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --stats-json
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --configuration=production --stats-json
+npx webpack-bundle-analyzer dist/dbtool-frontend/stats.json
+npm install -g source-map-explorer
+source-map-explorer /dist/dbtool-frontend/stats.json
+source-map-explorer dist/dbtool-frontend/stats.json
+npm remove webpack-bundle-analyzer
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --configuration=production --source-map=true --stats-json
+source-map-explorer dist/dbtool-frontend/browser/stats.json
+source-map-explorer dist\dbtool-frontend\stats.json
+source-map-explorer dist\dbtool-frontend\
+source-map-explorer dist\dbtool-frontend
+npx source-map-explorer
+npm run source-map-analyzer
+npx source-map-analyzer
+npm install --save-dev source-map-analyzer
+npm install -g source-map-explorer
+npx source-map-analyzer *.js
+npx source-map-explorer *.js
+node --max-old-space-size=4096 ./node_modules/@angular/cli/bin/ng build --configuration=production --source-map=true
+npx source-map-explorer *.js
+source-map-explorer *.js
+docker buildx build -t dbtool-frontend .
+docker image ps
+docker image ls
+docker image ls -a
+docker run --rm --name dbtool-frontend dbtool-frontend
+docker buildx build -t dbtool-frontend .
+docker ps -la
+docker image ls -a
+docker exec -it dbtool-frontend /bin/sh
+docker container ps -a
+curl http://localhost:80
+curl http://localhost
+docker stop dbtool-frontend
+docker run --rm --name dbtool-frontend dbtool-frontend
+cd ~\Documents\Github\angular\dbtool-frontend\
+lk
+l
+cd dbtool-frontend\
+l
+docker run --rm -p 8080:80 --name dbtool-frontend dbtool-frontend
+docker container ps -a
+docker run --rm -p 8081:80 --name dbtool-frontend dbtool-frontend
+docker buildx build -t dbtool-frontend .
+rm -rfv dist\
+l
+pwd\
+pwd
+cd src\
+touch environment/environment.prod.ts environment/environment.ts
+mkdir environment
+cd environment\
+touch environment.ts
+touch environment.prod.ts
+ipconfig
+node --version
+ng serve --host 0.0.0.0
+docker run --rm -p 8081:80 --name dbtool-frontend dbtool-frontend
+cd ..
+ng g environments
+ng serve --host 0.0.0.0
+uname -a
+ls
+docker-compose up -d --build
+docker container ps -a
+docker ps -la | grep dbtool
+docker logs dbtool-frontend-container
+docker container ps
+docker container stop dbtool-frontend-web
+docker container stop dbtool-frontend-web-1
+docker container ps
+docker container stop dbtool-frontend-container
+docker container ps
+docker-compose up -d --build
+dd
+docker-compose up -d --build
+docker logs dbtool-frontend-container
+docker exec -it dbtool-frontend-container /bin/sh
+dd
+docker build -t dbtool-frontend-debug
+docker build -t dbtool-frontend-debug .
+docker container ps -a
+docker image ps
+docker image ls
+docker run dbtool-frontend-debug
+docker exec -it dbtool-frontend-debug /bin/sh
+docker container run 
+docker container run dbtool-frontend-debug
+docker container ls
+docker build -t dbtool-frontend-debug .
+docker container run dbtool-frontend-debug
+docker logs dbtool-frontend-debug
+docker container run dbtool-frontend-debug --build
+docker build
+docker buildx build 
+docker buildx build .
+docker container ps
+docker container ps -a
+docker container run musing
+docker container run musing_pasteur
+docker container run dbtool-frontend-debug
+docker container ps
+docker image ls
+docker image prune
+docker image ls
+docker image rm dbtool-frontend-web
+docker image ls
+docker image rm dbtool-frontend
+docker image ls
+docker image rm dbtool-frontend:v1
+docker image ls
+docker image rm 74a
+docker container ls
+docker container ls -a
+docker container rm 2eff
+docker container ls -a
+docker container rm edd6
+docker container rm 645
+docker container rm 544
+docker container ls -a
+docker container rm d11
+docker image ls -a
+docker image rm 74a
+docker image ls -a
+docker image rm 1246
+docker image ls -a
+docker buildx build . -t dbtool-frontend-debug
+docker container ls -a
+docker image ls -a
+docker container run --help
+docker container ls -a
+docker image ls -a
+docker compose up --build 
+docker logs dbtool-frontend-debug
+dd
+docker image ls -a
+docker image rm dbtool-frontend-debug
+docker image rm dbtool-frontend
+docker image rm dbtool-frontend:v1
+docker compose up --build 
+dd
+docker image ls
+docker image ls -a
+hx $nu.env-path
+db
+du
+docker container ls
+docker image ls -a
+dd
+docker image ls -a
+docker image rm dbtool-frontend:v1
+docker image rm dbtool-frontend-debug
+docker image rm dbtool-frontend-debug:v1
+docker image rm 2f69
+docker image ls -a
+docker container ls -a
+du
+db
+du
+dd
+docker container ls -a
+docker image ls -a
+docker image rm db21
+docker image ls -a
+docker container ls -a
+l
+cd ..
+l
+rm Dockerfile_cli
+rm .dockerignore
+rm README.Docker.md
+rm compose_cli.yaml
+l
+cd dbtool-frontend\
+l
+npm run build
+cd dist\
+l
+cd dbtool-frontend\
+l
+cd browser\
+l
+du
+docker container ls 
+docker image ls
+docker image rm dbtool-frontend-debug:v1
+dd
+docker image rm dbtool-frontend-debug:v1
+du
+docker container ls 
+explorer .
+dd
+du
+dd
+db
+dd
+db
+du
+cd ~\Documents\Github\
+l
+cd medcom-hq\
+kl
+l
+cd backend\
+l
+cd ..
+hx ..\docker-rust-postgres\
+l
+hx docker-compose.yaml
+l
+cd backend\
+l
+dd
+db
+du
+dd
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ls ..
+cd ~\Documents\Github\
+l
+cd medcom-hq\
+l
+cd backend\
+l
+cd target\
+l
+cd release\
+l
+cargo build --locked --release
+explorer .
+web-server.exe 
+dd
+db
+dd
+db
+du
+docker exec -it backend-server-1 /bin/sh
+dd
+db
+du
+ipconfig
+dd
+db
+du
+docker exec -it backend-server-1 /bin/sh
+dd
+db
+du
+dd
+db
+du
+dd
+du
+db
+du
+docker exec -it backend-server-1 /bin/sh
+dd
+db
+du
+dd
+dd
+db
+du
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+db
+ng serve --host 0.0.0.0
+dd
+db
+du
+dd
+db
+du
+docker exec -it backend-server-1 /bin/sh
+dd
+dd
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+db
+docker container ls
+du
+docker debug backend-server-1
+docker exec -it backend-server-1 /bin/sh
+dd
+db;du
+dd;db;du
+docker exec -it backend-server-1 /bin/sh
+dd;db;du
+docker exec -it backend-server-1 /bin/sh
+dd;db;du
+clear
+dd;db;du
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch config.toml' --prune-empty --tag-name-filter cat -- --all
+git status
+git add .gitignore
+git commit -m "ignore config.toml"
+git status
+git add -A
+git commit -m "docker setup"
+git push
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch config.toml' --prune-empty --tag-name-filter cat -- --all
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cd examples\oauth2-google\
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+dd
+cd ..
+cd dbtool-frontend\
+lk
+l
+dd;db;du
+ng serve --host 0.0.0.0
+git status
+git diff
+git add -A
+git commit -m "cleanup"
+git branch -a
+git branch
+git branch --list
+git branch axum-login
+git checkout axum-login
+l
+cd crates\libs\
+cargo new lib-auth --lib --vcs none
+git status
+git add -A
+git commit -m "fix product name"
+git push
+clasp push
+cd ..
+sqlx migrate add -r init
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate down
+sqlx migrate 
+sqlx migrate revert
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate up
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+git status
+git add -A
+git commit -m "integrate axum login"
+git push
+git push --set-upstream origin axum-login
+git status
+bacon
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cd Documents\Github\medcom-hq\
+l
+cd backend\
+lk
+l
+git pull
+code .
+hx $nu.env-path
+hx $nu.config-path
+hx ~\.config\starship.toml
+explorer ~/.config
+l
+cd crates\libs\lib-auth-axum-login\
+l
+mv templates\ ..\..\services\
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cd ..
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+clear
+cd ..
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+dd
+db
+dd
+git branch main
+git checkout main
+git status
+git add -A
+git commit -m "refactor for axum login"
+git push
+git checkout main
+git status
+git push
+db
+du
+docker container ls
+docker image ls
+docker image rm e5c df5ff
+docker image ls
+docker image rm 2ff 4b5 5a0 938 f766 141 247 1c6 c4c 550
+docker image ls
+docker image rm bc2 912 faf3 b2cf5
+docker image ls
+docker image rm c0cd ccfc1c
+docker image ls
+docker image rm backend-server
+docker container ls
+docker image rm 341
+docker container ls -a
+docker container rm backend-server
+docker container rm b5ac22
+docker container ls -a
+docker container rm 4ffe
+docker image ls
+docker image ls -a
+docker image rm 3413
+docker image ls -a
+cd Documents\Github\
+k
+l
+cd medcom-hq\
+kl
+tokei
+hx $nu.config-path
+hx $nu.env-path
+cwe
+cwe abc
+config nu 
+hx $nu.env-path
+config nu 
+$env.EDITOR
+cd scoop\
+l
+l
+hx $nu.env-path
+cd scoop\
+l
+cd apps\
+l
+cd nu\
+l
+cd current\
+l
+pwd
+cd ..
+l
+cd current\
+l;
+pwd
+hx $nu.env-path
+cwe
+cwe abc
+config nu 
+hx $nu.env-path
+config nu 
+hx $nu.env-path
+cwe
+cwe abc
+hx $nu.env-path
+cwe abc
+cwe
+hx $nu.env-path
+cwe abc
+hx $nu.env-path
+cwe abc
+cwe web-server
+hx $nu.env-path
+cwe
+cwe abc
+cd Documents\Github\
+cd medcom-hq\
+l
+cd dbtool-backend\
+l
+mkdir _rust
+l
+cd _rust\
+l
+mkdir xp
+l
+cd ..
+dd
+cd ..
+l
+l
+mkdir dev
+l
+mv _rust\ dev\
+cd dev\
+l
+mv _rust rust
+l
+cd rust
+l
+mkdir xt
+cd ~\Documents\Github\axum-login .\xt\
+mv ~\Documents\Github\axum-login .\xt\
+cd xt
+l
+mv ~\Documents\Github\openidconnect\ .
+l
+cd ..
+l
+mv ~\Documents\Github\medcom-hq\dbtool-backend\ .
+dd
+l
+cd dbtool-backend\
+dd
+cd ..
+mv ~\Documents\Github\medcom-hq\dbtool-backend\ .
+mb dbtool-backend\ ~\dev\rust\
+mv dbtool-backend\ ~\dev\rust\
+cd ~\dev\rust\
+l
+cd dbtool-backend\
+l
+code .
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cd dev\
+l
+cd rust\
+l
+cd dbtool-backend\
+l
+db
+du
+cd ..
+mkdir ts
+cd ts
+l
+mv ~\Documents\Github\angular\dbtool-frontend\ .
+l
+cd dbtool-frontend\
+l
+docker container ls -a
+docker container rm 5072
+kl
+docker container ls -a
+db
+du
+docker container ls -a
+docker image ls -a
+docker image rm 4bf0
+docker image ls -a
+cd ..
+cd rust\
+l
+cd dbtool-backend\
+l
+code .
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git branch --list
+git checkout axum-login
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo clean
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo clean
+deno lint
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo watch --quiet --clear --watch src --exec run -p example-oauth2-google
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git status
+git add -A
+git commit -m "everything is a big mess"
+git push
+pwd
+cd ..
+l
+cd xy
+cd xt
+l
+cd ..
+cd dbtool-backend\
+l
+cd ..
+cd xt\
+cd ..
+cd xt
+lk
+l
+cd axum-login\
+l
+cp examples\oauth2\ examples\oauth2-social
+cp -r examples\oauth2\ examples\oauth2-social
+cd examples\oauth2-social\
+l
+code .
+l
+scoop install zellij
+l
+scoop update helix
+hx --health
+hx --health rust
+l
+hx .env
+hx src\main.rs
+l
+touch ~/.config/helix/config.toml
+mkdir ~/.config/helix
+touch ~/.config/helix/config.toml
+hx ~/.config/helix/config.toml
+l
+cd ~/
+l
+mv .config\helix\ .
+l
+cd helix\
+l
+hx ~/.config/helix/config.toml
+l
+cd dev\rust\xt\
+l
+cd axum-login\
+l
+cd examples\oauth2-social\
+bacon 
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+l
+hx src\main.rs
+l
+hx Cargo.toml
+bacon
+l
+cd src\
+l
+cd src\
+l
+hx main.rs
+pwd
+l
+hx main.rs
+l
+hx ~\helix\config.toml
+l
+hx main.rs
+l
+rm ~\helix\config.toml
+rm -r ~\helix\
+l
+hx main.rs
+cd ..
+l
+rustup
+rustup update
+hx src\main.rs
+rm -r ~\.rustup\tmp
+exit
+rustup.exe update
+exit
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+l
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+l
+hx --health rust
+scoop install lldb-dap
+npm install -g lldb-dap
+scoop install llvm
+hx --health rust
+rustup component add rust-analyzer
+rust-analyzer --version
+exit
+hx src\main.rs
+cargo watch -q -c -w src\ -x run -p example-oauth2-social
+hx $nu.config-path
+hx $nu.env-path
+cwe
+cwe example-oauth2-social
+nu config reload
+nushell config reload
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+l
+exit
+hx $nu.env-path
+ls
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+cwe
+cwe example-oauth2-social
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+cwe example-oauth2-social
+cwp
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+cwp
+cwp example-oauth2-social
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+hx $nu.env-path
+cd dev\rust\xt\axum-login\examples\oauth2-social\
+l
+code .
+bacon
+cwp example-oauth2-social
+cd ..
+l
+cd ..
+l
+cd ..
+cd dbtool-backend\
+code .
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+git status
+git add -A
+git commit -m "social provider working"
+git push
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git add -A
+git commit -m "social login working"
+git push
+git add -A
+git commit -m "harmonize errors"
+git push
+git add -A
+git commit -m "harmonize errors"
+git push
+cd dev\rust\dbtool-backend\
+l
+code .
+l
+cd dbtool-backend\
+l
+cd crates\
+l;
+;
+l
+cd libs\
+l
+cd lib-auth\
+l;
+l
+cd src\
+l
+cd ..
+l
+cd ..
+l
+cd ..
+l
+cd ..
+l
+cd crates
+l
+cd ..
+l
+mv dbtool-backend\ ~\dev\
+l
+code .
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+l
+hx
+git status
+git add -A
+git commit -m "before implementing UserBmc"
+git push
+git add -A
+git commit -m "using mm in backend"
+git status
+git revert crates\services\web-server\src\web\auth\backend.rs
+git log
+git checkout bf553e68d2482deb5973d66fcd088e176156cf72 -- crates\services\web-server\src\web\auth\backend.rs
+git checkout bf553e68d2482deb5973d66fcd088e176156cf72 -- crates\libs\lib-core\src\model\auth_axum_login\error.rs
+git checkout bf553e68d2482deb5973d66fcd088e176156cf72 -- crates\libs\lib-core\src\model\auth_axum_login\user.rs
+psql --help
+psql --help | grep url
+psql --help | grep host
+psql --help | grep add
+psql --help 
+psql -U postgres --host 192.168.100.59
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+sqlx database drop --database-url postgres://postgres:postgres@localhost/app_db
+sqlx database create --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+git status
+bacon
+git add -A
+git commit -m "use UserBmc in get_user in Backend"
+git push
+git status
+git add -A 
+git commit -m "remove dead code"
+git push
+git add -A
+git commit -m "moved protected router and public router into a single module"
+git push
+l
+cd dev\
+l
+cd t s
+cd ts
+l
+cd dbtool-frontend\
+l
+code .
+ping 192.168.0.0
+ping 192.168.0.1
+ping 192.168.1.1
+ping 192.168.100.0
+ping 192.168.100.1
+ping 192.168.0.0
+exit
+git status
+git add -A
+git commit -m "refactor all routes for auth into a single file"
+git push
+l
+git status
+git add .dockerignore
+git add Dockerfile compose.yaml
+git commit -m "docker"
+git status
+l src\environments\
+git add src\environments\
+git commit -m "environments"
+git stastus
+git status
+git diff angular.json
+git add angular.json
+git status
+git add README.Docker.md
+git status
+git diff package.json
+git commit -m "docker"
+git status
+git add package.json
+git commit -m "environments"
+git status
+git diff src\app\service\webrequest.service.ts
+git add src\app\service\webrequest.service.ts
+git commit -m "environments"
+git status
+git diff src\app\app.routes.ts
+git status
+git diff src\app\pages\webrequestdoctors\webrequestdoctors.component.ts
+git add -A
+git commit -m "cleanup"
+git push
+cd ..
+l
+mkdir xp
+mkdir xp\angular-auth-oidc-client
+l
+cp -r dbtool-frontend\ xp\
+git branch --list
+git branch remove-oidc
+l
+cd dbtool-frontend\
+l
+git branch remove-oidc
+git checkout remove-oidc
+npm uninstall angular-auth-oidc-client
+ng serve --host 0.0.0.0
+ng watch
+npm watch
+ng watch
+npm run watch
+zellij
+scoop install zellij
+cargo install --locked zellij
+rustup update
+cargo install --locked zellij
+scoop install openssl-devfel
+scoop install openssl-devel
+brew install zellij
+brew
+homebrew
+git diff
+git diff | save diff.txt
+git add -A
+git add -a
+git status
+git rm diff.txt
+rm diff.txt
+l
+git status
+git add -a
+git add -A
+git commit -m "Refactored web server routing and authentication"
+git push
+curl https://accounts.google.com/.well-known/openid-configuration
+git status
+git add -A
+git diff | save diff.txt
+git show
+git status
+rm diff.txt
+git status
+git commit -m "Update template for login"
+git push
+git status
+git add -A
+git commit -m "added headers to logline"
+git push
+l
+hx 
+l
+cd dev\ts\dbtool-frontend\
+k
+l
+ng serve --host 0.0.0.0
+npm run watch
+hx --health typescript
+hx --health ts
+npm install -g typescript-language-server typescript
+hx --health ts
+hx --health typescript
+hx 
+scoop install yazi
+yazi
+curl http://localhost:3000
+curl http://localhost:3000/login
+curl http://localhost:3000/mock/table
+curl http://localhost:3000/mock/table -o
+curl http://localhost:3000/mock/table -o -
+curl http://localhost:3000/mock/table -w
+curl http://localhost:3000/mock/table -w "%{http_code}\n"
+curl http://localhost:3000/mock/table -v
+cd dev\rust\dbtool-backend\
+l
+scoop install 7zip jq poppler df ripgrep fzf zoxide imagemagick
+scoop install 7zip jq poppler fd ripgrep fzf zoxide imagemagick
+scoop install jid extras/cvredist2022
+scoop install jid 
+yazi
+cd .config\
+mkdir yazi
+cd yazi
+l
+hx yazi.toml
+yazi
+l
+hx theme.tomkl
+hx theme.toml
+yazi
+l
+mkdir flavors
+mv theme.toml flavors\gruvbox.yazi
+yazi
+l
+cd flavors\
+l
+mv gruvbox.yazi ..
+l
+cd ..
+rm -r flavors\
+l
+mv gruvbox.yazi theme.toml
+l
+hx theme.toml
+yazi
+l
+hx yazi.toml
+yazi
+l
+hx yazi.toml
+yazi.exe 
+l
+hx theme.toml
+yazi
+def --env yy [...args] {<\n>let tmp = (mktemp -t "yazi-cwd.XXXXXX")yazi ...$args --cwd-file $tmplet cwd = (open $tmp)if $cwd != "" and $cwd != $env.PWD {theme.tomlcd $cwd<\n>}theme.tomlrm -fp $tmp<\n>}
+hx $nu.env-path
+yy
+l
+cd ..
+cd .config\
+l
+cd yazi\
+l
+hx yazi.toml
+yy
+hx yazi.toml
+pwd
+cd ..
+mv yazi ~\AppData\Roaming\
+mv yazi ~.\AppData\Roaming\
+mv yazi ~\AppData\Roaming\
+mv yazi ~\AppData\Roaming\yazi
+cd ~\AppData\Roaming\
+cd yazi\
+l
+cd state
+l
+cd ..
+l
+mv yazi\ config
+l
+cd config\
+l
+yy
+l
+hx yazi.toml
+yy
+hx yazi.toml
+l
+hx theme.toml
+yy
+hx theme.toml
+yy
+hx theme.toml
+yy
+hx theme.toml
+yy
+hx theme.toml
+yy
+hx theme.toml
+yy
+$env.EDITOR
+hx $nu.env-path
+yy
+l
+cd ~/
+l
+cd AppData\Roaming\yazi\config\
+l
+hx yazi.toml
+yy
+hx yazi.toml
+yy
+hx yazi.toml
+yy
+hx yazi.toml
+yy
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git status
+git add -A
+git commit -m "return login url for unauthorized api calls"
+git push
+l
+git status
+git add -A
+git commit -m "cleanup"
+git push
+git push --set-upstream origin remove-oidc
+l
+hx ~/.config/helix/config.toml
+hx ~\.cache\
+cd AppData\Local\helix\
+l
+cd ..
+cd Roaming\
+l
+cd helix\
+l
+hx config.toml
+cd dev\ts\dbtool-frontend\
+l
+cd src\
+l
+ng g s backend
+l
+rm backend.*
+l
+cd app\
+l
+cd service\
+l
+ng g s backend
+cd ~\.config\
+l
+cd ..
+cd AppData\Roaming\helix\
+l
+hx --health typescript
+l
+hx languages.toml
+hx --health typescript
+l
+cd dev\ts\dbtool-frontend\
+l
+npm install --save-dev --save-exact prettier
+npm install -g npm@10.8.2
+hx --health typescript
+npm i -g prettier
+hx --health typescript
+curl -fsSL https://deno.land/x/install/install.sh | sh
+deno --help
+l
+hx --health typescript
+lx
+ls
+lk
+l
+hx languages.toml
+l
+hx config.toml
+hx --health typescript
+hx languages.toml
+npm i -g emmet-ls
+hx languages.toml
+hx --health typescript
+hx languages.toml
+l
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+l
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx 
+l
+deno lint src\app\service\webrequest.service.ts
+hx languages.toml
+deno lint src\app\service\webrequest.service.ts
+hx --health typescript
+deno fmt
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+curl -fsSL https://dprint.dev/install.sh | sh
+hx languages.toml
+curl -fsSL https://dprint.dev/install.sh | sh
+hx --health typescript
+scoop install dprint
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+hx languages.toml
+hx --health typescript
+cd dev\ts\dbtool-frontend\
+l
+cd src\app\service\
+l
+l
+dprint ~\dev\ts\dbtool-frontend\src\app\components\auth\auth.component.ts
+hx languages.toml
+dprint ~\dev\ts\dbtool-frontend\src\app\components\auth\auth.component.ts
+dprint fmt ~\dev\ts\dbtool-frontend\src\app\components\auth\auth.component.ts
+cd dev\ts\dbtool-frontend\
+l
+dprint init
+dprint fmt src\app\components\auth\auth.component.ts
+hx languages.toml
+hx --health typescript
+dprint init -c ~/.dprint.json
+hx src\app\service\webrequest.service.ts
+l
+cd ~\dev\rust\dbtool-backend\
+l
+curl http://localhost:4200/api/login -v
+curl http://localhost:3000/api/login -v
+hx languages.toml
+l
+cd ~\dev\rust\dbtool-backend\
+l
+cd crates\services\
+l
+cd web-server\
+l
+cd src\
+l
+cd web\
+l
+mv mock\mod.rs routes_mock.rs
+l
+rm -r mock
+l
+hx mod.rs
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cd dev\ts\dbtool-frontend\
+l
+npm run watch
+l
+cd ..
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cd dbtool-backend\
+ng serve --host 0.0.0.0
+curl -i -X OPTIONS -H "Origin: http://127.0.0.1:3000" -H 'Access-Control-Request-Method: POST' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/table"
+curl -i -X OPTIONS -H "Origin: http://localhost:4200" -H 'Access-Control-Request-Method: POST' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/table"
+curl -i -X OPTIONS -H "Origin: http://localhost:4200" -H 'Access-Control-Request-Method: GET' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/table"
+curl -i -X OPTIONS -H "Origin: http://localhost:4200" -H 'Access-Control-Request-Method: GET' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/tabl"
+curl -i -X OPTIONS -H "Origin: http://localhost:4200" -H 'Access-Control-Request-Method: GET' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/table"
+curl http://localhost:3000/mock/table
+hx src\app\service\webrequest.service.ts
+curl -i -X OPTIONS -H "Origin: http://localhost:4200" -H 'Access-Control-Request-Method: GET' -H 'Access-Control-Request-Headers: Content-Type, Authorization' "http://localhost:3000/mock/table"
+$env.HOME
+$env.HOMEPATH
+$HOME
+$env
+$env | grep home
+$env | grep HOME
+cd $env.HOMEPATH
+l
+cd source\
+cd $env.HOMEPATH
+l
+git init --bare $env.HOMEPATH/.config-gitdir
+git init --bare $HOMEPATH/.config-gitdir
+git init --bare $env.HOMEPATH/.config-gitdir
+echo
+echo $env.HOMEPATH
+echo $env.HOMEPATH/.cofnig
+echo $env.HOMEPATH/"iaia"
+echo $env.HOMEPATH"jaja"
+echo $env.HOMEPATH+"jaja"
+echo $env.HOMEPATH + 
+echo $env.HOMEPATH + 'huhu'
+echo $"($env.HOMEPATH)/common.nu"
+git init --bare $"($env.HOMEPATH)/.config-gitdir"
+l
+l | type = dir
+l type=dir
+config
+cc
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"
+echo cc
+echo $cc
+$nu.config-path
+l
+cd .config
+l
+cd ,,
+cd ..
+cd AppData\Roaming\
+l
+cd nushell\
+l
+cd ..
+mklink
+mklink /D
+mklink /D ~\AppData\Roaming\nushell\ ~\.config\nushell
+mklink /D ~\AppData\Roaming\nushell\
+mklink /D ~/.config/nushell ~\AppData\Roaming\nushell\
+mklink /D ~/.config/nushell ~\AppData\Roaming\nushell
+mklink /D ~/.config/ ~\AppData\Roaming\nushell
+mklink /D ~/.config/nushell ~\AppData\Roaming\nushell
+junction
+scoop install junction
+mklink /j ~/.config/nushell ~\AppData\Roaming\nushell
+mklink /j ~\.config\nushell ~\AppData\Roaming\nushell
+cd ~/
+cd .config\k
+cd .config\
+l
+cd nushell\
+l
+cd ~\.config\
+l
+cd ..
+l
+cd .config\nushell\
+l
+$nu.env-path
+cp env.nu env.bak
+k
+ll
+l
+echo "alias config='/usr/bin/git --git-dir=$HOME/.config-gitdir/ --work-tree=$"($env.HOMEPATH)"' | save $"($nu.config-path) --append
+echo "alias config='/usr/bin/git --git-dir=$HOME/.config-gitdir/ --work-tree=$"($env.HOMEPATH)"'<\n>"
+echo "alias config='/usr/bin/git --git-dir=$HOME/.config-gitdir/ --work-tree=$"($env.HOMEPATH)"'"
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)" | save $nu.env-path --append
+echo alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)" | save $nu.env-path --append
+echo alias cc = git | save $nu.env-path --append
+l
+hx env.nu
+echo "alias cc = git" | save $nu.env-path --append
+hx env.nu
+echo 'aliassa'
+echo 'alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir"' | save $nu.env-path --append
+hx env.nu
+echo 'alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"' | save $nu.env-path --append
+hx env.nu
+source $nu.env-path
+cc
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)" | save $nu.env-path --append
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"
+cc
+hx env.nu
+echo alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"\n | save $nu.env-path --append
+echo alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)" | save $nu.env-path --append
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"
+cc
+echo 'alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"' | save $nu.env-path --append
+hx env.nu
+cd ~/
+l
+echo '.config' | save .gitignore
+hx .gitignore
+cc config --local status.showUntrackedFiles no
+l
+cc
+git init --bare $"($env.HOMEPATH)/.config-gitdir"
+cc config --local status.showUntrackedFiles no
+cd .config-gitdir\
+cc config --local status.showUntrackedFiles no
+echo cc
+echo $env.cc
+echo $cc
+cd ..
+alias cc
+source $nu.env-path
+cc
+hx $nu.env-path
+source $nu.env-path
+cc
+cc config --local status.showUntrackedFiles no
+hx $nu.env-path
+source $nu.env-path
+cc
+cc config --local status.showUntrackedFiles no
+cc config
+cc config --git-dir=$env.HOMEPATH/.config-gitdir --local status.showUntrackedFiles no
+git config --git-dir=$env.HOMEPATH/.config-gitdir --local status.showUntrackedFiles no
+cd .config-gitdir\
+l
+git config --local status.showUntrackedFiles no
+l
+cd ..
+cc
+cc status
+alias cc = git --git-dir=$"($env.HOMEPATH)/.config-gitdir" --work-tree=$"($env.HOMEPATH)"
+$nu.env-path
+$nu.env-path + "ashha"
+alias cc = git --git-dir=$env.HOMEPATH+"/.config-gitdir"
+cc
+cc status
+alias cc = git --git-dir="$($env.HOMEPATH)/.config-gitdir"
+cc
+cc status
+hx 
+hx $nu.env-path
+source $nu.env-path
+cc
+cc status
+hx $nu.env-path
+cc status
+source $nu.env-path
+cc status
+hx $nu.env-path
+source $nu.env-path
+cc
+cc status
+hx $nu.env-path
+source $nu.env-path
+cc
+hx $nu.env-path
+source $nu.env-path
+cc status
+cc --version
+cc
+hx $nu.env-path
+source $nu.env-path
+cc
+hx $nu.env-path
+source $nu.env-path
+cc
+cc status
+git status
+git --git-dir=~/.config-gitdir status
+git init --bare ~/.config-gitdir
+git --git-dir=~/.config-gitdir status
+git --git-dir=$env.HOMEDIR/.config-gitdir
+l
+git init --bare $env.HOMEPATH/.config-gitdir
+git init --bare $'($env.HOMEPATH)/.config-gitdir'
+$env.HOMEPATH
+git init --bare $'($env.HOMEPATH)\.config-gitdir'
+rm -r .config-gitdir\
+git init --bare $'($env.HOMEPATH)\.config-gitdir'
+git config --global init.defaultBranch main
+rm -r .config-gitdir\
+git init --bare $'($env.HOMEPATH)\.config-gitdir'
+alias cc = git --git-dir=$'($env.HOMEPATH)/.config-gitdir' --work-tree=$'($env.HOMEPATH)'
+cc status
+alias cc = git $'--git-dir=($env.HOMEPATH)/.config-gitdir' --work-tree=$'($env.HOMEPATH)'
+alias cc = git $'--git-dir=($env.HOMEPATH)/.config-gitdir --work-tree=($env.HOMEPATH)'
+cc
+cc status
+alias cc = git $'--git-dir=($env.HOMEPATH)\.config-gitdir --work-tree=($env.HOMEPATH)'
+cc status
+echo $'alias cc = git --git-dir=($env.HOMEPATH)\.config-gitdir --work-tree=($env.HOMEPATH)'
+echo $'alias cc = git --git-dir=($env.HOMEPATH)\.config-gitdir --work-tree=($env.HOMEPATH)' | save $nu.env-path --append
+cc config --local status.showUntrackedFiles no
+source $nu.env-path
+cc config --local status.showUntrackedFiles no
+cc status
+cc add .config\starship.toml
+cc remote add origin git@github.com/michi-jeremias/.config.git
+cc branch -M main
+cc push -u origin main
+cc remote add origin git@github.com:michi-jeremias/.config.git
+cc branch -M main
+cc status
+cc commit -m "starship"
+cc push -u origin main
+cc remote add origin git@github.com:michi-jeremias/.config.git
+cc push -u origin main
+cc pull
+cd .config-gitdir\
+k
+l
+git
+git status
+cd ..
+git status
+cc
+cc status
+cc add .config\starship.toml
+cc commit -m "starship"
+cc push
+cc push --set-upstream origin main
+cc push
+cd .config-gitdir\
+cc push
+cc config --local push.autoSetupRemote
+cc push
+cc push --set-upstream origin main
+cd ..
+cd .config-gitdir\
+l
+git remote add origin git@github.com:michi-jeremias/.config.git
+git remote
+cc remote
+cc push
+cc push --set-upstream origin main
+cc remote add origin git@github.com/michi-jeremias/.config.git
+cc remote add origin git@github.com:michi-jeremias/.config.git
+git remote remove origin
+cc remote remove origin
+cc push --set-upstream origin main
+cc remote add origin git@github.com:michi-jeremias/.config.git
+cc status
+cc push
+cc push --set-upstream origin main
+cd ..mklink /j ~\.config\nushell ~\AppData\Roaming\nushell
+cd ~\.config\
+l
+cc status
+cc restore --staged nushell/history.txt
+cc status
+l
+cd helix\
+l
+hx languages.toml
+cd ~/
+cd dev\docker\dnsmasq\
+l
+docker init
+l
+hx compose.yaml
+l
+docker pull jpillora/dnsmasq
+docker scout quickview jpillora/dnsmasq
+l
+hx compose.yaml
+l
+hx proxy
+l
+hx compose.yaml
+db
+hx compose.yaml
+db
+du
+l
+hx proxy
+rm proxy
+l
+cd docker\
+l
+cd proxy\
+l
+cd ../..
+l
+cd docker\
+l
+cd proxy\
+l
+hx conf.d
+dub
+dd
+which openssl
+cd ~\dev\docker\dnsmasq\
+l
+openssl genrsa -aes256 -passout pass:gsahdg -out server.pass.key 4096
+openssl rsa -passin pass:gsahdg -in server.pass.key -out server.key
+rm server.pass.key
+openssl req -new -key server.key -out server.csr
+openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+l
+cd docker\
+l
+cd proxy\
+l
+hx conf.d
+cd ..
+l
+yy
+l
+dd
+yy
+git status
+git add -A
+git commit -m "url builder and interceptor update"
+git push
+git log
+git checkout 6016ff3344bd2aff3479b0b2424836688bff7fee
+git diff
+npm run watch
+git log
+git rev-parse head
+git log --all
+git checkout 1b9202c9f3c95f4ed04cf811cc7e342bfcc7b6eb
+git diff
+git diff 6016ff3344bd2aff3479b0b2424836688bff7fee @
+npm run watch
+cd ~\dev\ts\dbtool-frontend\
+npm run watch
+git log
+git checkout 6016ff3344bd2aff3479b0b2424836688bff7fee
+git revert src\environments\environment.ts
+git reset src\environments\environment.ts
+git checkout 6016ff3344bd2aff3479b0b2424836688bff7fee
+git checkout 6016ff3344bd2aff3479b0b2424836688bff7fee -f
+hx src\app\service\auth.service.ts
+l
+yy
+git status
+git add -A
+git status
+git commit -m "logout() doesn't return an Observable anymore; rename internalerror component to error"
+git push
+git push origin HEAD:main
+git push origin HEAD:main -f
+git checkout main
+git pull
+git diff
+git pull origin master
+git pull origin main
+git config pull.rebase false
+git pull origin main
+git commit -m "before merge"
+git add -A
+git commit -m "before merge"
+git pull origin main
+git status
+git add -A
+git commit -m "before merge"
+git pull origin main
+git status
+npm run watch
+git log
+git reset --hard 9f0b97cda30e2ea3ad21910e90709fd76eece17a
+git status
+npm run watch
+git log
+git reset --hard 6016ff3344bd2aff3479b0b2424836688bff7fee
+l
+git status
+git add -A
+git commit -m "internalerror -> error"
+git push
+git push -f
+git status
+git add -A
+git commit -m "logout() doesn't return an Observable anymore; rename internalerror component to error"
+git push
+git status
+cd 2.
+cd ..
+git diff
+git status
+git diff ..\.cargo\config.toml
+git add ..\.cargo\config.toml
+git diff services\web-server\Cargo.toml
+git add -A
+git commit -m "remove web templates"
+git push
+git status
+git add -A
+git commit -m "remove headers from log line"
+git push
+nu lr_export.nu backup.sql
+git status
+docker compose up
+docker compose up --build 
+source $nu.env-path
+gc
+l
+source $nu.env-path
+gs
+gd
+yy
+gs
+git status
+git checkout -b lc_doctors_csv
+gac 'froms'
+gac froms
+git add -A
+git commit -m "working on froms"
+git push
+git push --set-upstream origin lc_doctors_csv
+npm run watch
+git status
+cd Downloads\
+cd AppData\Roaming\yazi\config\
+l
+scalc
+$env.PATH
+$env.Path
+hx $nu.env-path
+source $nu.env-path
+scalc
+hx yazi.toml
+yy
+scalc
+source $nu.env-path
+scalc
+yy
+hx yazi.toml
+cd dev\rust\dbtool-backend\
+l
+hx
+scoop install tmux
+scoop install fzf
+fzf
+fzf ~/
+ls ~/ | fzf
+l 
+l ~/
+l ~\Downloads\
+l ~\Downloads\ ~\Documents\
+l ~\Downloads\ + ~\Documents\
+l ~\Downloads\
+cd ~/
+l
+hx dirj.nu
+nu dirj.nu
+man ls
+scoop install man
+ls
+ls -l
+ls --help
+l -f 
+ls --help
+l -af 
+ls --help
+ls --help | get name
+l -af | get name
+l -af | get name | append l -af ~/Documents get name
+l
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+l
+fzf
+fzf templist.txt
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+l -af
+l -af | get name
+rm templist.txt
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+help str
+hx dirj.nu
+nu dirj.nu
+dir
+l
+l | type = dir
+ls | type = dir
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+ls -af
+ls -af | where type=dir
+ls -af | where type==dir
+ls -af ~/ | where type==dir
+ls -af ~/ | where type == dir
+hx dirj.nu
+ls -af ~/ | where type == dir
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+:q
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+cd dev\rust\dbtool-backend\
+cd ..
+cd ts\dbtool-frontend\
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git checkout main
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+fzf
+fzf ~/
+fzf ls ~/
+fzf | ls ~/
+fzf | ls ~\Downloads\ | append ls ~\Documents\
+hx dirj.nu
+ls -af ~\Downloads\
+ls
+hx dirj.nu
+ls -af ~\Downloads\ | where type == dir
+ls -af ~\Downloads\ | where type == dir | get name
+ls -af ~\Downloads\ | where type == dir | get name | fzf
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+l
+hx dirj.nu
+l
+nu dirj.nu
+hx dirj.nu
+nu dirj.nu
+pwd
+hx dirj.nu
+cd | nu dirj.nu
+hx dirj.nu
+cd | nu dirj.nu
+hx dirj.nu
+source $nu.env-path
+dd 
+source $nu.env-path
+hx $nu.env-path
+dd
+hx $nu.env-path
+dd
+source $nu.env-path
+dd
+source $nu.env-path
+hx $nu.env-path
+source $nu.env-path
+dd
+cd C:\Users\micha\Downloads\Meslo
+c d~/
+yy
+hx $nu.env-path
+source $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+q
+hx $nu.env-path
+cd | dd
+ll
+l
+hx $nu.env-path
+source $nu.env-path
+dd
+nu AppData\
+fd
+cd (fd -H -t d -E .git -E node_modules | fzf)
+l
+pwd
+cd (fd -H -t d -E .git -E node_modules | fzf)
+cd ~/
+cd (fd -H -t d -E .git -E node_modules | fzf)
+l
+fd --help
+cd (fd -H -t d -E .git -E node_modules -t d| fzf)
+cd ~/
+cd (fd -H -t d -E .git -E node_modules -t d| fzf)
+cd (fd -H -t d -E .git -E node_modules -t d| fzf --no-multi --height 60% --layout reverse --border)
+cd (fd -H -t d -E .git -E node_modules -E AppData -t d| fzf --no-multi --height 60% --layout reverse --border)
+l
+cd (fd c:-H -t d -E .git -E node_modules -E AppData -t d| fzf --no-multi --height 60% --layout reverse --border)
+cd (fd c:\ -H -t d -E .git -E node_modules -E AppData -t d| fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . 'c:\' -H -t d -E .git -E node_modules -E AppData -t d| fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . 'c:\' -H -t d -E .git -E node_modules -E AppData -d 3| fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . 'c:\' -H -t d -E .git -E node_modules -E AppData -E '$*' -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . 'c:\' -H -t d -E .git -E node_modules -E AppData -E '$*' -E windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . 'c:\' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . '~/' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd ~/ -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd ~ -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+cd (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+ll
+l
+cd (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+l
+yy
+cd (fd . --full-path 'C:\Users\micha' -H -t d -E .git -E node_modules -E AppData -E '$*' -E Windows -d 3 | fzf --no-multi --height 60% --layout reverse --border)
+hx $nu.env-path
+source $nu.env-path
+dd
+l
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+dsd
+dd
+cc
+cc status
+cd ~/
+cc add AppData\Roaming\nushell\env.nu
+hx $nu.env-path
+l
+dd
+hx
+dd
+l
+echo l
+hx $nu.env-path
+ls -la
+ls -la | get name
+ls -la | get name type
+ls -la 
+hx crates\
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+git checkout -b
+git branch
+git checkout lc_doctors_csv
+dd
+wpd
+pwd
+dd
+pwd
+cd ~/
+l
+hx dirj.nu
+hx $nu.env-path
+dd
+hx $nu.env-path
+source $nu.env-path
+dc
+source $nu.env-path
+hx $nu.env-path
+source $nu.env-path
+dc
+hx $nu.env-path
+dd
+l
+dd
+dd
+source $nu.env-path
+dd
+mkdir ahk
+l
+cd ahk
+l
+mkdir xt
+cd xt\
+git clone git@github.com:sdias/win-10-virtual-desktop-enhancer.git
+l
+cd win-10-virtual-desktop-enhancer\
+l
+hx $nu.env-path
+source $nu.env-path
+ds
+cd ..
+l
+rm -r win-10-virtual-desktop-enhancer\
+l
+git clone git@github.com:radosi/virtualdesktop.git
+cd virtualdesktop\
+ds
+ds 
+dg
+cd ..
+l
+rm -r virtualdesktop\
+git clone git@github.com:mogya/win-11-virtual-desktop-enhancer.git
+l
+cd win-11-virtual-desktop-enhancer\
+start .
+cd ..
+rm -r win-11-virtual-desktop-enhancer\
+l
+dd
+source $nu.env-path
+dd
+git status
+ga
+gc "new type for csv export"
+gp
+gs
+gs
+dd
+gs
+gac "extending the doctors table; csv export of doctors"
+gp
+dd
+hx
+l
+dd
+l
+qmk
+npm run watch
+dd
+dd 
+dd
+gs
+dd
+gs
+gacp "export csv for doctors; filters for the doctors table"
+gs
+gacp "rename DoctorBig to DoctorWebrequestDb"
+gs
+gacp "csv export done"
+gs
+gacp "doctor for csv import"
+git checkout main
+git pull
+nu lr_export.nu krausmed_20240916.sql
+hx $nu.env-path
+cd ~\.config\
+l
+cd ..
+cd AppData\Roaming\yazi\config\
+l
+cat
+echo theme.toml
+l
+start .
+cd ~\.config\helix\
+l
+hx config.toml
+hx yazi.toml
+ds
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+db
+du
+l
+dd
+source $nu.env-path
+dd
+db
+du
+l
+ff
+l
+cd .cargo\
+l
+hx config.toml
+ff
+l
+cd .cargo\
+l
+hx compose.yaml
+l
+gs
+rm crates\libs\lib-core\.config
+gs
+gacp "frontend url"
+db
+du
+hx config.toml
+dd
+git pull
+gacp "filter newlines, returns, ; and quotes in doctor comment"
+dd
+db
+du
+l
+hx compose.yaml
+l
+hx compose.yaml
+dd
+db
+du
+:LL:q
+l
+dd
+db
+du
+dd
+npm run watch
+du
+dd
+source $nu.env-path
+dd
+db
+du
+dd
+docker container ls -a
+docker container rm b9a
+docker container ls -a
+docker image ls -a
+docker image rm 4606 384 a03 822d f53 ce71 b3ab
+docker image rm d3ae 2ccf
+docker image ls
+docker image ls -a
+docker image rm 91c
+db
+docker image ls -a
+du
+dbu
+dub
+dd
+docker exec -it backend-server-1 /bin/sh
+docker container ls -a
+docker exec -it dbtool-backend-server /bin/sh
+docker exec -it dbtool-backend-server-1 /bin/sh
+l
+docker compose up
+hx compose.yaml
+dub
+hx compose.yaml
+dub
+:wq
+hx compose.yaml
+hx compose.yaml
+dub
+dub
+dd
+dub
+dd
+dub
+dd
+dub
+hx compose.yaml
+dd
+dub
+cd c:\Windows\System32\drivers\etc\
+l
+ping host.docker.internal
+hx hosts
+start .
+hx hosts
+start .
+hx $nu.env-path
+cd c:\Windows\System32\drivers\etc\
+l
+hx hosts
+ping medcom.lololocal.at
+ff
+l
+ff
+ff
+l
+which openssl
+cd ~\.ssh\
+l
+fg
+ffg
+hx $nu.env-path
+source $nu.env-path
+ffg
+which openssl
+ff
+l
+cd current\
+l
+cd ~/
+cd ~\.ssh\
+l
+openssl genrsa -aes256 -passout pass:gsahdg -out server.pass.key 4096
+l
+openssl rsa -passin pass:gsahdg -in server.pass.key -out server.key
+l
+rm server.pass.key
+openssl req -new -key server.key -out server.csr
+l
+openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365 -nodes
+l
+rm server.*
+l
+mv key.pem server-key.pem
+mv cert.pem server-cert.pem
+l
+l
+mkdir certs
+mv server-* ~\dev\rust\dbtool-backend\certs\
+cd certs\
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+l
+git checkout -b tls
+git status
+git add certs\
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+cargo clean
+cargo build
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+scoop install cmake
+cd ..
+l
+cd .cargo\
+l
+ff
+hx config.toml
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+yy
+mkdir certs
+l
+mv cert certs\
+l
+mv cert.pem certs\
+mv key.pem certs\
+curl localhost:3000
+curl https://localhost:3000
+curl http://localhost:3000
+curl http://localhost:7878
+curl https://localhost:7878
+curl https://localhost:3000
+curl http://localhost:7878
+curl https://localhost:3000
+yy
+l
+start .
+curl https://localhost:3000
+l
+cd ..
+l
+l
+mkdir certs2
+l
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=lololocalhost"
+l
+rm cert*
+l
+rm key.pem
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=lololocalhost"
+l
+curl https://localhost:3000
+curl https://lololocalhost:3000
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=lololocalhost.at"
+curl https://lololocalhost:3000
+ping lololocalhost
+ping lololocalhost.at
+ping medcom.lololocalhost.at
+curl https://medcom.lololocalhost:3000
+curl https://medcom.lololocalhost.at:3000
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=medcom.lololocalhost.at"
+curl https://medcom.lololocalhost.at:3000
+ping https://medcom.lololocalhost.at
+ping medcom.lololocalhost.at
+curl localhost:3000
+gacp "tls"
+git push --set-upstream origin tls
+git checkout main
+l
+gs
+dd
+db
+du
+l
+l
+hx compose.yaml
+dd
+db
+du
+hx compose.yaml
+hx Dockerfile
+dd
+dbu
+dd
+db
+du
+l
+docker image ls -a
+dd
+docker container ls -a
+docker container ls
+docker image rm 6f8 0ba 3fe 91c
+docker image ls 
+docker image rm f761
+docker image ls -a
+hx compose.yaml
+du
+hx $nu.env-path
+docker container ls
+docker container rm 835
+dd
+docker container rm 835
+hx Dockerfile
+hx Dockerfile.nginx
+mv Dockerfile.nginx ~/
+l
+hx compose.yaml
+docker image ls
+docker image rm f761
+docker image ls
+hx compose.yaml
+l
+hx Dockerfile
+db
+du
+hx $nu.env-path
+l
+cd dist\
+du
+dd
+cd ..
+l
+docker-compose build compose.yaml
+docker-compose build dbtool-frontend-v0.1.2
+docker-compose build dbtool-frontend
+hx compose.yaml
+docker container ls
+docker container ls -a
+hx compose.yaml
+db
+docker container ls -a
+docker container ls
+docker image ls -a
+docker reposiroty
+docker repository
+du
+docker container ls
+hx compose.yaml
+hx Dockerfile
+docker-compose build --no-cache
+du
+npm run watch
+dd
+docker-compose build --no-cache
+du
+hx Dockerfile
+npm run build
+l
+ff
+docker image ls -a
+docker image rm 2849 f761
+docker image ls -a
+docker image rm 871
+dd
+docker image rm 871
+l
+docker build -t dbtool-frontend:v0.1.2
+docker build -t dbtool-frontend:v0.1.2 .
+docker image ls -a
+hx compose.yaml
+dbu
+docker build -t dbtool-frontend:v0.1.2 .
+dd
+dbu
+docker image ls -a
+dd
+docker image rm 6e3 b99 6a5 871
+docker build -t dbtool-frontend:v0.1.2 .
+dd
+docker build -t dbtool-frontend:v0.1.2 .
+docker image ls
+docker image ls -a
+dbu
+hx compose.yaml
+docker image ls -a
+docker image rm b99
+docker image rm 6e3
+docker image ls -a
+docker image rm b99
+dd
+docker image rm b99
+docker image ls -a
+hx Dockerfile
+docker build -t dbtool-frontend:v0.1.3 .
+dbu
+docker image ls -a
+docker image rm dbtool-frontend:latest
+dd
+docker image rm dbtool-frontend:latest
+docker image rm dbtool-frontend:v0.1.3
+docker image ls -a
+db
+docker container ls
+docker container ls -a
+docker compose build
+docker container ls
+docker container ls -a
+hx $nu.env-path
+docker-compose build --no-cache
+docker container ls -a
+du
+docker container ls -a
+hx compose.yaml
+dd
+du
+docker container ls -a
+hx compose.yaml
+dd
+hx $nu.env-path
+source $nu.env-path
+dd
+dbu
+docker container ls -a
+du
+hx Dockerfile
+docker build
+docker build -t dbtool-frontend .
+l
+hx .dockerignore
+$env.DOCKER_BUILDKIT
+$env
+$env | grep DOCKER
+hx Dockerfile
+l
+yy
+hx Dockerfile
+cd ..
+hx Dockerfile
+docker build -t dbtool-frontend .
+l
+docker image ls -a
+docker container ls -a
+dd
+du
+dd
+docker build -t dbtool-frontend .
+du
+docker image ls
+docker run -it dbtool-frontend /bin/sh
+hx Dockerfile
+docker build -t dbtool-frontend .
+hx Dockerfile
+hx Dockerfile
+docker build -t dbtool-frontend .
+hx Dockerfile
+docker build -t dbtool-frontend .
+hx Dockerfile
+docker build -t dbtool-frontend .
+hx Dockerfile
+docker build -t dbtool-frontend .
+hx Dockerfile
+docker build -t dbtool-frontend .
+docker run -it dbtool-frontend /bin/sh
+hx Dockerfile
+docker build -t dbtool-frontend .
+docker image ls
+docker image ls -a
+docker build -t dbtool-frontend:waaw .
+docker image ls -a
+dockere image rm dbtool-frontend:waaw
+docker image rm dbtool-frontend:waaw
+docker image ls 
+docker build -t dbtool-frontend-server .
+docker image ls
+docker image rm 041 1ff c1f4
+docker image ls
+dd
+docker image rm 041 1ff c1f4
+docker container ls -a
+docker container rm dbtool-frontend
+docker container rm 38b6
+docker container ls -a
+docker container rm 7bd
+docker container ls -a
+db
+docker container ls -a
+du
+docker container ls -a
+yy
+cd ..
+.
+cd ..
+ls
+hx compose.yaml
+db
+docker container ls -a
+du
+dd
+db
+du
+docker container ls -a
+hx compose.yaml
+hx Dockerfile
+docker image ls
+docker image rm c1 041 08e 1ff f5f9 b99
+docker image ls
+docker image rm 9ae
+dd
+docker image rm 9ae
+docker image ls
+docker build -t dbtool-frontend-server .
+docker image ls
+hx compose.yaml
+dd
+db
+du
+docker container ls
+dd
+db
+du
+dd
+dbu
+dd
+dbu
+dd
+dbu
+l
+docker run -it dbtool-frontend-server /bin/sh
+l
+hx Dockerfile
+dd\
+dd
+db
+du
+hx Dockerfile
+dd
+dbu
+hx Dockerfile
+dd
+dbu
+docker container ls
+docker image ls
+hx Dockerfile
+gs
+curl localhost:8080
+curl 192.168.100.59:8080
+npm run watch
+dd
+dbu
+dd
+dbu
+hx compose.yaml
+dd
+dbu
+hx src\app\service\auth.service.ts
+dd
+dbu
+gs
+git add compose.yaml Dockerfile
+git commit -m "change nginx image to a custom image that serves index.html if no other file matches"
+git push
+gacp "repair filters"
+hx Dockerfile
+hx crates\libs\
+l
+ff
+l
+git clone git@github.com:tokio-rs/axum.git
+l
+cd axum\
+l
+cd examples\
+l
+cd tls-rustls\
+l
+ff
+l
+cd axum
+l
+curl 127.0.0.1:7878
+curl 127.0.0.1:3000
+cargo run -p example-tls-rustls
+hx 
+l
+gs
+git diff compose.yaml
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+gs
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+hx compose.yaml
+git add compose.yaml
+git commit -m "remove unnecessary env var"
+gacp "add 192.168.100.59 to allowed origin for CORS"
+git branch -a
+git checkout tls
+hx 
+hx
+git checkout tls; git merge main
+git mergetool
+git merge main
+git status
+git add compose.yaml
+git commit -m "merge compose.yaml"
+git status
+git push
+git status
+git rm compose.yaml.orig
+rm compose.yaml.orig
+git status
+git checkout main
+git status
+hx 
+git checkout tls
+hx
+git checkout tls
+curl 127.0.0.1:3000
+curl 127.0.0.1:7878
+l
+cd certs\
+l
+start .
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=localhost"
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+mkdir self-signed
+mv cert.pem self-signed\
+mv key.pem self-signed\
+l
+cd self-signed\
+l
+mv * ..
+l
+cd ..
+l
+rm -r self-signed\
+l
+rm *
+k
+l
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=localhost"
+l
+start .
+dd
+cd ..
+cd dbtool-backend\
+l
+dd
+hx compose.yaml
+dd
+curl 192.168.100.59:3000
+curl 192.168.100.59:7878
+curl 192.168.100.59:3000
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+hx src\app\service\webrequest.service.ts
+npm run watch
+ff
+l
+ff
+l
+ff
+l
+cd certs\
+l
+rm *
+lk
+l
+mkdir self-signed
+yy
+l
+yy
+cd ..
+l
+rm cert.pem
+rm -r certs
+rm key.pem
+l
+yy
+fd 
+cd ,,
+cd ..
+fd cert
+fd pem
+fd
+fd pem
+l
+ff
+cd crates\services\web-server\certs\
+l
+cd self-signed\
+l
+rm -r 
+rm
+rm *
+l
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650
+l
+yy
+l
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes
+l
+rm *2*
+l
+start .
+mkcert -install
+scoop install mkcert
+scoop bucket add extras
+scoop install mkcert
+l
+rm *
+kl
+l
+mkcert -key-file key.pem -cert-file cert.pem localhost
+mkcert -install
+l
+mkcert -key-file key.pem -cert-file cert.pem localhost *.dbtool.com dbtool.com
+l
+mkcert -install
+l
+ping dbtool.com
+start .
+exit
+ff
+gs
+dbu
+yy
+du
+nu lr_export.nu buchegger_brigitte.sql
+l
+hx lr_export.nu
+nu lr_export.nu buchegger_brigitte.sql
+dd
+nu lr_export.nu buchegger_brigitte.sql
+dd
+nu lr_export.nu buchegger_brigitte_utf8.sql
+l
+hx buchegger_brigitte_utf8.sql
+dd
+nu lr_export.nu buchegger_brigitte.sql
+cd ..
+dd
+dbu
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+curl 192.168.100.59:3000
+l
+hx compose.yaml
+docker image ls
+docker image rm 5d0 f0c 0a5 4b9
+docker image ls
+docker image rm 076 efa 129 9ae 61f f344
+docker image ls
+docker image rm 83a 21d
+l
+dd
+dbu
+docker image ls
+curl 192.168.100.59:3000
+curl 192.168.100.59:7878
+l
+cd web-folder\
+l
+cd ..
+cd crates\services\web-server
+l
+cd certs\
+l
+cd self-signed\
+l
+cd ..
+hx Dockerfile
+l
+yy
+ff
+l
+hx .cargo\config.toml
+yy
+dd
+dbu
+hx compose.yaml
+yy
+hx compose.yaml
+yy
+hx compose.yaml
+hx Dockerfile
+dd
+dbu
+l
+hx Dockerfile
+dd
+dbu
+hx Dockerfile
+db
+hx Dockerfile
+l
+hx Dockerfile
+dd
+db
+du
+ff
+l
+dd
+dbu
+du
+docker exec -it dbtool-backend-server-1 /bin/sh
+docker container ls
+docker exec -it dbtool-backend-server-1 /bin/sh
+dd
+dbu
+hx Dockerfile
+dd
+dbu
+npm run watch
+l
+gs
+git add crates\libs\lib-rpc\src\doctor_rpc.rs 
+git add crates\libs\lib-rpc\src\lib.rs
+git commit -m "remove doctor_with_lab"
+gs
+l
+git add certs\
+gs
+git rm crates\services\web-server
+git rm crates\services\web-server\certs -r
+git rm key.pem
+git rm cert.pem
+gs
+git add .cargo\config.toml Dockerfile compose.yaml
+gs
+git commit -m "move certs"
+gs
+git diff crates\services\web-server\src\web\auth\routes_auth.rs
+gs
+git add crates\services\web-server\src\config.rs
+git commit -m "define env for cert dir"
+git add crates\services\web-server\src\web\auth\routes_auth.rs
+git commit -m "exchange hardcoded urls with env vars"
+gs
+git add -A
+git commit -m "deactivate tls for now"
+gp
+gs
+git add -A
+git commit -m "clean unused rpc"
+gp
+hx Dockerfile
+hx Dockerfile
+ff
+l
+ff
+l
+hx Dockerfile
+hx compose.yaml
+ff
+l
+ff
+l
+ff
+gapc
+gacp
+gacp "rename doctors_list to doctor_list"
+git checkout main
+git pull
+git branch -a
+git branch -d lc_doctors_csv
+git branch -d help
+git branch -d authorization
+git branch -d tls
+git branch -a
+git push origin --delete tls
+git remote update origin --prune
+git branch -a
+git checkout parameter_export
+git checkout -b parameter_export
+hx
+ff
+l
+ff
+l
+cd src\app\pages\
+ng g c webrequestparameters
+l
+cd webrequestlabs\
+l
+cp webrequestlabs.routes.ts ..\webrequestparameters\
+cd ..
+cd webrequestparameters\
+l
+mv webrequestlabs.routes.ts webrequestparameters.routes.ts
+cd ..
+c d..
+l
+cd ..
+l
+cd ..
+l
+ng add @angular/localize
+gs
+gacp "csv export for parameter"
+l
+ff
+hx $nu.env-path
+source $nu.env-path
+ff
+l
+ff
+l
+hx
+start .
+l
+ff
+yy
+ff
+scoop install poppler
+yy
+scoop update poppler
+start .
+gs
+l
+npm run watch
+hx
+ff
+dd
+dbu
+ff
+dd
+dbu
+ff
+l
+ff
+l
+ff
+git status
+ff
+du
+l
+ff
+cd ~/
+ff
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ff
+dbu
+dd
+docker compose logs db
+docker-compose logs db
+docker compose logs server
+docker compose inspect server
+docker exec -it dbtool-backend-db-1 /bin/sh
+docker exec -it dbtool-backend-db /bin/sh
+docker container ls
+du
+docker container ls
+docker exec -it dbtool-backend-db-1 /bin/sh
+hx compose.yaml
+dd
+dbu
+curl 192.168.100.59:8080
+curl 192.168.100.59
+ff
+l
+hx compose.yaml
+dd
+dbu
+gs
+git diff compose.yaml
+git add crates\libs\*
+gs
+gc "export parametes to csv"
+git push
+git push --set-upstream origin parameter_export
+l
+gs
+git checkout main
+git pull
+git status
+gacp "fix network"
+git status
+gs
+gacp "fix prod env vars"
+git status
+gacp "fix prod env vars"
+hx compose.yaml
+gs
+gacp "handle null values for username who created a request"
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+dd
+gs
+du
+dbu
+dd
+dbu
+npm run watch
+dd
+dbu
+gs
+gacp "move backend port to 8080"
+gs
+git diff crates\libs\lib-rpc\src\request_rpc.rs
+git diff compose.yaml
+dd
+dbu
+gs
+git add crates\libs\lib-rpc\src\request_rpc.rs
+git commit -m "remove comments"
+gacp "move backend port to 8080"
+gs
+yy
+gs
+gacp "bauer"
+deno fmt
+deno lint
+deno lint | grep auva
+deno lint
+deno fmt
+gacp "fix linter errors"
+deno lint
+deno fmt
+gacp "fix drawheadera4 arguments"
+gs
+hx
+hx
+gs
+cd ..
+l
+cd xp
+l
+cd ..
+cd xt
+l
+cargo new pdf_form --vcs none
+l
+cd pdf_form\
+l
+ff
+l
+ff
+l
+mkdir assets
+cd assets
+l
+l
+yy
+start .
+ff
+cargo add pdf_form
+l
+ff
+cd ..
+hx
+cargo watch --quiet --clear --watch src/ --exec run -p pdf_form
+cd ..
+cd ..
+rm -r pdf_form\
+l
+git clone git@github.com:pdf-rs/pdf.git
+cd pdf
+l
+l files\
+cargo run --example content -- files\example.pdf
+l files\
+cargo run --example content -- files\pdf-sample.pdf
+l
+l examples\
+l examples\src\
+l examples\src\bin\
+cargo run --example {content,metadata,names,.read,text} -- files\pdf-sample.pdf
+cargo run --example names -- files\pdf-sample.pdf
+start .
+cargo run --example names -- files\medcom-dienstreise.pdf
+cargo run --example metadata -- files\medcom-dienstreise.pdf
+cargo run --example read -- files\medcom-dienstreise.pdf
+l
+start .
+rm font*
+rm extracted_image_*
+l
+cargo run --example text -- files\medcom-dienstreise.pdf
+cargo run --example form -- files\medcom-dienstreise.pdf
+cargo run --example other_page_content -- files\medcom-dienstreise.pdf
+cargo run --example form -- files\medcom-dienstreise.pdf
+cargo run --example names -- files\medcom-dienstreise.pdf
+cargo run --example form -- files\medcom-dienstreise.pdf
+cargo run --example content -- files\medcom-dienstreise.pdf
+l
+cargo run --example form -- files\medcom-dienstreise.pdf
+cargo run --example metadata -- files\medcom-dienstreise.pdf
+cargo run --example names -- files\medcom-dienstreise.pdf
+cargo run --example other_page_content -- files\medcom-dienstreise.pdf
+cargo run --example read -- files\medcom-dienstreise.pdf
+start .
+cargo run --example read -- files\medcom-dienstreise.pdf
+start .
+l
+rm extracted_image_*
+rm font*
+cd pdf\
+cargo run --example read -- files\medcom-dienstreise.pdf
+l
+rm font*
+rm extracted_image_*
+hx
+ff
+cargo run --example read -- files\medcom-dienstreise.pdf
+cargo watch --quiet --clear --watch src/ --exec run -p pdf_form
+l
+cd pdf\
+;l
+cargo watch --quiet --clear --watch src/ --exec run -p pdf_form
+cd ..
+cargo run --example read -- files\medcom-dienstreise.pdf
+l
+cd examples\
+l
+cd src\
+l
+cd bin\
+;l
+hx form.rs
+cd ..
+l
+cargo run --example form
+l
+lk
+l
+cargo run -p form
+cargo run -p pdf/examples/form
+l
+cargo run
+hx Cargo.toml
+cargo run -p pdf-examples
+cargo run -p pdf-examples --bin form
+cargo run -p pdf-examples --bin form ..\files\medcom-dienstreise.pdf
+hx
+l
+cp ..\files\medcom-dienstreise.pdf .
+l
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+kl
+l
+hx
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+hx src\bin\
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+hx src\bin\form.rs
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+hx src\bin\form.rs
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+l
+start .
+ff
+l
+cd pdf\examples
+l
+cd ..
+l
+hx src\bin\form.rs
+pwd
+cd ..
+cd examples\
+l
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+l
+rm out.pdf
+cargo run -p pdf-examples --bin form medcom-dienstreise.pdf
+ff
+cd ..
+cd rust\
+l
+cd xt
+l
+cargo new pdf_form --vcs none
+cd pdf_form\
+l
+hx src\main.rs
+cargo add pdf_form
+cd ..
+l
+mv pdf_form\ pdf_medcom
+l
+cd pdf_medcom\
+cargo add pdf_form
+cd ..
+mv pdf_medcom\ pdf_form
+cd pdf_form\
+l
+hx Cargo.toml
+cargo add pdf_form
+l
+ff
+l
+cargo run 
+hx src\main.rs
+hx src\bin\form.rs
+hx
+cd ..
+l
+cd ..
+l
+cd xt
+l
+cd ..
+cd xp
+l
+cd ..
+cd xt\
+l
+cd ..
+cd xp
+cargo new tectonic
+l
+cd tectonic\
+hx Cargo.toml
+cargo add tectonic
+l
+cd src\
+l
+ff
+l
+cargo run 
+curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net |sh
+l
+cargo run 
+pkg-config
+source $nu.env-path
+cargo run 
+clear
+cargo run 
+tectonic --help
+scoop install pkg-config
+tectonic --help
+cargo run 
+pkg-config
+pkg-config install fontconfig
+pkg-config fontconfig
+scoop install fontconfig
+scoop install graphite2
+pkg-config graphite2
+source $nu.env-path
+scoop install graphite\
+scoop install graphite
+$env | grep TEC
+cargo build
+scoop install libpng
+hx main.rs
+clasp pull
+code .
+clasp push
+code
+gs
+gacp "fix easy-ordi product name"
+l
+code.exe .
+clasp push
+gacp "move const out of main"
+clasp push
+gacp "move const back into main"
+ff
+l
+cd ..
+l
+cd xp
+l
+cd tectonic\
+l
+cd src\
+l
+ff
+l
+cargo watch --quiet --clear --watch src/ --exec run
+l
+cd ~/
+ff
+l
+cargo watch --quiet --clear --watch src/ --exec run
+cargo vcpk
+cargo install vcpk
+cargo install pkg-config
+cargo install cargo-vcpkg
+cargo watch --quiet --clear --watch src/ --exec run
+msys2
+cargo install tectonic
+cd ..
+l;
+rm -r tectonic\
+hx main.rs
+cd ..
+l
+mkdir tectonic-mj
+cd tectonic-mj\
+l
+cargo install tectonic
+l
+cargo install vcpkg
+ff
+l
+dd
+dbu
+gacp "fix calculation of deactivated parameters"
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+hx 
+cd ..
+l
+rm -r tectonic-mj\
+l
+typst
+cargo install typst
+cargo install --locked typst-cli
+l
+rustc --version
+cargo update
+cargo update -p time
+cargo install typst-cli
+typst
+l
+mkdir typst-cli
+l
+mv main.typ typst-cli\
+mv template.toml typst-cli\
+l
+cd typst-cli\
+l
+typst compile main.typ out.pdf
+l
+start .
+ff
+l
+ff
+l
+ff
+l
+cd src\
+l
+cd app\pages\
+l
+ng g c medcomdienstreise
+yy
+hx main.typ
+ff
+cd typst\
+l
+typst compile dienstreise.typ out.pdf
+l
+rm out.pdf
+cat
+dir
+ff
+l
+cargo new typst-integration
+l
+cd typst-integration\
+l
+ff
+l
+cd ..
+l
+cp typst\ ..\xp\typst-integration\
+cp -r typst\ ..\xp\typst-integration\
+cargo run
+cd ..
+l
+cd xp\typst-integration\
+cargo run
+l
+cd typst\
+l
+cargo run
+l
+cd ..
+l
+cargo run
+l
+cd typst\
+;l
+cargo run
+l
+cd ..
+l;
+cd typst\
+;
+l
+cargo run
+l
+cd ..
+l
+cd typst\
+typst compile dienstreise.typ out.pdf
+l
+rm out.pdf
+cargo run
+l
+cd ..
+l
+cargo run
+l typst\
+cargo run
+l
+rm out.pdf
+l
+cargo run
+l
+rm out.pdf
+cargo run
+l
+rm out.pdf
+cargo build
+carog run
+cargo run
+l
+rm out.pdf
+l
+cargo run
+l
+rm out.pdf
+l
+cargo run
+l
+cargo run
+l
+rm out.pdf
+l
+cd ..
+typst compile typst\dienstreise.typ
+typst compile typst\dienstreise.typ out.pdf
+l
+rm out.pdf
+typst compile typst\dienstreise.typ out.pdf
+l
+rm out.pdf
+gs
+gacp "generate pdf files with typst"
+gs
+gacp "download pdf from the backend"
+gs
+l
+nu lr_export.nu backup_weindl.sql
+l
+dbtool_lr.exe -p 5434 -d postgres
+./dbtool_lr.exe -p 5434 -d postgres
+l
+hx lr_export.nu
+nu lr_export.nu backup_weindl.sql
+git checkout -b dienstreise
+l
+hx
+l
+npm run watch
+l
+typst compile typst\dienstreise.typ out.pdf
+gs
+gacp "typst pdf works"
+gs
+gacp "send businesstrip form to backend"
+git push --set-upstream origin dienstreise
+gacp "send businesstrip form to backend"
+gs
+gacp "fix means of transportation"
+gs
+gacp "fix typo"
+git checkout main
+git checkout main
+git pull
+gs
+gacp "open pdf in new tab"
+gs
+gacp "presets"
+gs
+gs
+gacp "typst template"
+gacp "form layout, validation, presets"
+l
+cd src\app\pages\
+l
+ng g c medcomholidayform
+yy
+gs
+gacp "rename dienstreise to businesstrip"
+gs
+gacp "rename dienstreise to businesstrip"
+gs
+gacp "fix routes"
+l
+rm -r medcomholiday\
+ng g c medcomholidayrequest
+gacp "rename dienstreise to businesstrip, create holidayrequest pdf"
+gs
+gacp "holidayrequest pdf"
+ff
+ff
+ff
+l
+cd typst\
+l
+cd ..
+typst compile typst\holidayrequest.typ out.pdf
+cd typst\
+l
+gs
+gacp "holidayrequest pdf"
+gs
+gacp "holiday request pdf"
+gacp "fix attempt to calculate return date if holiday end date is not set"\
+gacp "fix attempt to calculate return date if holiday end date is not set"
+l
+cd ..
+l;
+;
+l
+hx Dockerfile
+dd
+db
+hx Dockerfile
+db
+du
+l
+hx compose.yaml
+hx Dockerfile
+hx compose.yaml
+dd
+dd
+dbu
+hx Dockerfile
+dd
+dbu
+ff
+docker exec -it dbtool-backend-db-1 /bin/sh
+dd
+db
+du
+dd
+dbu
+l
+dbu
+l
+dbu
+dd
+db
+du
+l
+docker exec -it dbtool-backend-server-1 /bin/sh
+dd
+dbu
+dd
+ff
+docker exec -it dbtool-backend-server-1 /bin/sh
+dbu
+which typst
+dd
+db
+dd
+db
+dd
+db
+which typst
+db
+docker build -t dbtool-backend . --progress=plain
+docker build -t dbtool-backend . --progress=plain --no-cache
+docker exec -it dbtool-backend-server-1 /bin/sh
+du
+dd
+docker build -t dbtool-backend . --progress=plain
+dd
+db
+dd
+db
+dd
+db
+dd
+db
+du
+docker exec -it dbtool-backend-server-1 /bin/sh
+docker service logs
+docker service logs dbtool-backend-server=1
+docker service logs dbtool-backend-server-1
+docker service logs dbtool-backend-server
+docker container ls
+docker logs dbtool-backend-server
+docker logs dbtool-backend-server:v0.1.1
+docker logs dbtool-backend-server-1
+docker logs
+docker container ls
+docker logs dbtool-backend-server-1
+dd
+dbu
+dd
+dbu
+cd ..
+cd dbtool-backend\
+dd
+db
+du
+dd
+dbu
+dd
+dbu
+dd
+dbu
+dd
+dbu
+l
+gs
+git diff typst\holidayrequest_values.json
+cd ..
+l
+cd dbtool-backend\
+l
+hx .gitignore
+gs
+git add .gitignore
+git commit -m "ignore .json"
+gp
+gs
+git rm typst\holidayrequest_values.json
+hx
+hx .gitignore
+git rm -f typst\holidayrequest_values.json
+gs
+gacp "add typst"
+ls
+dd
+dbu
+typst
+typst compile
+typst compile --help
+l
+dd
+dbu
+gs
+gacp "add liberation-sans ttf package"
+gs
+gacp "add other presets"
+dd
+dbu
+gs
+gacp "convert option to result"
+hx compose.yaml
+dd
+dbu
+gs
+gacp "parameter sql insert"
+gacp "parameter sql insert"
+deno
+deno upgrade
+ff
+l
+deno fmt
+deno --version
+l
+deno task dev
+cd out
+l
+start .
+dd
+gacp "update fixtures"
+dbu
+hx
+gs
+gacp "generate insert sql for parameters"
+gacp "load parameter insert sql from backend"
+dd
+dbu
+dd
+dbu
+gacp "rename button"
+dd
+dbu
+gs
+gacp "add holiday type"
+dd
+gs
+gacp "add holiday type"
+dd
+dbu
+dbu
+gs
+gacp "fix calculating planned return"
+dd
+dbu
+ls
+git checkout -b core-refactor
+hx
+yy
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+yy
+gs
+gacp "refactor"
+git push --set-upstream origin core-refactor
+gs
+git checkout main
+git pull
+gs
+gacp "remove dead code"
+gacp "rename rpc method"
+gs
+gacp "refactor rpc"
+gacp "clean profile bmc"
+gacp "remove unused request.rs, we're only using request_join_user.rs"
+gs
+nu lr_export.nu margeta.sql
+dd
+pg_dump -c
+pg_dump --help
+l
+hx margeta.sql
+nu lr_export.nu margeta.sql
+dd
+cd Desktop\labcomplete\
+nu lr_export.nu margeta.sql
+exit
+dbtool_lr.exe -i 192.168.100.16 -p 5432 -d lc_margeta
+l
+.dbtool_lr.exe -i 192.168.100.16 -p 5432 -d lc_margeta
+./dbtool_lr.exe -i 192.168.100.16 -p 5432 -d lc_margeta
+hx margeta.sql
+gacp "remove unused code; move all from/tryfrom implementations into the modules of the target types. clean all bmcs. type conversions are now performed in the rpc handlers"
+dd
+dbu
+gs
+git diff Cargo.tomlk
+git diff Cargo.toml
+gs
+git diff ../../../../../../Cargo.toml
+gacp "remove doctor_specsupplier.rs"
+gacp "format"
+gs
+git diff ..\labcomplete\request.rs
+ga ..\labcomplete\request.rs 
+gacp "format"
+gacp "define dummy uuids for the labs Bauer and Undefined"
+gacp "remove google page"
+gacp "remove login button"
+dd
+dbu
+dd
+cd ..
+dbu
+l
+cd .config\helix
+l
+hx
+ff
+deno lint
+ff
+deno lint
+deno fmt
+rustc --explain E0793
+cargo install --locked zellij
+perl
+cargo install --locked zellij
+cd dev\rust
+cd xt
+l
+git clone git@github.com:MSxDOS/ntapi.git
+l
+cd ntapi\
+l
+cargo build
+ff
+cd ..
+l
+cd .
+l
+cd ..
+cd rust\xt
+l
+git clone git@github.com:zellij-org/zellij.git
+cd zellij\
+l
+cargo build
+l
+hx Cargo.toml
+cargo clean && cargo build -vv 2>/dev/null | grep 'rustc-link-lib'
+cargo clean && cargo build -vv 2>/dev/null; grep 'rustc-link-lib'
+cargo clean; cargo build -vv 2>/dev/null; grep 'rustc-link-lib'
+cargo build -vv | grep 'rustc-link-lib'
+cargo clean; cargo build -vv | ignore-errors | where $it =~ 'rustc-link-lib'
+cargo clean; cargo build -vv | ignore-errors | where $it =~ 'ntapi'
+cargo clean; cargo build -vv | where $it =~ 'rustc-link-lib'
+ff
+l
+cargo clean; cargo build -vv | save "out.txt"
+cargo clean
+cargo build
+cargo clean; cargo build
+ff
+cargo clean
+cargo build
+cargo clean
+cargo build
+cargo clean
+cargo build
+cd ..
+mkdir fork
+cd fork\
+git clone git@github.com:michi-jeremias/zellij.git
+l
+cd zellij\
+l
+hx rust-toolchain.toml
+cargo build
+\\
+hx
+l
+ff
+dd
+du
+hx
+dd
+docker login
+du
+ff
+cargo build
+ff
+cd xt
+j
+l
+git clone git@github.com:knsd/daemonize.git
+l
+mkdir zellij-dependencies
+mv ntapi\ zellij-dependencies\
+mv -r ntapi\ zellij-dependencies\
+cd ..
+mv ntapi\ zellij-dependencies\
+mv -r ntapi\ zellij-dependencies\
+l
+cd zellij-dependencies\
+l
+cd ntapi\
+l
+cd ..
+l
+mv daemonize\ zellij-dependencies\
+l
+rm -r ntapi
+cd zellij-dependencies\
+l
+cd daemonize\
+l
+cargo build
+pwd
+l
+cd ,,
+cd ..
+l
+git clone git@github.com:bozaro/daemon-rs.git
+l
+cd daemon-rs\
+cargo build
+ff
+l
+cd ..
+l
+cd .
+cd ..
+pwd
+ff
+l
+hx init.nu
+cd ~
+ff
+l
+hx starship.toml
+ff
+hx
+l
+pwd
+cargo build
+hx config.toml languages.toml
+ff
+l
+gs
+git diff bitbucket-pipelines.yml
+hx bitbucket-pipelines.yml
+git pull
+git checkout -- bitbucket-pipelines.yml
+git pull
+gs
+git rm assets\pdf-templates\medcom-dienstreise.pdf
+rm assets\pdf-templates\medcom-dienstreise.pdf
+gs
+git add src\bauer-*
+git commit -m "bauer genanalyse; bauer ais document"
+gs
+gacp "enml selbstzuweiser"
+gs
+deno fmt
+gacp "format"
+gs
+gacp "update lc sql insert"
+npm run watch
+yy
+gs
+gacp "reorganize files and folders"
+gacp "fix missing import"
+yy
+gs
+gacp "reorganize files and folders"
+gacp "rewrite subscribe"
+gs
+:qa
+hx
+gs
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+hx
+deno task dev
+yy
+ff
+l
+ff
+yy
+gs
+deno fmt
+deno lint
+gacp "enml befundzustellung kostenuebernahme"
+ff
+hx $nu.env-path
+source $nu.env-path
+ff
+l
+ff
+gacp "rpc router update; fix psql insert"
+hx
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+yy
+ff
+gs
+git diff src\bauer-genanalyse-document.ts
+gacp "remove reqSentDate; add reqCurrentDate"
+deno fmt
+deno lint
+hx
+l
+deno fmt src\bauer-genanalyse-document.ts
+deno lint
+gacp
+gacp "format"
+gs
+gacp "rpc rework"
+gs
+dd
+yy
+l
+docker build -t dbtool-backend:v0.1.3 .
+dbu
+ff
+l
+docker build -t dbtool-frontend:v0.1.3 .
+hx compose.yaml
+dbu
+docker image ls
+docker build -t dbtool-frontend-server:v0.1.3 .
+docker image ls
+docker image rm dbtool-frontend
+docker image rm 21292
+docker build -t dbtool-backend-server:v0.1.3 .
+dbu
+dd
+dbu
+docker container ls
+docker image ls -a
+dd
+dbu
+l
+docker image ls
+docker image 
+docker image prune
+docker image ls
+docker image
+docker image rm dbtool-frontend
+docker image rm 212
+docker rmi dbtool-frontend
+docker rmi dbtool-frontend:0.1.3
+docker rmi 21292
+docker rmi repository/dbtool-frontend:0.1.3
+docker rmi repository/dbtool-frontend:v0.1.3
+docker rmi dbtool-frontend:v0.1.3
+docker image ls
+docker rmi dbtool-backend:v0.1.3
+docker image ls
+docker rmi dbtool-frontend-server:v0.1.3
+dd
+docker image ls
+docker rmi dbtool-frontend-server:latest
+docker build -t dbtool-frontend-server:v0.1.3 .
+docker image ls
+db
+docker image ls
+docker rmi dbtool-frontend-server:v0.1.3
+dd
+dbu
+docker image ls
+gs
+gacp "parameters filter inactive"
+l
+hx
+ff
+hx --health typescript
+deno
+deno lint
+deno fmt src\app\pages\webrequest\parameters\parameters.component.ts
+hx ~/.config/helix/config.toml
+hx
+ff
+l
+hx
+npm run watch
+hx
+hx 
+hx
+hx 
+deno lsp
+npm run watch
+hx
+l
+hx
+hx src\app\service\backend.service.ts
+npm install -g @angular/cli @angular/language-service typescript @angular/language-server
+hx src\app\service\backend.service.ts
+npm -g root
+ff
+npm root
+npm -g install ngserver
+npm -g install @angular/language-server
+npm -g install @angular/language-service
+npm -g update
+hx src\app\service\backend.service.ts
+ff
+l
+ff
+nu lr_export.nu dump.sql
+curl -i 192.168.100.59:3000
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'accept-encoding: br' -H 'Content-Type: application/json' -d '{"id": 1, "method": "doctor_list_for_csv", "params": {}, "list_options": {}}'
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'accept-encoding: br' -H 'Content-Type: application/json' -d '{"id": 1, "method": "doctor_list_for_csv", "params": {}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "doctor_list_for_csv", "params": {}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'accept-encoding: br' -H 'Content-Type: application/json' -d '{"id": 1, "method": "doctor_list_for_csv", "params": {}, "list_options": {}}' --output -
+yy
+dd
+dbu
+ff
+gs
+gacp "add compression layer"
+gs
+gacp "rewrite parameters"
+npm install --save-dev brotli-webpack-plugin
+npm install compression-webpack-plugin --save-dev
+npx webpack init
+l
+npm run watch
+hx webpack.config.js
+git checkout -- package.json
+npm run watch
+npm
+npm run watch
+l
+rm index.html
+rm src\index.ts
+hx webpack.config.js
+npm run watch
+l
+rm postcss.config.js
+hx ~\.config\helix\languages.toml
+hx webpack.config.js
+npm uninstall compression-webpack-plugin --save-dev
+npm audit fix
+npm install --save-exact --save-dev esbuild
+npm run watch
+npm install -D
+npm install -D compression-webpack-plugin brotli-webpack-plugin
+l
+hx webpack.config.js
+l
+mv webpack.config.js custom-webpack.config.js
+npm i -D @angular-builders/custom-webpack
+node --version
+ng update @angular/core@18 @angular/cli@18
+l
+gs
+gacp "webpack"
+ng update @angular/core@18 @angular/cli@18
+ff
+hx C:\Users\micha\AppData\Local\npm-cache\_logs\2024-10-24T13_15_49_893Z-debug-0.log
+ng update @angular/core@18 @angular/cli@18
+gs
+git checkout -- package.json
+ng update @angular/core@18 @angular/cli@18
+npm uninstall -g @angular/cli
+npm install -g @angular/cli@latest
+ng update @angular/core@18 @angular/cli@18
+l
+ng version
+npm version
+ng update @angular/core@18
+l
+rm package-lock.json
+rm -r node_modules\
+l
+hx package.json
+npm install
+ng update @angular/core@18 @angular/cli@18
+gs
+git diff package-lock.json
+gacp "package-lock.json"
+ng update @angular/core@18 @angular/cli@18
+l
+npm run watch
+npm install
+node --version
+ng update ng-zorro-antd
+gs
+gacp "upgrade to ng 18"
+ng update ng-zorro-antd
+npm run watch
+dd
+l
+docker image ls
+docker rm 76eb
+docker image rm 76eb
+l
+hx Dockerfile
+docker build -t dbtool-frontend-server:v0.1.4 .
+hx Dockerfile
+docker build -t dbtool-frontend-server:v0.1.4 .
+npm uninstall ngx-cookieservice
+npm uninstall ngx-cookie-service
+docker build -t dbtool-frontend-server:v0.1.4 .
+hx compose.yaml
+docker container ls
+docker image ls
+docker build -t dbtool-frontend-server:latest .
+docker image ls
+dbu
+hx
+l
+hx custom-webpack.config.js
+l
+npm run watch
+ng build
+l
+cd dist
+ls
+mv dbtool-frontend\ dbtool-frontend-initial\
+cd ..
+l dist\
+l dist\*
+l dist\dbtool-frontend-initial\*
+l dist\dbtool-frontend-initial\browser\*
+sme
+l
+cd dist\
+l
+cd dbtool-frontend-initial\
+l
+cd browser\
+l
+sme main-PUNA3UE4.js
+hx angular.json
+hx src\app\app.config.ts
+ng build
+l
+hx angular.json
+ng build
+cd ..
+l
+cd ..
+ng build
+hx angular.json
+ng build
+purgecss
+npm install -g purgecss
+purgecss
+purgecss -css dist\*.css --content dist\dbtool-frontend\browser\index.html dist\*.js -o dist\
+npm run watch
+purgecss -css dist\dbtool-frontend\browser\styles-2ZOLSSMA.css --content dist\dbtool-frontend\browser\index.html dist\*.js -o dist\
+hx custom-webpack.config.js
+npm i -D @angular-builders/custom-webpack
+npm run watch
+ng build
+l
+mv custom-webpack.config.js src\
+ng build
+npm run watch
+ng serve
+ng build
+ff
+lite-server --baseDir="dist/project-name"
+npm install lite-server --save-dev
+lite-server --baseDir="dist/project-name"
+lite-server
+npm i -g lite-server
+lite-server
+l
+l dist\
+rm -r dist\dbtool-frontend-initial\
+rm -r dist\dbtool-frontend\
+ng build --watch
+l
+l dist\
+lite-server --baseDir="dist/dbtool-frontend"
+l dist\dbtool-frontend\
+lite-server --baseDir="dist/dbtool-frontend/browser"
+lite-server --help
+lite-server asd
+ff
+gs
+gacp "use signals"
+gs
+gacp "implement ParameterForUi"
+gs
+gacp "drop signals; receiving id again for ParameterForUi"
+hx
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+gs
+dd
+hx
+gs
+gacp "drop signals; receiving id again for ParameterForUi"
+dbu
+:qa
+ff
+l
+cd xp\
+l
+cargo new pdf-ocr
+cd pdf-ocr\
+l
+ff
+lk
+l
+cargo watch --quiet --clear --watch Cargo.toml --watch src\ --exec run
+gs
+l
+cd ,,
+cd ..
+l
+cd ..
+l
+cd xp
+l
+cd ..
+l
+mkdir rust-xp
+cd rust-xp\
+git init
+l
+cd ..
+l
+mv rust\xp\* rust-xp\
+hx Cargo.toml
+cd ..
+cd rust-xp\
+l
+gacp "rust-xp init"
+cd pdf-ocr\
+l;
+rm -r .git\
+hx .gitignore
+mv .gitignore ..
+l
+cd ..
+gacp "rust-xp init"
+cd typst-cli\
+l
+cd ..
+l
+cd typst-integration\
+l
+rm -r .git\
+rm .gitignore
+cd ..
+l
+gacp "rust-xp init"
+git branch -M main
+git remote add origin git@github.com:michi-jeremias/rust-xp.git
+git push -u origin main
+l
+gs
+cd pdf-ocr\
+l
+cargo watch --quiet --clear --watch Cargo.toml --watch src\ --exec run
+l
+cd ..
+l
+cd rust
+l
+cd xp
+l
+cd ..
+rm -r xp
+l
+cd dbtool-backend\
+l
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+npm run watch
+hx $nu.env-path
+cc add $nu.env-path
+cd ~/
+cc
+cc status
+cd .config
+l
+cd ..
+l
+cd .gitconfig
+l
+hx .gitconfig
+cd .config\l
+cd .config\
+l
+cd ..
+cd .config\configstore\
+kl
+l
+cd ..
+cd .config-gitdir\
+l
+hx config
+cd ~/
+cc status
+cd .config-gitdir\
+cc status
+gs
+cd ..
+cd .config\
+gs
+cd ..
+hx $nu.env-path
+hx $nu.config-path
+hx .config\helix\config.toml
+hx .config\helix\languages.toml
+cd .config\
+l
+hx starship.toml
+ff
+cd ~/
+ff
+l
+ff
+cd dev
+l
+cd ts
+l
+mkdir ts-xp
+l
+mv xp ts-xp
+l
+cd xp
+l
+cd ts-xp\
+l
+cd xp\
+l
+mv angular-auth-oidc-client\ ..
+l
+cd ..
+l
+rm -r xp
+cd ..
+l
+cd ts-xp\
+l
+git init 
+git add -A
+l
+cd angular-auth-oidc-client\
+l
+rm .git\
+rm -r .git
+mv .gitignore ..
+l
+cd ..
+l
+git add -A
+l
+gs
+git commit -m "angular auth oidc"
+git branch -M main
+git remote add origin git@github.com:michi-jeremias/ts-xp.git
+git push -u origin main
+ng new 
+ng n ng-signals
+l
+cd ng-signals\
+l
+ng g c table
+ng g s backend
+npm run watch
+ff
+l
+npm run watch
+hx src\app\
+l
+hx
+l;
+l
+ff
+l
+gs
+gacp "ng-signals"\
+gacp "ng-signals"
+ff
+l
+cd src\app\
+l
+cd components\
+l
+cd ..
+cd pages\
+l
+cd webrequest\
+l
+mv parameters parameters-legacy
+hx 
+npm run watch\
+cd ..
+l
+cd webrequest\
+l
+mv parameters-legacy\ parameters
+hx
+ng serve
+npm run watch
+gs
+gacp "using signals"
+gs
+clasp pull
+gs
+git diff Company.js
+gs
+git diff Product.js
+gs
+git diff Fieldmapper.js
+gs
+git diff FileService.js
+ff
+gs
+gacp "explicit utc offset +1"
+gs
+gacp "convert datetime to iso"
+gs
+gacp "remove toISOstring() as the date is transmitted in utc anyways"
+dd
+dbu
+gs
+git diff
+cargo install nu_plugin_clipboard
+git diff | clipboard copy
+source $nu.env-path
+ff
+git diff
+git diff | clipboard copy
+echo "test"
+echo "test" | clipboard copy
+plugin add ~/.cargo/bin/nu_plugin_clipboard
+git diff | save diff.txt
+hx diff.txt
+gacp "Refactor parameter component: simplify filtering and update methods, rename params to paramsS"
+l
+hx .gitignore
+gacp ".gitignore diff.txt"
+l
+gs
+clasp pull
+ff
+l
+ff
+l
+clasp push
+git diff
+gs
+gacp "OrderDetails: getOrderedBy(), .setOrderedBy()"
+hx
+gs
+git diff | save diff.txt
+hx diff.txt
+gacp "put filters into popover, remove unused modules"
+dd
+dbu
+hx compose.yaml
+dd
+dbu
+gacp "put filters into popover, remove unused modules"
+dd
+dbu
+ff
+ng serve
+hx
+ff
+hx
+hx -health
+hx --health
+ff
+ngserver
+typescript --version
+ts --version
+npm i -g vscode-langservers-extracted
+hx
+npm u -g vscode-langservers-extracted
+npm uninstall -g vscode-langservers-extracted
+scoop update
+scoop update helix
+scoop status
+npm uninstall -g vscode-langservers-extracted@4.8.0
+npm i -g vscode-langservers-extracted@4.8.0
+hx
+l
+npm init @eslint/config@latest
+typescript
+npm i -g typescript
+typescript
+npm i -g typescript-language-server
+npm i -g @angular-eslint/eslint-plugin
+ng add @angular-eslint/schematics
+l
+hx eslint.config.js
+mv eslint.config.mjs ..
+l
+hx 
+npm run watch
+gacp "small fixes, remove unused code"
+l
+cd appl
+cd src\app\
+l
+cd pages
+l
+cd medcom
+l
+cd businesstrip\
+l
+cd ..
+cd .
+cd ..
+l
+cd medcom
+ng g ng-zorro-antd:table zuweiser
+ng add ng-zorro-antd
+cd ..
+cd webrequest\
+l
+cd ..
+l
+cd medcom
+ng g c customers
+yy
+gs
+gacp "organize routes"
+l
+cd ..
+l
+ng g i checkboxgroupitem
+yy
+gs
+gacp "reorganize styles for pages"
+dd
+dbu
+yy
+gacp "fix lints"
+gs
+gacp "customers"
+ff
+l
+ff
+gs
+ff
+gacp "customers"
+pwd
+hx $nu.env-path
+hx ~\.cache\starship\init.nu
+hx ~\.config\starship.toml
+hx $nu.config-path
+which hx
+$env
+hx $nu.env-path
+hx $nu.config-path
+hx $nu.env-path
+ff
+l
+ff
+l
+ff
+cd ~/
+ff
+l
+sqlx --help
+sqlx migrate help
+sqlx migrate info
+sqlx migrate info --database-url postgres://192.168.100.59:5432/app_db
+l
+hx .cargo\config.toml
+sqlx migrate info --database-url postgres://postgres:postgres@192.168.100.59/app_db
+gs
+sqlx migrate add -r customers_labs_ais
+l
+cd migrations\
+lk
+l
+hx .config\helix\config.toml
+hx ~/.config/helix/config.toml
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+cd ..
+l
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate down
+sqlx migrate --help
+sqlx migrate revert
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate --help
+sqlx migrate run
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+gs
+git branch -a
+git branch customers_labs_ais
+git checkout customers_labs_ais
+gs
+gacp "migrations"
+git push --set-upstream origin customers_labs_ais
+l
+gs
+yy
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+cd ..
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+hx ~/.config/helix/config.toml
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+hx ~/.config/helix/config.toml
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+gs
+git add migrations\*
+git commit -m "use bigint for ids instead of uuid"
+gs
+ff
+ff
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'accept-encoding: br' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_labs_ais_list", "params": {}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_labs_ais_list", "params": {}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+l
+git add migrations\*
+git commit -m "fix migrations"
+gs
+git add crates\libs\lib-core\src\model\webrequest\request_join_user.rs
+git commit -m "cosmetics"
+gs
+gacp "customers labs ais"
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+gs
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate up --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate help
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_lab_ais_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_list", "params": {}, "list_options": {}}' --output -
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+hx
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_list", "params": {}, "list_options": {}}' --output -
+gs
+gacp "customers from backend"
+gs
+gacp "customers now in backend"
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {id: 1000}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {"id": 1000}, "list_options": {}}' --output -
+l
+cd src\app\
+l
+cd components\
+l
+cd ..
+l
+mkdir customer
+cd customer\
+l
+ng g c details t
+ng g c t details
+ng g c details inline-template
+ng g c details -t
+l
+rm -r details
+ng g c details -t -flat
+ng g c details -t -flat=true
+ng g c details -t --flat
+l
+cd ..
+l
+cd components\
+l
+cd .
+cd ..
+cd customer\
+l
+rm details*
+ng g c customerdetails -t --flat
+l
+gacp "modal for customerdetails"
+l
+ng g c jiraticket -t --flat
+l
+ng g d phonelink
+l
+rm phone*
+l
+gs
+gacp "modal wip"
+gs
+gacp "customer_list, customer_get"
+git checkout main
+git pull
+l
+hx
+npm run watch
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+ff
+curl --request GET \
+ff
+l
+ff
+yy
+deno fmt
+deno lint
+l
+scoop update
+scoop install nvim
+scoop install neovim
+scoop install extras/vcredist2022
+scoop uninstall vcredist2022
+cd ~\.config\
+l
+nvim
+cd ~\AppData\Local\
+mkdir nvim
+cd nvim\
+hx init.lua
+l
+hx lazy.lua
+nvim
+l
+hx init.lua
+l
+mkdir lua/config
+mv lazy.lua lua\config\
+l
+nvim
+l
+hx init.lua
+l
+cd lua\
+l
+cd config\
+l
+hx lazy.lua
+nvim
+l
+cd ..
+l
+cd ..
+l
+mv nvim nvim.bak
+cd nvim.bak\
+l
+rm init.lua
+rm -r lua\
+l
+cd ..
+mv nvim-data\ nvim-data.bak
+l
+git clone https://github.com/LazyVim/starter nvim
+l
+cd nvim\
+l
+rm -r .git
+nvim
+c d~/
+cd ~/
+ff
+l
+nvim
+cd ~/
+cd ~\AppData\Local\nvim\
+l
+cd lua\plugins\
+l
+nvim example.lua
+l
+cd ..
+cd config\
+l
+nvim lazy.lua
+l
+nvim lazy.lua
+nvim options.lua
+l
+nvim keymaps.lua
+nvim lazy.lua
+l
+cd ..
+l
+cd plugins\
+;l
+nvim example.lua
+mv example.lua core.lua
+nvim core.lua
+nvim
+nvim core.lua
+hx
+l
+gs
+deno lint
+deno fmt
+hx src\bauer-abnahme-im-labor-document.ts
+gacp "use parpl2short"
+l
+cd ..
+l;
+cd config\
+l
+nvim keymaps.lua
+l
+nvim src\main.ts
+cd ..
+l
+cd plugins\
+nvim core.lua
+l
+nvim core.lua
+hx
+nvim
+l
+cd ..
+l
+cd config\
+l
+nvim lazy.lua
+;l
+nvim options.lua
+cd ..
+l
+cd plugins\
+l
+nvim core.lua
+l
+cd ..
+l
+cd ..
+l
+nvim init.lua
+cd lua\
+l
+cd config\
+l
+nvim lazy.lua
+l
+cd ..
+l
+cd plugins\
+l
+nvim core.lua
+l
+nvim 
+gacp "customer details"
+ff
+cd AppData\Local\nvim\
+l
+cd lua
+l
+cd config\
+l
+nvim lazy.lua
+lk
+l
+nvim keymaps.lua
+l
+cd ~/
+ff
+l
+nvim
+deno task dev
+yy
+gs
+deno fmt
+deno lint
+gacp "bauer genanalyse"
+ff
+hx
+hx 
+yy
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {"id": 1000}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {"id": 1001}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_update", "params": {"id": 1001, "name": "Michael Jeremiassss"}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_update", "params": {"id": 1001, "data": {"name": "Michael Jeremiassss"}}, "list_options": {}}' --output -
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_update", "params": {"id": 1000, "data": {"name": "Michael Jeremiassss"}}, "list_options": {}}' --output -
+gs
+yy
+gacp "CustomerBmc::update, customer_update in customer_rpc"
+gs
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {"id": 1000}, "list_options": {}}' --output -
+npm run watch
+ff
+zz
+ff
+cd ..
+nvim
+yy
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+yy
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+cd ..
+sqlx migrate revert --database-url postgres://postgres:postgres@localhost/app_db
+sqlx migrate run --database-url postgres://postgres:postgres@localhost/app_db
+ff
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_get", "params": {"id": 1000}, "list_options": {}}' --output -
+hx
+curl -X POST '192.168.100.59:3000/api/rpc' -H 'Content-Type: application/json' -d '{"id": 1, "method": "customer_list", "params": {}, "list_options": {}}' --output -
+ff
+lk
+l
+cd src\app\
+l
+cd service\
+l
+ng g s customer
+l
+npm i ngxtension
+gs
+git add migrations\*
+git commit -m "make values non null"
+npm uninstall ngxtension
+l
+cd ..
+mkdir shared
+cd shared
+ng g s storage
+l
+cd ..
+cd service\
+l;
+mv customer* ..\shared\
+cd ..\shared\
+l
+mkdir data-access
+mv * data-access\
+l
+hx
+ng generate --help
+l
+cd ..
+l;
+;
+l
+cd customer\
+l
+mkdir interfaces
+cd interfaces\
+ng g i customer
+l
+cd ..
+l
+cd customer\
+l
+ng g c customers -t --flat
+l
+ff
+l
+cd src\app\
+l
+cd customer
+l
+rm customers*
+l
+ng g c customer -t --flat
+ff
+npm run watch
+hx
+ff
+;
+l
+cd ts-xp\
+l
+git clone git@github.com:joshuamorony/quicklist-default.git
+l
+cd quicklist-default\
+l
+npm run watch
+ng serve
+npm install
+ng serve
+ff
+l
+cd src\app\
+l
+mkdir shared
+cd shared
+l
+ll
+l
+mkdir interfaces
+cd interfaces\
+ng g i rpcresult
+npm run watch
+yy
+gs
+gacp "refactor some interfaces; rebuild customers"
+ff
+gs
+gacp "rewrite customers rpc and bmc"
+l
+gs
+ff
+l
+clasp pull
+cd AppData\Local\nvim\
+l
+cd lua\
+l
+cd config\
+l
+nvim
+clasp push
+gs
+gacp "add reverse short/long names and auto add diagnoses to jira text templates"
+nvim keymaps.lua
+l
+cd plugins\
+l
+nvim
+nvim treesitter.lua
+cd ..
+l
+nvim keymaps.lua
+nvim
+clasp push
+gacp "disable pat/doc prices in templates"
+ff
+l
+cd AppData\Local\nvim\
+l
+cd lua\
+l
+nvim config\keymaps.lua
+nvim
+clasp push
+gacp "bauer: show prices"
+ff
+nvim
+gacp "bauer: show prices"
+clasp push
+l
+cd app\
+l
+cd customer\
+l
+mkdir ui
+cd ui
+l
+ng g c search --skip-tests -t --flat
+ng g c search --skip-tests=true -t --flat
+l
+rm search.component.*
+ng g c search --skip-tests=true -t --flat
+rm search.component.*
+ng generate component --help
+ng g c search --skip-tests -t -s --flat
+l
+ng g c filter --skip-tests -t -s --flat
+ng g c table --skip-tests -t -s --flat
+gs
+cd ..
+l
+gs
+gacp "refactor"
+ff
+cd ~/
+ff
+l
+cargo new synth-hl7
+cd synth-hl7\
+l
+start .
+nvim
+l
+ff
+l
+ff
+l
+mv message.rs src\
+nvim src\main.rs
+hx\
+hx
+ff
+l;
+l
+gs
+hx .gitignore
+git rm pdf-ocr\target
+git rm -r pdf-ocr\target
+git rm -r -f pdf-ocr\target
+gs
+gacp "remove target"
+l
+gs
+cargo new builder_pattern --vcs none
+l
+cd builder_pattern\
+l
+cd src\
+l
+ff
+l
+cargo watch -w src -w Cargo.toml --exec run
+ff
+l
+mkdir examples
+cd examples\
+l
+cd ..
+l
+hx Cargo.toml
+cargo watch -q -w src -w Cargo.toml --exec run
+ff
+hx
+ff
+hx
+cd ~/
+ff
+yy
+l
+npm run watch
+hx
+ff
+cd ~/
+ff
+l;
+ff
+yy
+l
+mkdir enums
+l
+mv pathologic_classification.rs enums\\
+mv specimen.rs enums\
+mv labresultstatus.rs enums\
+mv gfx_display.rs enums
+cd enums\
+l
+mv gfx_display.rs graphic_types.rs
+l
+;
+l
+cd ..
+kl
+l
+hx
+cargo watch -q -w src -w Cargo.toml --exec run
+yy
+hx
+ff
+hx
+yy
+l
+yy
+ff
+git clone git clone git@bitbucket.org:medcomat/needful-things.git
+git clone git@bitbucket.org:medcomat/needful-things.git
+l
+cd needful-things\
+l
+ff
+l
+hx .gitignore
+hx .gitignore
+l
+cd ..
+cp synth-hl7\ ~\Documents\Bitbucket\needful-things\
+cp -r synth-hl7\ ~\Documents\Bitbucket\needful-things\
+l
+git status
+git add .gitignore
+git commit -m "/target"
+gs
+cd synth-hl7\
+l
+rm -r target
+l
+cd ..
+gs
+gacp "synth-hl7"
+gs
+git push
+gs
+git add -A
+cd synth-hl7\
+l
+rm -r .git
+rm .gitignore
+cd ..
+gs
+gacp "synth-hl7"
+cargo watch -q -w src -w Cargo.toml --exec run
+ff
+l
+gp
+git pull
+git pull origin main
+git pull --set-upstream origin main
+l
+gs
+l
+cd ..
+l
+cd synth-hl7\
+l
+ff
+l
+hx
+ff
+l
+hx src\main.rs
+ff
+yy
+cargo add serde --features derive
+cargo add clap --features derive
+cargo watch -q -w src -w Cargo.toml --exec run
+cargo watch -q -w src -w Cargo.toml --exec run --order_number 123
+cargo -q -w src -w Cargo.toml --exec run --order_number 123
+cargo run --order_number 123
+cargo run -- --order_number 123
+cargo run -- --order_number=123
+cargo run -- --order-number=123
+cargo run -- --order-number 123
+l
+rm synth*.hl7
+l
+l
+yy
+synth-hl7.exe 
+l
+synth-hl7.exe
+.synth-hl7.exe
+.\synth-hl7.exe
+.\synth-hl7.exe --order-number 123
+cargo watch -q -w src -w Cargo.toml --exec run
+cargo build
+.\synth-hl7.exe --order-number 123
+.\synth-hl7.exe --order-number 123 --patients ..\..\assets\patients.csv
+.\synth-hl7.exe -- --order-number 123 --patients ..\..\assets\patients.csv
+.\synth-hl7.exe -- --order-number 123 ..\..\assets\patients.csv
+.\synth-hl7.exe -- --order-number 123 
+.\synth-hl7.exe --order-number 123 
+.\synth-hl7.exe --order-number 123 --patients ..\..\assets\patients.csv
+cargo build
+.\synth-hl7.exe 
+.\synth-hl7.exe --patients ..\..\assets\patients.csv
+.\synth-hl7.exe --help
+.\synth-hl7.exe -p ..\..\assets\patients.csv
+.\synth-hl7.exe --help
+cargo build
+.\synth-hl7.exe --help
+cargo build
+.\synth-hl7.exe --help
+.\synth-hl7.exe --o abc
+.\synth-hl7.exe -o abc
+.\synth-hl7.exe --help
+l
+cp synth-hl7.exe ..\..\
+ff
+lk
+l
+\.synth-hl7.exe
+.\synth-hl7.exe
+.\synth-hl7.exe --help
+.\synth-hl7.exe -p assets\patients.csv
+l
+rm synth*.hl7
+l
+.\synth-hl7.exe -p assets\patients.csv
+l
+.\synth-hl7.exe 
+.\synth-hl7.exe --help
+cargo build
+cp target\debug\synth-hl7.exe .
+.\synth-hl7.exe --help
+.\synth-hl7.exe --patients assets\patients.csv
+.\synth-hl7.exe --patients assets\patients.csva
+.\synth-hl7.exe --patients assets\patients.csva-asd12=
+cargo build
+cp target\debug\synth-hl7.exe .
+.\synth-hl7.exe --patients assets\patients.csva-asd12=
+.\synth-hl7.exe --patients assets\patients.csv
+l
+rm synth*.hl7
+.\synth-hl7.exe --patients assets\patients.csv
+l
+rm synth*.hl7
+cargo build
+cp target\debug\synth-hl7.exe .
+.\synth-hl7.exe --help
+.\synth-hl7.exe --patients assets\patients.csv -o 7000001 -n 10 -i 4
+l
+rm synth*.hl7
+l
+.\synth-hl7.exe --help
+.\synth-hl7.exe --patients assets\patients.csv -o 7000001 -n 1000 -i 10
+l
+rm synth*.hl7
+ff
+cargo build
+cargo build --release
+ff
+l
+git status
+rm -r synth-hl7\
+lk
+l
+gsa
+gs
+gacp "remove synth-hl7"
+git pull
+gs
+l
+cd ..
+l
+rm -r needful-things\
+gs
+hx .gitignore
+gs
+git remote add origin git@bitbucket.org:medcomat/synth-hl7.git
+git push -u origin main
+git remote show origin
+git status
+l
+git add .gitignore
+git commit -m "init"
+git push -u origin main
+git pull
+git status
+git push -u origin main
+git pull
+git pull origin main
+git config pull.rebase false
+git pull origin main
+l
+mv .gitignore .gitignoreo
+git pull origin main
+l
+mv .gitignoreo .gitignore
+l
+cd ..
+hx
+cd ..
+l
+l
+git clone git@bitbucket.org:medcomat/synth-hl7.git
+l
+cd synth-hl7\
+l
+git status
+hx .gitignore
+l
+git add .gitignore
+git commit -m "only ignore /target/"
+gacp "init"
+gs
+gs
+cargo build --release
+pwd
+l
+gs
+synth-hl7.exe 
+synth-hl7.exe --help
+synth-hl7.exe -p assets\patients.csv
+synth-hl7.exe -p assets\patients.csv -n 1000 -i 5
+synth-hl7.exe -p assets\patients.csv print
+ff
+cd ~/
+ff
+l
+cd ~/
+ff
+l
+cargo build --release
+synth-hl7.exe --help
+l
+gs
+gacp "remove unused code; improve comments"
+gs
+l
+cd ..
+l
+hx src\main.rs
+cd ~/
+ff
+l
+ll
+l
+cargo run -- --order-number 123
+cargo run -- -p assets\patients.csv --order-number 123
+cargo run -- -p assets\patients.csv --order_number 123
+l
+cargo run -- -p assets\patients.csv --order_number 123 -i 2
+l
+rm synth*.hl7
+l
+pwd
+gs
+git add README.md
+git commit -m "update readme"
+git diff
+gacp "remove comment"
+gs
+git pull
+l
+git config pull.rebase false
+git pull
+hx README.md
+gs
+l
+gacp "pom.xml"
+gs
+pwd
+l
+cd ..
+l
+git clone git@bitbucket.org:medcomat/needful-things.git
+l
+cd needful-things\
+l
+cd .config\lk
+cd .config\
+l
+cd helix\
+l
+cd ~/
+l
+cd .config\
+l
+cd nushell\
+l
+cd ..\
+l
+cd yazi\
+l
+cd config\
+l
+cd ..
+cd state\
+l
+cd ..
+l
+cd config\
+l\
+l
+cd .config-gitdir\
+l
+cd ..
+l
+cd .config\
+l
+cc
+cc status
+cd ..
+cd ~/
+l
+cd Documents\Github\
+l
+git clone git@github.com:michi-jeremias/.config.git
+l
+cd .config\
+l
+cd .config\
+l
+mkdir yazi
+cd yazi\
+l
+l
+cd ~/
+l
+cd AppData\Roaming\yazi\
+l
+cd Documents\Github\.config\
+l
+gs
+gacp "yazi"
+l
+pwd
+cd ~\AppData\Roaming\
+l
+pwd
+git pull
+gs
+gd
+l
+pwd
+hx src\main.rs
+pwd
+hx src\main.rs
+l
+gs
+cd ~/
+ff
+l
+cd ..
+l
+rm -r synth-hl7\
+l
+cargo clean
+ff
+l
+hx $nu.env-path
+scoop update
+scoop update helix
+cd dev\
+l
+cd ts
+l
+cd ~/
+cd Documents\Github\
+l
+zellij
+brew install zellij
+bash <(curl -L https://zellij.dev/launch)
+cd ~/
+l
+bash <(curl -L https://zellij.dev/launch)
+brew install zellij
+brew
+ff
+hx src\app\app.component.html
+cd ~/
+wsl --shutdown
+npm install -g typescript-language-server typescript
+typescript-language-server
+typescript-language-server --stdio
+ff
+git pull
+s
+l
+hx src\enml-befundzustellung-kostenuebernahme.ts
+ff
+l
+ff
+fdf
+ff
+cargo watch -q -w src -w Cargo.toml --exec run
+l
+ff
+cargo watch --quiet --clear --watch .cargo/ --watch crates/ --exec run -p web-server
+dd
+hx $nu.env-path
+dbu
+gacp "change chunk size default to 3000"
+hx
+hx src\app\app.component.html
+npm run watch
+ff
+gs
+deno lint
+deno fmt
+gacp "enml-befundkarte"
+deno task dev
+ff
+git pull
+l
+cd ~/
+ff
+git pull
+l
+cd assets\
+l
+hx patients.csv
+gd
+gacp "beautify names"
+deno lint
+deno fmt
+gacp "enml-zeitbestaetigung"
+cd assets\
+l
+cd ..
+l
+cd assets\
+l
+cd pdf-templates\
+l
+git rm enml-befundzustellung-kostenuebernahme.pdf
+cd ..
+l
+gs
+gacp "remove enml-befundzustellung-kostenuebernahme.pdf"
+deno task dev
+deno lint
+deno fmt
+gacp "enml-befundzustellung-fo3"
+deno task dev
+deno lint
+deno fmt
+gacp "enml-befundzustellung-fo3 und enml-befundzustellung-kostenuebernahme: neues feld meadresse"
+scoop install chezmoi
+cd AppData\Roaming\helix\
+l
+cp config.toml config.toml.bak
+cp languages.toml languages.toml.bak
+cd ~/
+cd AppData\Roaming\nushell\
+l
+cp config.nu config.nu.bak
+cp env.nu env.nu.bak
+cp history.txt history.txt.bak
+cd ~/
+chezmoi init git@github.com:michi-jeremias/dotfiles.git
+chezmoi diff
+cd .config\
+l
+rm helix\
+l
+rm nushell\
+cd ~/
+chezmoi diff
+cd AppData\Roaming\nushell\
+l
+cd ~/
+cd .config\
+l
+cd ~/
+chezmoi diff
+chezmoi apply -v
+chezmoi diff
+cd ~\.config\
+l
+cd helix\
+l
+cd ..
+cd ~/
+cd AppData\Roaming\
+l
+cp helix\ helix-bak
+cp -r helix\ helix-bak
+l
+mv helix\ helix-tmp
+l
+hx
+l
+rm -r helix
+mklink /D nushell ~\.config\nushell\
+l
+mklink /D helix ~\.config\helix\
+cd ~/
+l
+cd
+cd c:\Users\micha\AppData\Roaming\
+mklink /D helix c:\Users\micha\.config\helix\
+hx
+l;
+;
+l
+cd helix\l
+cd helix
+l
+hx
+hx languages.toml
+cd ~\AppData\Roaming\
+l
+rm -r helix-tmp\
+l
+l nu*
+cp history.txt ~\.config\nushell\
+l
+cp env.nu ~\.config\nushell\
+cd ..
+l
+cd helix\
+l
+hx config.toml
+cd ..
+l
+cd ~\AppData\Roaming\
+l
+cd helix-bak\
+l
+hx config.toml
+l
+cp languages.toml ~\.config\helix\
+cp config.toml ~\.config\
+cp config.toml ~\.config\helix\
+cd ~\.config\
+l
+rm config.toml
+chezmoi diff -v
+chezmoi diff
+l
+cd helix\
+l
+hx config.toml
+cd ..
+l
+cd helix\
+l
+cd ..
+cd nushell\
+l
+hx env.nu
+$env.OS
+$env.OS == 'Windows NT'
+$env.OS == 'Windows_NT'
+chezmoi diff
+chezmoi apply -v
+chezmoi diff
+chezmoi edit ~\.config\nushell\env.nu
+hx ~\AppData\Roaming\nushell-bak\env.nu
+cp ~\AppData\Roaming\nushell-bak\env.nu ~\.config\nushell\
+chezmoi diff -v
+chezmoi apply
+$nu.env-path
+hx $nu.env-path
+hx
+hx abc
+cd ~\AppData\Roaming\
+l
+cd helix
+l
+hx config.toml
+chezmoi diff
+chezmoi re-add
+chezmoi diff
+chezmoi push
+chezmoi cd
+chezmoi apply
+hx
+cp ~\AppData\Roaming\helix-bak\languages.toml ~\.config\helix\
+chezmoi re-add
+l
+hx languages.toml ~\AppData\Roaming\helix-bak\languages.toml
+cp ~\AppData\Roaming\nushell-bak\env.nu ~\.config\nushell\
+cp ~\AppData\Roaming\nushell-bak\config.nu ~\.config\nushell\
+chezmoi re-add
+chezmoi cd
+chezmoi apply
+hx
+cd AppData\Roaming\
+l
+cd yazi\
+l
+yy
+source $nu.env-path
+yy
+l
+cd ..
+l
+mv yazi\ yazi-bak
+l
+cd ~/
+l
+cd .config\l
+cd .config\
+l
+mkdir yazi
+l
+cd ~\AppData\Roaming\
+l
+yy
+l
+cd yazi-bak\
+l
+cp config\ ~\.config\yazi\
+cp -r config\ ~\.config\yazi\
+cp -r state\ ~\.config\yazi\
+cd ..
+l
+chezmoi add yazi\
+chezmoi cd
+l
+chezmoi add starship.toml
+chezmoi cd
+l
+cd ..
+l
+rm -r .config-gitdir\
+l
+cd .config\
+l
+chezmoi diff
+cd ..
+l
+nvim
+l
+cd ..
+l
+cd Local\
+l
+cd nvim\l
+cd nvim\
+l
+nvim init.lua
+cd ..
+l
+cp nvim nvim-bak
+chezmoi apply
+hx
+chezmoi apply
+hx
+chezmoi update
+hx 
+chezmoi update
+exit
+ff
+code .
+deno task dev
+deno lint
+deno fmt
+gacp "update enml footer; new checkboxes in enml-befundzustellung-fo3"
+cd dev\
+l
+cd ts
+l
+ng --version
+ng --help
+ng update
+ng -g update
+npm -g update
+node --version
+docker pull node:22-alpine
+docker run -it --rm --entrypoint sh node:22-alpine
+l
+cd dbtool-frontend\
+l
+ff
+l
+mkdir code-inside-docker
+cd code-inside-docker\
+l
+hx Dockerfile
+npm --version
+npm init
+l
+npm install @angular/cli
+l
+ng n code-inside-docker
+l
+cd code-inside-docker\
+l
+cd ..
+hx .dockerignore
+l
+cd code-inside-docker\
+l
+cd ..
+l
+cd ..
+l
+cd code-inside-docker\
+npm install express
+l
+cd ..
+l
+rm -r code-inside-docker\
+ng n code-inside-docker
+l
+cd code-inside-docker\
+hx .dockerignore
+l
+hx Dockerfile
+npm start
+l
+hx Dockerfile
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+npm config delete proxy
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+docker run -p 4200:4200 code-inside-docker
+hx Dockerfile
+npm run
+npm run start
+hx Dockerfile
+docker run -p 4200:4200 code-inside-docker
+docker build -t code-inside-docker .
+hx Dockerfile
+docker build -t code-inside-docker .
+hx Dockerfile
+l
+cd ..
+l
+rm -r code-inside-docker\
+docker image ls
+docker image rm 73ae
+docker container ls
+docker container ls -a
+docker container rm a8b 4cb
+docker image ls
+docker image rm 73ae 546 a204 ff39 7a6 eb85 dad1
+docker image ls -a
+ng new docker-demo --skip-install\
+ng new docker-demo --skip-install
+l
+cd docker-demo\
+hx Dockerfile
+docker build -t docker-demo-dev .
+docker run -it --rm -p 4200:4200 -v ${pwd}/src:/app/src docker-demo-dev
+pwd
+ff
+l
+hx src\
+l
+docker run -it --rm -p 4200:4200 -v c:\Users\micha\dev\ts\docker-demo\src docker-demo-dev
+hx Dockerfile
+hx src\app\app.component.html
+ll
+l
+hx compose.yaml
+l
+dd
+db
+dbu
+db
+docker container ls
+docker container ls -a
+docker container rm 8febb
+docker container rm ece
+docker container ls -a
+docker container stop 8febb
+docker container stop ece66
+docker run -it --rm -p 4200:4200 -v c:\Users\micha\dev\ts\docker-demo\src:/app/src docker-demo-dev
+docker container rm ece
+docker container ls -a
+hx compose.yaml
+db
+du
+dd
+hx
+dd
+dbu
+dd
+hx compose.yaml
+dd
+db
+du
+dd
+hx compose.yaml
+docker-demo-dev npm run build
+docker run -it --rm -v ./src:/app/src -v ./dist:/app/dist docker-demo-dev npm run build
+l
+cd src\app
+l
+cd ..
+cd app/dist
+docker run -it --rm -v ./src:/app/src -v ./dist:/app/dist docker-demo-dev npm run build
+$pwd
+pwd
+docker run -it --rm -v c:\Users\micha\dev\ts\docker-demo\src:/app/src -v ./dist:/app/dist docker-demo-dev npm run build
+l
+docker run -it --rm -v c:\Users\micha\dev\ts\docker-demo\src:/app/src -v c:\Users\micha\dev\ts\docker-demo\dist:/app/dist docker-demo-dev npm run build
+l
+cd dist
+l
+cd ..
+$env.FILE_PWD
+$env.PWD
+docker run -it --rm -v $env.PWD\src:/app/src -v $env.PWD\dist:/app/dist docker-demo-dev npm run build
+docker run -it --rm -v ($env.PWD)\src:/app/src -v $env.PWD\dist:/app/dist docker-demo-dev npm run build
+docker run -it --rm -v ($env.PWD)\src:/app/src -v ($env.PWD)\dist:/app/dist docker-demo-dev npm run build
+docker run -it --rm -v src:/app/src -v dist:/app/dist docker-demo-dev npm run build
+l
+rm -r dist\
+l
+docker run -it --rm -v src:/app/src -v dist:/app/dist docker-demo-dev npm run build
+l
+docker run -it --rm -v c:\Users\micha\dev\ts\docker-demo\src:/app/src -v c:\Users\micha\dev\ts\docker-demo\dist:/app/dist docker-demo-dev npm run build
+l
+rm -r dist
+l
+docker run -it --rm -v $"($env.PWD)/src:/app/src" -v $"($env.PWD)/dist:/app/dist" docker-demo-dev npm run build
+l
+docker run -it --rm -p 4200:4200 -v $"($env.PWD)/src:/app/src" docker-demo-dev
+l
+git status
+l
+deno task dev
+hx Dockerfile
+:qa
+chezmoi diff
+chezmoi update
+ff
+git@github.com:michi-jeremias/docker-demo.git
+git pull git@github.com:michi-jeremias/docker-demo.git
+git clone git@github.com:michi-jeremias/docker-demo.git
+l
+mv docker-demo\ docker-demo-bak
+git clone git@github.com:michi-jeremias/docker-demo.git
+cd docker-demo\
+l
+hx $nu.config-path
+source $nu.env-path
+source $nu.config-path
+hx $nu.config-path
+l
+db
+du
+l
+hx Dockerfile
+l
+cp package.json package.json.bak
+npm i add-dependencies -D daisyui@latest
+l
+rm -r node_modules
+npm i add-dependencies -D @tailwindcss/typography
+npm i --save --no-install daisyui@latest
+npm i --save --no-install @tailwindcss/typography
+l
+rm -r node_modules
+l
+dd
+db
+l
+du
+l
+hx compose.yaml
+hx Dockerfile
+rm package.json.bak
+l
+gs
+gacp "add daisyui and tailwind"
+ff
+l
+ff
+git pull
+clasp pull
+clasp push
+gacp "auto add diagnoses, patient billing, doctor billing"
+hx
+l
+ff
+ff
+l
+hx $nu.config-path
+source $nu.config-path
+dd
+db
