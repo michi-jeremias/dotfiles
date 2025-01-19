@@ -102,10 +102,28 @@ if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
-    $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
+    # $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/.cargo/bin")
     $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
     $env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
+
+    # NVM
+    $env.NVM_DIR = $'($env.HOME)/.nvm'
+
+    # FNM
+    load-env (fnm env --shell bash
+        | lines
+        | str replace 'export ' ''
+        | str replace -a '"' ''
+        | split column '='
+        | rename name value
+        | where name != "FNM_ARCH" and name != "PATH"
+        | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
+    )
+    $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
+)
 }
+
 # Windows
 if ('OS' in $env) and $env.OS == 'Windows_NT' {
     $env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
@@ -122,5 +140,3 @@ mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 
 use ~/.cache/starship/init.nu
-
-
