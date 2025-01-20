@@ -111,15 +111,15 @@ if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.NVM_DIR = $'($env.HOME)/.nvm'
 
     # FNM
-    load-env (fnm env --shell bash
-        | lines
-        | str replace 'export ' ''
-        | str replace -a '"' ''
-        | split column '='
-        | rename name value
-        | where name != "FNM_ARCH" and name != "PATH"
-        | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
-    )
+    # load-env (fnm env --shell bash
+    #     | lines
+    #     | str replace 'export ' ''
+    #     | str replace -a '"' ''
+    #     | split column '='
+    #     | rename name value
+    #     | where name != "FNM_ARCH" and name != "PATH"
+    #     | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
+    # )
     $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
 )
 }
@@ -129,7 +129,19 @@ if ('OS' in $env) and $env.OS == 'Windows_NT' {
     $env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
     $env.EDITOR = 'C:\Users\micha\scoop\shims\hx.exe'
     $env.YAZI_FILE_ONE = 'C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe'
+    $env.Path = ($env.Path | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin")
 }
+
+# Linux and Windows
+load-env (fnm env --shell bash
+    | lines
+    | str replace 'export ' ''
+    | str replace -a '"' ''
+    | split column '='
+    | rename name value
+    | where name != "FNM_ARCH" and name != "PATH"
+    | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
+)
 
 $env.RUST_BACKTRACE = 'full'
 # $env.EDITOR = C:\Users\micha\scoop\apps\nu\current\nu.exe
