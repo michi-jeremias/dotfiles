@@ -97,6 +97,18 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
+
+# Linux and Windows
+load-env (fnm env --shell bash
+    | lines
+    | str replace 'export ' ''
+    | str replace -a '"' ''
+    | split column '='
+    | rename name value
+    | where name != "FNM_ARCH" and name != "PATH"
+    | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
+)
+
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
@@ -132,16 +144,6 @@ if ('OS' in $env) and $env.OS == 'Windows_NT' {
     $env.Path = ($env.Path | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin")
 }
 
-# Linux and Windows
-load-env (fnm env --shell bash
-    | lines
-    | str replace 'export ' ''
-    | str replace -a '"' ''
-    | split column '='
-    | rename name value
-    | where name != "FNM_ARCH" and name != "PATH"
-    | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
-)
 
 $env.RUST_BACKTRACE = 'full'
 # $env.EDITOR = C:\Users\micha\scoop\apps\nu\current\nu.exe
