@@ -1,4 +1,5 @@
-theme = "gruvbox"
+# theme = "gruvbox"
+theme = "tokyonight_moon"
 
 [keys.insert]
 C-backspace = "delete_word_backward"
