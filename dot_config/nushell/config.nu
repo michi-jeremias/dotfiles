@@ -761,8 +761,9 @@ $env.config = {
 # use ~/.cache/starship/init.nu
 # 
 # -- Alias
-# -- Docker
 alias l = ls -la
+alias s = start .
+# Docker
 alias du = docker compose up
 alias dud = docker compose up -d
 alias dub = docker compose up -d --build
@@ -770,41 +771,59 @@ alias dbu = docker compose up -d --build
 alias dd = docker compose down
 alias db = docker compose build
 
-alias s = start .
+# -- Functions
+# Bacon
+def bre [name: string] {
+    bacon run -- -q --example $name
+}
+
+def bt [param1: string, param2: string = ""] {
+    if ($param1 | is-empty) {
+        bacon test -- -- --nocapture
+    } else if ($param2 | is-empty) {
+        bacon test -- $param1 -- --nocapture
+    } else {
+        bacon test -- --test $param1 $param2 -- --nocapture
+    }
+}
+
+# Cargo watch -- deprecated
+def cwe [name: string] {
+    cargo watch -q -c -x run -p --example $name
+}
+
+def cwp [name: string] {
+    cargo watch -q -c -x run -p $name
+}
+
 
 # -- Git
 def gc [name: string] {
     git commit -m $'"($name)"'
-    }
+}
 def ga [] {
     git add -A
-    }
+}
 def gp [] {
     git push
-    }
+}
 def gs [] {
     git status
-    }
+}
 def gd [] {
     git diff
 }
 def gac [name: string] {
     git add -A
     git commit -m $'"($name)"'
-    }
+}
 def gacp [name: string] {
     git add -A
     git commit -m $'"($name)"'
     git push
-    }
+}
 
-def cwe [name: string] {
-    cargo watch -q -c -x run -p --example $name
-    }
-
-def cwp [name: string] {
-    cargo watch -q -c -x run -p $name
-    }
+# Yazi
     
 def --env yy [...args] {
     let tmp = (mktemp -t "yazi-cwd.XXXXXX")
