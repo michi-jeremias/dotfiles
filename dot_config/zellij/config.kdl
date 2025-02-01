@@ -259,8 +259,9 @@ plugins {
 //
 // theme "default"
 // theme "tokyo-night"
-theme "tokyo-night-storm"
+// theme "tokyo-night-storm"
 // theme "catppuccin-mocha"
+theme "gruvbox-dark"
 
 // The name of the default layout to load on startup
 // Default: "default"
