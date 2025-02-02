@@ -823,6 +823,10 @@ def gacp [name: string] {
     git push
 }
 
+# Lazygit
+alias lg = lazygit
+
+
 # Yazi
     
 def --env yy [...args] {
