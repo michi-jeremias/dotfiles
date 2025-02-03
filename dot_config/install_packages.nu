@@ -2,7 +2,7 @@
 let os = sys host | get name
 
 # List of packages to install via Scoop (Windows)
-let scoop_packages = ["helix", "fnm", "hx", "yazi", "fd", "lazygit"]
+let scoop_packages = ["helix", "fnm", "yazi", "fd", "lazygit"]
 
 # List of packages to install via Homebrew (Linux)
 let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit"]
