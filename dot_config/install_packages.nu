@@ -2,10 +2,10 @@
 let os = sys host | get name
 
 # List of packages to install via Scoop (Windows)
-let scoop_packages = ["helix", "fnm", "hx", "yazi", "fd"]
+let scoop_packages = ["helix", "fnm", "hx", "yazi", "fd", "lazygit"]
 
 # List of packages to install via Homebrew (Linux)
-let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi"]
+let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit"]
 
 # Function to install packages with Scoop
 def install_with_scoop [packages: list<string>] {
@@ -18,7 +18,7 @@ def install_with_brew [packages: list<string>] {
 }
 
 # Check if the system is Windows
-if $os == "Windows_NT" {
+if $os == "Windows" {
     # Install packages using Scoop
     install_with_scoop $scoop_packages
 } else {
