@@ -19,7 +19,7 @@ X = ["extend_line_up", "extend_to_line_bounds"]
 X = ["extend_line_up", "extend_to_line_bounds"]
 
 [keys.normal.space]
-i = ":toggle lsp.display-inlay-hints"
+# i = ":toggle lsp.display-inlay-hints"
 f = "file_picker_in_current_directory"
 F = "file_picker"
 q = ":bc"
@@ -27,6 +27,11 @@ x = ":q"
 u = "switch_to_uppercase"
 l = "switch_to_lowercase"
 t = ":lsp-restart"
+
+[keys.normal.space.i]
+c = ":toggle inline-diagnostics.cursor-line hint disable"
+e = ":toggle end-of-line-diagnostics hint disable"
+o = ":toggle inline-diagnostics.other-lines hint disable"
 
 [keys.normal.g]
 D = ["vsplit", "goto_definition"]

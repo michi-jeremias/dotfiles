@@ -2818,3 +2818,379 @@ C:\Users\micha\NTUSER.DAT{31b327ce-8931-11ee-880f-c916ea628eae}.TMContainer00000
   2025-01-13T13:11:05.499821Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
     at yazi-adapter\src\ueberzug.rs:87
 
+  2025-02-04T11:55:03.098703Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-04T11:55:03.099422Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-04T11:55:03.099425Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-04T11:55:03.101305Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-04T11:55:03.101341Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-04T11:55:03.103391Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-07T14:52:55.763484Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-07T14:52:55.764713Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-07T14:52:55.764717Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-07T14:52:55.766773Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-07T14:52:55.766837Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-07T14:52:55.769477Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-07T14:53:10.933352Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-07T14:53:10.933401Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-07T14:53:10.933402Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-07T14:53:10.934821Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-07T14:53:10.934870Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-07T14:53:10.936505Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-07T14:55:09.749487Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-07T14:55:09.749531Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-07T14:55:09.749533Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-07T14:55:09.751114Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-07T14:55:09.751153Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-07T14:55:09.752742Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-10T10:05:11.648629Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-10T10:05:11.648673Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-10T10:05:11.648674Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-10T10:05:11.650109Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-10T10:05:11.650156Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-10T10:05:11.652361Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-11T08:51:09.472384Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-11T08:51:09.472431Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-11T08:51:09.472432Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-11T08:51:09.473909Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-11T08:51:09.473952Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-11T08:51:09.475919Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-11T10:04:04.997848Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-11T10:04:04.997891Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-11T10:04:04.997892Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-11T10:04:04.999353Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-11T10:04:04.999387Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-11T10:04:05.001036Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-11T10:57:49.158140Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-11T10:57:49.158189Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-11T10:57:49.158190Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-11T10:57:49.159645Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-11T10:57:49.159684Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-11T10:57:49.161137Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-11T14:57:49.742455Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-11T14:57:49.742545Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-11T14:57:49.742548Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-11T14:57:49.743639Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-11T14:57:49.743698Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-11T14:57:49.747427Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-12T08:15:25.188084Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-12T08:15:25.188132Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-12T08:15:25.188134Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-12T08:15:25.189447Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-12T08:15:25.189484Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-12T08:15:25.191310Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-13T14:44:41.524452Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-13T14:44:41.524561Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-13T14:44:41.524564Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-13T14:44:41.531299Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-13T14:44:41.531403Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-13T14:44:41.534627Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T09:49:51.933227Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T09:49:51.933273Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T09:49:51.933275Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T09:49:51.934730Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T09:49:51.934774Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T09:49:51.936538Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T09:49:52.640004Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\micha\.bash_history
+C:\Users\micha\.gitconfig
+C:\Users\micha\.gitignore
+C:\Users\micha\.kdiff3rc
+C:\Users\micha\.lesshst
+C:\Users\micha\.viminfo
+C:\Users\micha\.wget-hsts
+C:\Users\micha\.yarnrc
+C:\Users\micha\infoserve
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TM.blf
+C:\Users\micha\.pdfbox.cache
+C:\Users\micha\NTUSER.DAT
+C:\Users\micha\ntuser.ini
+C:\Users\micha\.angular-config.json
+C:\Users\micha\.clasprc.json
+C:\Users\micha\.dprint.json
+C:\Users\micha\ntuser.dat.LOG1
+C:\Users\micha\ntuser.dat.LOG2
+C:\Users\micha\Dockerfile.nginx
+C:\Users\micha\dirj.nu
+C:\Users\micha\infoserve.pub
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2025-02-14T09:50:03.905891Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T09:50:03.905940Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T09:50:03.905942Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T09:50:03.907317Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T09:50:03.907355Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T09:50:03.908860Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T10:21:23.262752Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T10:21:23.262797Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T10:21:23.262799Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T10:21:23.264099Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T10:21:23.264151Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T10:21:23.266040Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T10:21:46.796911Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T10:21:46.796954Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T10:21:46.796956Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T10:21:46.798365Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T10:21:46.798405Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T10:21:46.799905Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T10:22:15.816397Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T10:22:15.816438Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T10:22:15.816440Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T10:22:15.817668Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T10:22:15.817706Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T10:22:15.819148Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T10:45:34.509518Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T10:45:34.509568Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T10:45:34.509569Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T10:45:34.511183Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T10:45:34.511241Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T10:45:34.513116Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
+  2025-02-14T10:45:35.236060Z ERROR yazi_scheduler::prework::prework: Returned 2 when running fetcher `mime` with:
+C:\Users\micha\.bash_history
+C:\Users\micha\.gitconfig
+C:\Users\micha\.gitignore
+C:\Users\micha\.kdiff3rc
+C:\Users\micha\.lesshst
+C:\Users\micha\.viminfo
+C:\Users\micha\.wget-hsts
+C:\Users\micha\.yarnrc
+C:\Users\micha\infoserve
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TM.blf
+C:\Users\micha\.pdfbox.cache
+C:\Users\micha\NTUSER.DAT
+C:\Users\micha\ntuser.ini
+C:\Users\micha\.angular-config.json
+C:\Users\micha\.clasprc.json
+C:\Users\micha\.dprint.json
+C:\Users\micha\ntuser.dat.LOG1
+C:\Users\micha\ntuser.dat.LOG2
+C:\Users\micha\Dockerfile.nginx
+C:\Users\micha\dirj.nu
+C:\Users\micha\infoserve.pub
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TMContainer00000000000000000001.regtrans-ms
+C:\Users\micha\NTUSER.DAT{31e495ec-b858-11ef-885d-010101010000}.TMContainer00000000000000000002.regtrans-ms
+    at yazi-scheduler\src\prework\prework.rs:49
+
+  2025-02-14T10:45:43.900492Z  WARN yazi_adapter::emulator: [Adapter] No special environment variables detected
+    at yazi-adapter\src\emulator.rs:70
+
+  2025-02-14T10:45:43.900540Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM_PROGRAM: 
+    at yazi-adapter\src\emulator.rs:84
+
+  2025-02-14T10:45:43.900541Z  WARN yazi_adapter::emulator: [Adapter] Unknown TERM: 
+    at yazi-adapter\src\emulator.rs:92
+
+  2025-02-14T10:45:43.901416Z  WARN yazi_adapter::adapter: [Adapter] Could not identify XDG_SESSION_TYPE
+    at yazi-adapter\src\adapter.rs:101
+
+  2025-02-14T10:45:43.901454Z  WARN yazi_adapter::adapter: [Adapter] Falling back to chafa
+    at yazi-adapter\src\adapter.rs:113
+
+  2025-02-14T10:45:43.902936Z  WARN yazi_adapter::ueberzug: ueberzugpp spawning failed: program not found
+    at yazi-adapter\src\ueberzug.rs:87
+
