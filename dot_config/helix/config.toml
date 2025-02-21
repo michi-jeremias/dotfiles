@@ -36,6 +36,7 @@ o = ":toggle inline-diagnostics.other-lines hint disable"
 
 [keys.normal.g]
 D = ["vsplit", "goto_definition"]
+s = ["goto_line_start", "goto_first_nonwhitespace"]
 
 [editor]
 line-number = "relative"
