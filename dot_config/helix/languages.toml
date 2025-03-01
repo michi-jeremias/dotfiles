@@ -35,6 +35,9 @@ experimental = {}
 problems = { shortenToSingleLine = false }
 # workingDirectory = { mode = "auto" }
 
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+
 [[language]]
 # See https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#typescript
 name = "typescript"
