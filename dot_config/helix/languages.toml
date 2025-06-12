@@ -39,6 +39,10 @@ problems = { shortenToSingleLine = false }
 check.command = "clippy"
 
 [[language]]
+name = "rust"
+auto-format = true
+
+[[language]]
 # See https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#typescript
 name = "typescript"
 formatter = { command = "dprint", args = [ "fmt", "--stdin", "ts" ] }
