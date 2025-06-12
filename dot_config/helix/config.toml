@@ -3,6 +3,18 @@ theme = "gruvbox"
 
 [keys.insert]
 C-backspace = "delete_word_backward"
+"C-;" = [
+  "goto_line_end",
+  ":append-output echo ;",
+  "collapse_selection",
+  "keep_primary_selection",
+]
+"C-," = [
+  "goto_line_end",
+  ":append-output echo ,",
+  "collapse_selection",
+  "keep_primary_selection",
+]
 
 [keys.normal]
 D = "kill_to_line_end"
@@ -14,6 +26,18 @@ S-h = "jump_view_left"
 S-k = "jump_view_up"
 S-j = "jump_view_down"
 X = ["extend_line_up", "extend_to_line_bounds"]
+"C-;" = [
+  "goto_line_end",
+  ":append-output echo ;",
+  "collapse_selection",
+  "keep_primary_selection",
+]
+"C-," = [
+  "goto_line_end",
+  ":append-output echo ,",
+  "collapse_selection",
+  "keep_primary_selection",
+]
 
 [keys.select]
 X = ["extend_line_up", "extend_to_line_bounds"]
@@ -36,6 +60,8 @@ o = ":toggle inline-diagnostics.other-lines hint disable"
 
 [keys.normal.g]
 D = ["vsplit", "goto_definition"]
+# h = ["vsplit", "goto_definition", "jump_view_right", ":q", "jump_view_left"]
+h = ["vsplit", "goto_definition", "jump_view_right", ":q"]
 s = ["goto_line_start", "goto_first_nonwhitespace"]
 
 [editor]
@@ -53,6 +79,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+git-ignore = true
 
 [editor.statusline]
 left = ["mode",  "spinner", "spacer", "version-control", "file-name"]
