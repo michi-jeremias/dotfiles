@@ -5,7 +5,7 @@ let os = sys host | get name
 let scoop_packages = ["helix", "fnm", "yazi", "fd", "lazygit", "wget", "lua-language-server"]
 
 # List of packages to install via Homebrew (Linux)
-let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit"]
+let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit", "wezterm"]
 
 # Function to install packages with Scoop
 def install_with_scoop [packages: list<string>] {
