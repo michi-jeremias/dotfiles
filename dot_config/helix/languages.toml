@@ -14,10 +14,12 @@ unstable = true
 # suggest.imports.hosts = { "https://deno.land" = true }
 
 [language-server.eslint]
-#
-
 args = ["--stdio"]
 command = "vscode-eslint-language-server"
+
+[language-server.lua-language-server]
+command = "lua-language-server"
+enable = true
 
 [language-server.eslint.config]
 # format = true
@@ -37,6 +39,10 @@ problems = { shortenToSingleLine = false }
 
 [language-server.rust-analyzer.config]
 check.command = "clippy"
+
+[[language]]
+name = "lua"
+auto-format = true
 
 [[language]]
 name = "rust"
