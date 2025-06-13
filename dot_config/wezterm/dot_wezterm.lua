@@ -6,6 +6,7 @@ local mux = wezterm.mux
 -- This will hold the configuration
 local config = wezterm.config_builder()
 
+
 -- Config
 config.initial_cols = 120
 config.initial_rows = 28
@@ -70,10 +71,12 @@ config.leader = {
 config.keys = {
   -- Tabs
   { mods = "ALT",       key = "t", action = wezterm.action.SpawnTab "CurrentPaneDomain" }, -- "c" in tmux
-  { mods = "ALT",       key = "x", action = wezterm.action.CloseCurrentPane { confirm = true } },
   { mods = "ALT",       key = "p", action = wezterm.action.ActivateTabRelative(-1) },
   { mods = "ALT",       key = "n", action = wezterm.action.ActivateTabRelative(1) },
+  { mods = "ALT|SHIFT", key = "p", action = wezterm.action.MoveTabRelative(-1) },
+  { mods = "ALT|SHIFT", key = "n", action = wezterm.action.MoveTabRelative(1) },
   -- Panes
+  { mods = "ALT",       key = "x", action = wezterm.action.CloseCurrentPane { confirm = true } },
   { mods = "ALT",       key = "h", action = wezterm.action.ActivatePaneDirection "Left" },
   { mods = "ALT",       key = "j", action = wezterm.action.ActivatePaneDirection "Down" },
   { mods = "ALT",       key = "k", action = wezterm.action.ActivatePaneDirection "Up" },
