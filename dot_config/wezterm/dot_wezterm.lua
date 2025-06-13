@@ -1,4 +1,3 @@
--- Test comment
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
 local mux = wezterm.mux
@@ -23,14 +22,16 @@ config.color_scheme = 'GruvboxDark'
 config.colors = {
   tab_bar = {
     active_tab = {
-      bg_color = '#d79921',
-      fg_color = '#282828',
+      -- bg_color = '#d79921',
+      -- fg_color = '#282828',
+      bg_color = '#98971a',
+      fg_color = '#fbf1c7',
     }
   }
 }
 
 -- Window Appearance
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
 -- config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 0,
@@ -98,5 +99,76 @@ config.keys = {
   { mods = "ALT",       key = "9", action = wezterm.action.ActivateTab(8) },
 }
 
+-- wezterm.on('gui-startup', function(cmd)
+--   -- Set dbtool workspace
+--   local project_dir = 'C:\\Users\\micha\\dev\\rust\\dbtool-backend'
 
+--   local tab, pane, window = mux.spawn_window {
+--     workspace = 'dbtool',
+--     cwd = project_dir,
+--   }
+--   window:gui_window():maximize()
+--   pane:split {
+--     direction = 'Right',
+--     size = 0.1,
+--     cwd = project_dir,
+--   }
+
+--   pane:split {
+--     direction = 'Down',
+--     size = 0.5,
+--     cwd = project_dir,
+--   }
+
+--   -- local tab2, yy_pane, window = window:spawn_tab {
+--   --   cwd = project_dir,
+--   -- }
+--   -- lg_pane = yy_pane:split {
+--   --   size = 0.3,
+--   --   cwd = project_dir,
+--   -- }
+--   -- pane3 = lg_pane:split {
+--   --   size = 0.5,
+--   --   cwd = project_dir,
+--   -- }
+
+
+
+--   -- local tab, pane, window = mux.spawn_window {
+--   --   workspace = 'pdf-templates',
+--   --   cwd = '~/Documents/Bitbucket/pdf-templates',
+--   -- }
+
+--   -- Start in specific workspace
+--   mux.set_active_workspace = 'dbtool'
+-- end
+-- )
+
+wezterm.on('gui-startup', function(cmd)
+  -- local project_dir = 'C:\\Users\\micha'
+  local project_dir = 'C:\\Users\\micha\\dev\\rust\\dbtool-backend'
+
+  -- Spawn the first tab and window
+  local tab1, pane, window = mux.spawn_window(cmd or { cwd = project_dir, args = { 'hx' } })
+  window:gui_window():maximize()
+
+  -- Create a split occupying the right 1/10 of the screen
+  local build_pane = pane:split { direction = 'Right', size = 0.1, cwd = project_dir }
+
+  -- Create another split in the bottom of the right pane
+  build_pane:split { direction = 'Bottom', size = 0.5, cwd = project_dir }
+
+  -- Spawn the second tab
+  local tab2, pane2 = window:spawn_tab({ cwd = project_dir, args = { 'yazi', project_dir } })
+  pane2:split { direction = 'Right', size = 0.3, cwd = project_dir, args = { 'lazygit', '-p', project_dir } }
+  pane2:split { direction = 'Right', size = 0.5, cwd = project_dir }
+
+  -- Spawn the third tab
+  local tab3, pane3 = window:spawn_tab({ cwd = project_dir })
+  -- Optional: Add a split to the third tab for visibility
+  pane3:split { direction = 'Right', size = 0.5, cwd = project_dir }
+
+  -- Optionally, activate the third tab to make it visible on startup
+  tab1:activate()
+end)
 return config
