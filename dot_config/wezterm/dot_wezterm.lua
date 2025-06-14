@@ -146,7 +146,8 @@ config.keys = {
 
 wezterm.on('gui-startup', function(cmd)
   -- local project_dir = 'C:\\Users\\micha'
-  local project_dir = 'C:\\Users\\micha\\dev\\rust\\dbtool-backend'
+  -- local project_dir = 'C:\\Users\\micha\\dev\\rust\\dbtool-backend'
+  local project_dir = cmd and cmd.cwd or os.getenv('PWD') or wezterm.home_dir
 
   -- Spawn the first tab and window
   local tab1, pane, window = mux.spawn_window(cmd or { cwd = project_dir, args = { 'hx' } })
