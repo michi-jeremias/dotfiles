@@ -46,22 +46,22 @@ config.use_fancy_tab_bar = false
 -- wezterm.gui.enumerate_gpus() to show the available gpus
 config.max_fps = 240
 config.front_end = "WebGpu"
--- config.webgpu_preferred_adapter = {
---   backend = "Dx12",
---   device = 39880,
---   device_type = "IntegratedGpu",
---   name = "Intel(R) UHD Graphics 630",
---   vendor = 32902,
--- }
 config.webgpu_preferred_adapter = {
-  backend = "Vulkan",
+  backend = "Dx12",
   device = 39880,
   device_type = "IntegratedGpu",
-  driver = "Intel Corporation",
-  driver_info = "Intel driver",
   name = "Intel(R) UHD Graphics 630",
   vendor = 32902,
 }
+-- config.webgpu_preferred_adapter = {
+--   backend = "Vulkan",
+--   device = 39880,
+--   device_type = "IntegratedGpu",
+--   driver = "Intel Corporation",
+--   driver_info = "Intel driver",
+--   name = "Intel(R) UHD Graphics 630",
+--   vendor = 32902,
+-- }
 
 -- mux
 config.leader = {
@@ -76,6 +76,15 @@ config.keys = {
   { mods = "ALT",       key = "n", action = wezterm.action.ActivateTabRelative(1) },
   { mods = "ALT|SHIFT", key = "p", action = wezterm.action.MoveTabRelative(-1) },
   { mods = "ALT|SHIFT", key = "n", action = wezterm.action.MoveTabRelative(1) },
+  { mods = "ALT",       key = "1", action = wezterm.action.ActivateTab(0) },
+  { mods = "ALT",       key = "2", action = wezterm.action.ActivateTab(1) },
+  { mods = "ALT",       key = "3", action = wezterm.action.ActivateTab(2) },
+  { mods = "ALT",       key = "4", action = wezterm.action.ActivateTab(3) },
+  { mods = "ALT",       key = "5", action = wezterm.action.ActivateTab(4) },
+  { mods = "ALT",       key = "6", action = wezterm.action.ActivateTab(5) },
+  { mods = "ALT",       key = "7", action = wezterm.action.ActivateTab(6) },
+  { mods = "ALT",       key = "8", action = wezterm.action.ActivateTab(7) },
+  { mods = "ALT",       key = "9", action = wezterm.action.ActivateTab(8) },
   -- Panes
   { mods = "ALT",       key = "x", action = wezterm.action.CloseCurrentPane { confirm = true } },
   { mods = "ALT",       key = "h", action = wezterm.action.ActivatePaneDirection "Left" },
@@ -88,15 +97,6 @@ config.keys = {
   { mods = "ALT|SHIFT", key = "l", action = wezterm.action.AdjustPaneSize { "Right", 5 } },
   { mods = "ALT",       key = "v", action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" } },
   { mods = "ALT",       key = "s", action = wezterm.action.SplitVertical { domain = "CurrentPaneDomain" } },
-  { mods = "ALT",       key = "1", action = wezterm.action.ActivateTab(0) },
-  { mods = "ALT",       key = "2", action = wezterm.action.ActivateTab(1) },
-  { mods = "ALT",       key = "3", action = wezterm.action.ActivateTab(2) },
-  { mods = "ALT",       key = "4", action = wezterm.action.ActivateTab(3) },
-  { mods = "ALT",       key = "5", action = wezterm.action.ActivateTab(4) },
-  { mods = "ALT",       key = "6", action = wezterm.action.ActivateTab(5) },
-  { mods = "ALT",       key = "7", action = wezterm.action.ActivateTab(6) },
-  { mods = "ALT",       key = "8", action = wezterm.action.ActivateTab(7) },
-  { mods = "ALT",       key = "9", action = wezterm.action.ActivateTab(8) },
 }
 
 -- wezterm.on('gui-startup', function(cmd)
