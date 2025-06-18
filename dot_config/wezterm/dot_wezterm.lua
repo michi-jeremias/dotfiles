@@ -46,22 +46,22 @@ config.use_fancy_tab_bar = false
 -- wezterm.gui.enumerate_gpus() to show the available gpus
 config.max_fps = 240
 config.front_end = "WebGpu"
-config.webgpu_preferred_adapter = {
-  backend = "Dx12",
-  device = 39880,
-  device_type = "IntegratedGpu",
-  name = "Intel(R) UHD Graphics 630",
-  vendor = 32902,
-}
 -- config.webgpu_preferred_adapter = {
---   backend = "Vulkan",
+--   backend = "Dx12",
 --   device = 39880,
 --   device_type = "IntegratedGpu",
---   driver = "Intel Corporation",
---   driver_info = "Intel driver",
 --   name = "Intel(R) UHD Graphics 630",
 --   vendor = 32902,
 -- }
+config.webgpu_preferred_adapter = {
+  backend = "Vulkan",
+  device = 39880,
+  device_type = "IntegratedGpu",
+  driver = "Intel Corporation",
+  driver_info = "Intel driver",
+  name = "Intel(R) UHD Graphics 630",
+  vendor = 32902,
+}
 
 -- mux
 config.leader = {
@@ -146,30 +146,23 @@ config.keys = {
 
 wezterm.on('gui-startup', function(cmd)
   -- local project_dir = 'C:\\Users\\micha'
-  -- local project_dir = 'C:\\Users\\micha\\dev\\rust\\dbtool-backend'
   local project_dir = cmd and cmd.cwd or os.getenv('PWD') or wezterm.home_dir
 
   -- Spawn the first tab and window
   local tab1, pane, window = mux.spawn_window(cmd or { cwd = project_dir, args = { 'hx' } })
-  window:gui_window():maximize()
-
-  -- Create a split occupying the right 1/10 of the screen
-  local build_pane = pane:split { direction = 'Right', size = 0.1, cwd = project_dir }
-
-  -- Create another split in the bottom of the right pane
-  build_pane:split { direction = 'Bottom', size = 0.5, cwd = project_dir }
 
   -- Spawn the second tab
-  local tab2, pane2 = window:spawn_tab({ cwd = project_dir, args = { 'yazi', project_dir } })
-  pane2:split { direction = 'Right', size = 0.3, cwd = project_dir, args = { 'lazygit', '-p', project_dir } }
+  local tab3, pane2 = window:spawn_tab({ cwd = project_dir })
+  -- Optional: Add a split to the third tab for visibility
   pane2:split { direction = 'Right', size = 0.5, cwd = project_dir }
 
   -- Spawn the third tab
-  local tab3, pane3 = window:spawn_tab({ cwd = project_dir })
-  -- Optional: Add a split to the third tab for visibility
+  local tab2, pane3 = window:spawn_tab({ cwd = project_dir, args = { 'yazi', project_dir } })
+  pane3:split { direction = 'Right', size = 0.3, cwd = project_dir, args = { 'lazygit', '-p', project_dir } }
   pane3:split { direction = 'Right', size = 0.5, cwd = project_dir }
 
   -- Optionally, activate the third tab to make it visible on startup
   tab1:activate()
+  window:gui_window():maximize()
 end)
 return config
