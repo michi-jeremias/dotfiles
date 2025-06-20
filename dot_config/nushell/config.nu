@@ -786,6 +786,10 @@ def bt [param1: string, param2: string = ""] {
     }
 }
 
+# Cargo
+alias cb = cargo build
+alias cr = cargo run
+
 # Cargo watch -- deprecated
 def cwe [name: string] {
     cargo watch -q -c -x run -p --example $name
