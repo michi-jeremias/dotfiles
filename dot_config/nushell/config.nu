@@ -829,6 +829,8 @@ def gacp [name: string] {
 # Lazygit
 alias lg = lazygit
 
+# Wezterm
+alias wt = wezterm
 
 # Yazi
     
