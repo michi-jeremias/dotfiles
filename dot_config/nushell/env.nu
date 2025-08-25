@@ -99,22 +99,12 @@ $env.NU_PLUGIN_DIRS = [
 
 
 # Linux and Windows
-load-env (fnm env --shell bash
-    | lines
-    | str replace 'export ' ''
-    | str replace -a '"' ''
-    | split column '='
-    | rename name value
-    | where name != "FNM_ARCH" and name != "PATH"
-    | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
-)
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
-    # $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/.cargo/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/.cargo/bin")
     $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
     $env.config.buffer_editor = '/home/linuxbrew/.linuxbrew/bin/hx'
@@ -123,26 +113,20 @@ if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.NVM_DIR = $'($env.HOME)/.nvm'
 
     # FNM
-    # load-env (fnm env --shell bash
-    #     | lines
-    #     | str replace 'export ' ''
-    #     | str replace -a '"' ''
-    #     | split column '='
-    #     | rename name value
-    #     | where name != "FNM_ARCH" and name != "PATH"
-    #     | reduce -f {} {|it, acc| $acc | upsert $it.name $it.value}
-    # )
     $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
 )
 }
 
 # Windows
 if ('OS' in $env) and $env.OS == 'Windows_NT' {
+    print "windows setup"
     $env.Path = ($env.Path | split row (char esep) | prepend $"C:/Program Files/LibreOffice/program")
     $env.EDITOR = 'C:\Users\micha\scoop\shims\hx.exe'
     $env.YAZI_FILE_ONE = 'C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe'
-    $env.Path = ($env.Path | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin")
-}
+    
+    # fnm
+    # fnm env --shell power-shell | fnm-nushell | from json | load-env
+    }
 
 
 $env.RUST_BACKTRACE = 'full'
