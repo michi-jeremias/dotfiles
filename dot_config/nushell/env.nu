@@ -104,6 +104,7 @@ $env.NU_PLUGIN_DIRS = [
 if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/linuxbrew/.linuxbrew/sbin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/home/michi/go/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/.cargo/bin")
     $env.HELIX_RUNTIME = '/home/michi/helix/runtime'
@@ -113,7 +114,7 @@ if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.NVM_DIR = $'($env.HOME)/.nvm'
 
     # FNM
-    # $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin")
+    fnm env --shell power-shell | fnm-nushell | from json | load-env
 }
 
 # Windows
@@ -125,7 +126,7 @@ if ('OS' in $env) and $env.OS == 'Windows_NT' {
     
     # fnm
     # fnm env --shell power-shell | fnm-nushell | from json | load-env
-    }
+}
 
 
 $env.RUST_BACKTRACE = 'full'
