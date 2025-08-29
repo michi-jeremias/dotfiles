@@ -113,8 +113,7 @@ if not ('OS' in $env) or ('OS' in $env and $env.OS != 'Windows_NT') {
     $env.NVM_DIR = $'($env.HOME)/.nvm'
 
     # FNM
-    $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin"
-)
+    # $env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.FNM_MULTISHELL_PATH)/bin")
 }
 
 # Windows
