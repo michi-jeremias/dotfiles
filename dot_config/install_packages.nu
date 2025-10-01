@@ -2,7 +2,7 @@
 let os = sys host | get name
 
 # List of packages to install via Scoop (Windows)
-let scoop_packages = ["helix", "fnm", "yazi", "fd", "wget", "lua-language-server", "jj", "starship", "wezterm"]
+let scoop_packages = ["helix", "fnm", "yazi", "fd", "wget", "lua-language-server", "jj", "starship", "wezterm-nightly"]
 
 # List of packages to install via Homebrew (Linux)
 let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit", "wezterm", "jj"]
@@ -11,6 +11,7 @@ let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit", "
 def install_with_scoop [packages: list<string>] {
     scoop install git # required to run scoop bucket
     scoop bucket add extras
+    scoop bucket add versions
     scoop install ...$packages
 }
 
