@@ -1,6 +1,7 @@
-[language-server]
-deno = { command = "deno", args = [ "lsp" ]}
-emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+[language-server.deno]
+command = "deno"
+args = ["lsp"]
+config = { enable = true, line = true, unstable = true, importMap = "deno.json"}
 
 [language-server.deno-lsp]
 command = "deno"
@@ -10,12 +11,6 @@ environment = { "DENO_UNSTABLE_SLOPPY_IMPORTS" = "1"}
 [language-server.deno-lsp.config.deno]
 enable = true
 unstable = true
-# # unstable = ["sloppy-imports"]
-# suggest.imports.hosts = { "https://deno.land" = true }
-
-# [language-server.eslint]
-# args = ["--stdio"]
-# command = "vscode-eslint-language-server"
 
 [language-server.lua-language-server]
 command = "lua-language-server"
@@ -33,52 +28,62 @@ name = "rust"
 auto-format = true
 
 [[language]]
-# See https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#typescript
 name = "typescript"
-formatter = { command = "dprint", args = [ "fmt", "--stdin", "ts" ] }
-auto-format = true
 language-servers = ["typescript-language-server"]
-
-# [[language]]
-# name = "html"
-# formatter = { command = 'prettier', args = ["--write", "--parser", "html"] }
-# auto-format = true
-# language-servers = ["vscode-html-language-server", "angular"]
-# 
-[[language]]
-name = "tsx"
-# language-servers = [ "deno", "eslint", "emmet-ls"]
-language-servers = [ "deno",  "emmet-ls"]
 formatter = { command = "dprint", args = [ "fmt", "--stdin", "typescript" ] }
 auto-format = true
 
 [[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "tsx" ] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "jsx" ] }
+auto-format = true
+
+[[language]]
 name = "javascript"
+language-servers = ["typescript-language-server"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "javascript" ] }
 auto-format = true
 
 [[language]]
 name = "html"
-# language-servers = [ "vscode-html-language-server", "emmet-ls" ]
-language-servers = [ "emmet-ls" ]
-# formatter = { command = 'prettier', args = ["--parser", "html"] }
-formatter = { command = "dprint", args = [ "fmt", "--stdin", "html" ] }
 auto-format = true
 
 [[language]]
 name = "css"
-language-servers = [ "vscode-css-language-server", "emmet-ls" ]
-# formatter = { command = 'prettier', args = ["--parser", "css"] }
-formatter = { command = "dprint", args = [ "fmt", "--stdin", "css" ] }
+language-servers = [ "vscode-css-language-server" ]
 auto-format = true
 
 [[language]]
 name = "json"
-# formatter = { command = "prettier", args = [ "--parser", "json" ] }
 formatter = { command = "dprint", args = [ "fmt", "--stdin", "json" ] }
 auto-format = true
 
 # [[language]]
-# name = "sql"
-# language-servers = ["sql-language-server"]
+# name = "Dockerfile"
+# formatter = { command = "dprint", args = [ "fmt", "--stdin", "Dockerfile" ] }
 # auto-format = true
+ 
+
+[[language]]
+name = "toml"
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "toml" ] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+language-servers = ["yaml-language-server"]
+formatter = { command = "dprint", args = [ "fmt", "--stdin", "pretty_yaml" ] }
+auto-format = true
+
+[[language]]
+name = "sql"
+language-servers = ["sql-language-server"]
+auto-format = true
 
