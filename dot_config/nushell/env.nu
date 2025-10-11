@@ -134,7 +134,9 @@ $env.RUST_BACKTRACE = 'full'
 # $env.VISUAL
 # -- yazi
 
-mkdir ~/.cache/starship
-starship init nu | save -f ~/.cache/starship/init.nu
+# mkdir ~/.cache/starship
+# starship init nu | save -f ~/.cache/starship/init.nu
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
-use ~/.cache/starship/init.nu
+# use ~/.cache/starship/init.nu
