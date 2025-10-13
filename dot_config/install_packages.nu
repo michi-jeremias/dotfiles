@@ -2,7 +2,18 @@
 let os = sys host | get name
 
 # List of packages to install via Scoop (Windows)
-let scoop_packages = ["helix", "fnm", "yazi", "fd", "wget", "lua-language-server", "jj", "starship", "wezterm-nightly"]
+let scoop_packages = [
+    "helix",
+    "fnm",
+    "yazi",
+    "fd",
+    "wget",
+    "lua-language-server",
+    "jj",
+    "starship",
+    "wezterm-nightly",
+    "taplo" # toml language server?
+]
 
 # List of packages to install via Homebrew (Linux)
 let brew_packages = ["helix", "zellij", "fnm", "fd", "fzf", "yazi", "lazygit", "wezterm", "jj"]
