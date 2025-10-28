@@ -8,6 +8,7 @@ let scoop_packages = [
     "yazi",
     "fd",
     "wget",
+    "fzf",
     "lua-language-server",
     "jj",
     "starship",
