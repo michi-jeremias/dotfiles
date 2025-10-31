@@ -78,10 +78,6 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "javascript"] }
 auto-format = true
 
 [[language]]
-name = "html"
-auto-format = true
-
-[[language]]
 name = "css"
 language-servers = ["vscode-css-language-server"]
 auto-format = true
@@ -110,4 +106,10 @@ auto-format = true
 [[language]]
 name = "sql"
 language-servers = ["sql-language-server"]
+auto-format = true
+
+# npm i -g vscode-langservers-extracted
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server"]
 auto-format = true
