@@ -125,7 +125,7 @@ if ('OS' in $env) and $env.OS == 'Windows_NT' {
     $env.YAZI_FILE_ONE = 'C:\Users\micha\scoop\apps\git\current\usr\bin\file.exe'
     
     # fnm
-    # fnm env --shell power-shell | fnm-nushell | from json | load-env
+    fnm env --shell power-shell | fnm-nushell | from json | load-env
 }
 
 
