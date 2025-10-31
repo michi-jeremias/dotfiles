@@ -5,7 +5,7 @@
   "height": 30,
   "theme": {
     "palette": "Base16",
-    "name": "TokyoCityDark",
+    "name": "TokyoNightTerminalDark",
     "accent": "Base0D"
   },
   "left_widgets": [
