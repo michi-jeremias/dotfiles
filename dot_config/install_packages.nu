@@ -13,7 +13,9 @@ let scoop_packages = [
     "jj",
     "starship",
     "wezterm-nightly",
-    "taplo" # toml language server?
+    "taplo", # toml language server?
+    "whkd", # windows hotkey manager
+    "komorebi", # window tiling
 ]
 
 # List of packages to install via Homebrew (Linux)
