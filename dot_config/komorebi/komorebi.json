@@ -4,13 +4,14 @@
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "default_workspace_padding": 5,
+  "mouse_follows_focus": false,
   "default_container_padding": 2,
   "border": true,
   "border_width": 4,
   "border_offset": -1,
   "theme": {
     "palette": "Base16",
-    "name": "Ashes",
+    "name": "TokyoNightTerminalDark",
     "unfocused_border": "Base03",
     "bar_accent": "Base0D"
   },
@@ -23,7 +24,7 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "III",
