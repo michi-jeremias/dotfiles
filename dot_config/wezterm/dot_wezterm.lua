@@ -15,7 +15,8 @@ config.initial_rows = 28
 config.default_prog = { 'nu' }
 
 -- Font
-config.font = wezterm.font("MesloLGLDZ Nerd Font Mono")
+-- config.font = wezterm.font("MesloLGLDZ Nerd Font Mono")
+config.font = wezterm.font("IosevkaTerm Nerd Font")
 config.font_size = 10
 
 -- Colors
