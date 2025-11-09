@@ -152,26 +152,25 @@ wezterm.on('gui-startup', function(cmd)
 
   -- Spawn the first tab and window
   -- local tab1, pane, window = mux.spawn_window(cmd or { cwd = project_dir, args = { 'hx' } })
-  local tab1, pane, window = mux.spawn_window(cmd or { cwd = project_dir })
-  pane:send_text 'hx'
+  local tab1, pane1_1, window = mux.spawn_window(cmd or { cwd = project_dir })
+  -- pane:send_text 'hx'
 
   -- Spawn the second tab
-  local tab2, pane2 = window:spawn_tab({ cwd = project_dir })
+  local tab2, pane2_1 = window:spawn_tab({ cwd = project_dir })
   -- Optional: Add a split to the third tab for visibility
-  pane2:split { direction = 'Right', size = 0.5, cwd = project_dir }
+  local pane2_2 = pane2_1:split { direction = 'Right', size = 0.9, cwd = project_dir }
+  local pane2_3 = pane2_2:split { direction = 'Right', size = 0.9, cwd = project_dir }
 
   -- Spawn the third tab
   -- local tab2, pane3 = window:spawn_tab({ cwd = project_dir, args = { 'yazi', project_dir } })
   local tab3, pane3_1 = window:spawn_tab({ cwd = project_dir })
   -- pane3:split { direction = 'Right', size = 0.3, cwd = project_dir, args = { 'lazygit', '-p', project_dir } }
   local pane3_2 = pane3_1:split { direction = 'Right', size = 0.9, cwd = project_dir }
-  local pane3_3 = pane3_2:split { direction = 'Right', size = 0.8, cwd = project_dir }
-  pane3_1:split { direction = 'Bottom', size = 0.5, cwd = project_dir }
-  pane3_3:split { direction = 'Bottom', size = 0.5, cwd = project_dir }
+  local pane3_3 = pane3_2:split { direction = 'Right', size = 0.9, cwd = project_dir }
 
   -- Spawn the fourth tab
   local tab4, pane4_1 = window:spawn_tab({ cwd = project_dir })
-  pane4_1:send_text 'cd ~/'
+  -- pane4_1:send_text 'cd ~/'
 
   -- Optionally, activate the third tab to make it visible on startup
   tab1:activate()
