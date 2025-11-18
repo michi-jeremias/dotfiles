@@ -18,6 +18,10 @@ enable = true
 # unstable = true
 suggest = { completeFunctionCalls = false, imports = { imports = { "https://deno.land" = true } } }
 
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
 [language-server.typescript-language-server]
 required-root-patterns = ["package.json", "tsconfig.json"]
 
@@ -79,7 +83,7 @@ auto-format = true
 
 [[language]]
 name = "css"
-language-servers = ["vscode-css-language-server"]
+language-servers = ["vscode-css-language-server", "tailwindcss-ls"]
 auto-format = true
 
 [[language]]
@@ -111,5 +115,5 @@ auto-format = true
 # npm i -g vscode-langservers-extracted
 [[language]]
 name = "html"
-language-servers = ["vscode-html-language-server"]
+language-servers = ["vscode-html-language-server", "tailwindcss-ls"]
 auto-format = true
