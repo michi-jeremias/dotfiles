@@ -6,48 +6,51 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  {
-    "context": "Workspace",
-    "bindings": {
-      // "shift shift": "file_finder::Toggle"
-      "space q": "pane::CloseActiveItem",
-      // "space q r": "pane::ReopenClosedItem"
-      //
-      "space i i": "editor::ToggleInlayHints",
-      "space x": "pane::CloseAllItems",
-      "space g d": [
-        "action::Sequence",
-        ["pane::SplitAndMoveRight", "editor::GoToDefinition"]
-      ]
+    {
+        "context": "Workspace",
+        "bindings": {
+            // "shift shift": "file_finder::Toggle"
+            "space q": "pane::CloseActiveItem",
+            // "space q r": "pane::ReopenClosedItem"
+            //
+            "space i i": "editor::ToggleInlayHints",
+            "space x": "pane::CloseAllItems",
+            "space g d": [
+                "action::Sequence",
+                ["pane::SplitAndMoveRight", "editor::GoToDefinition"]
+            ],
+            "g r": "editor::FindAllReferences",
+            "space /": "pane::DeploySearch",
+            "space shift-d": "diagnostics::Deploy"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        }
+    },
+    {
+        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+        "bindings": {
+            "space k": "editor::Hover",
+            "space a": "editor::ToggleCodeActions",
+            "space r": "editor::Rename",
+            "space z": "zed::Zoom",
+            "shift-l": "pane::SplitAndMoveRight"
+            // "space d": "diagno"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == normal",
+        "bindings": {
+            // "j k": "vim::NormalBefore"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-g b": null
+        }
     }
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
-    "bindings": {
-      "space k": "editor::Hover",
-      "space a": "editor::ToggleCodeActions",
-      "space r": "editor::Rename",
-      "space z": "zed::Zoom",
-      "shift-l": "pane::SplitAndMoveRight"
-      // "space d": "diagno"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    }
-  },
-  {
-    "context": "Editor",
-    "bindings": {
-      "alt-g b": null
-    }
-  }
 ]
