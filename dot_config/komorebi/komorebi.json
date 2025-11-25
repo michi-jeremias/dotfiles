@@ -19,31 +19,31 @@
     {
       "workspaces": [
         {
-          "name": "I",
+          "name": "1",
           "layout": "BSP"
         },
         {
-          "name": "II",
-          "layout": "BSP"
+          "name": "2",
+          "layout": "Columns"
         },
         {
-          "name": "III",
+          "name": "3",
           "layout": "HorizontalStack"
         },
         {
-          "name": "IV",
+          "name": "4",
           "layout": "UltrawideVerticalStack"
         },
         {
-          "name": "V",
+          "name": "5",
           "layout": "Rows"
         },
         {
-          "name": "VI",
-          "layout": "Grid"
+          "name": "6",
+          "layout": "Columns"
         },
         {
-          "name": "VII",
+          "name": "7",
           "layout": "RightMainVerticalStack"
         }
       ]

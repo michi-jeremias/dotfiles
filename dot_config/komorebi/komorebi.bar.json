@@ -47,6 +47,13 @@
       }
     },
     {
+      "Network": {
+        "enable": true,
+        "show_total_data_transmitted": true,
+        "show_network_activity": true
+      }
+    },
+    {
       "Date": {
         "enable": true,
         "format": "DayDateMonthYear"
