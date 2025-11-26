@@ -11,17 +11,22 @@
         "bindings": {
             // "shift shift": "file_finder::Toggle"
             "space q": "pane::CloseActiveItem",
-            // "space q r": "pane::ReopenClosedItem"
+            "space e": [
+                "action::Sequence",
+                ["project_panel::ToggleFocus", "workspace::CloseActiveDock"]
+            ],
+            // "space q r": "pane::ReopenClosedItem",
             //
             "space i i": "editor::ToggleInlayHints",
             "space x": "pane::CloseAllItems",
-            "space g d": [
-                "action::Sequence",
-                ["pane::SplitAndMoveRight", "editor::GoToDefinition"]
-            ],
             "g r": "editor::FindAllReferences",
             "space /": "pane::DeploySearch",
-            "space shift-d": "diagnostics::Deploy"
+            "space shift-d": "diagnostics::Deploy",
+            // jumplist next prev
+            "alt-j": "pane::GoBack",
+            "alt-k": "pane::GoForward",
+            "alt-h": "workspace::ActivatePaneLeft",
+            "alt-l": "workspace::ActivatePaneRight"
         }
     },
     {
@@ -31,14 +36,29 @@
         }
     },
     {
-        "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+        "context": "Editor && (vim_mode == helix_normal || vim_mode == helix_visual || vim_mode == helix_select) && !VimWaiting && !menu",
         "bindings": {
-            "space k": "editor::Hover",
+            // "space k": "editor::Hover",
             "space a": "editor::ToggleCodeActions",
             "space r": "editor::Rename",
             "space z": "zed::Zoom",
-            "shift-l": "pane::SplitAndMoveRight"
-            // "space d": "diagno"
+
+            // G mode
+            "g shift-d": [
+                "action::Sequence",
+                ["pane::SplitRight", "editor::GoToDefinition"]
+            ],
+
+            // Window mode
+            "space w h": "workspace::ActivatePaneLeft",
+            "space w l": "workspace::ActivatePaneRight",
+            "space w k": "workspace::ActivatePaneUp",
+            "space w j": "workspace::ActivatePaneDown",
+            "space w q": "pane::CloseActiveItem",
+            "space w s": "pane::SplitDown",
+            "space w r": "pane::SplitRight",
+            "space w v": "pane::SplitRight",
+            "space w d": "pane::SplitDown"
         }
     },
     {
