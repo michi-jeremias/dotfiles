@@ -6,20 +6,24 @@ For more information about configuration options, please visit the Wiki https://
     --mauve: #cba6f7;
     --red: #f38ba8;
     --yellow: #ffd16d;
+    --yellowdark: #6f411d;
     --blue: #448fff;
     --lavender: #b4befe;
+    --lavenderdark: #444e6e;
     --text1: #d4d9eb;
     --text2: #8f929e;
     --text3: #9399b2;
-    --text4: #7f849c;
-    --bg-color1: #191919;
+    /* --text4: #7f849c; */
+    --text4: rgba(0, 0, 0, 0.1);
+    /* --bg-color1: #191919; */
+    --bg-color1: rgba(0, 0, 0, 0.5);
     --bg-color2: #333333;
 }
 * {
     font-size: 12px;
     color: var(--text1);
     font-weight: 600;
-    font-family: "JetBrainsMono NFP";
+    font-family: "IosevkaTerm Nerd Font";
 }
 .yasb-bar {
     background-color: var(--bg-color1);
@@ -133,19 +137,20 @@ For more information about configuration options, please visit the Wiki https://
     border: none;
     background-color: var(--text4);
     margin: 0 3px;
-    height: 9px;
-    width: 9px;
-    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
 }
 .komorebi-workspaces .ws-btn:hover {
     color: var(--text2);
 }
 .komorebi-workspaces .ws-btn.populated {
-    background-color: var(--lavender);
+    background-color: var(--lavenderdark);
 }
 .komorebi-workspaces .ws-btn.active {
-    background-color: var(--blue);
-    width: 36px;
+    background-color: var(--yellow);
+    color: rgba(0, 0, 0, 1);
+    /* width: 36px; */
 }
 .power-menu-widget .label {
     color: #f38ba8;
@@ -278,7 +283,7 @@ For more information about configuration options, please visit the Wiki https://
     color: #7a7f8b;
     padding: 0 4px;
     margin: 0;
-    font-family: "JetBrainsMono NFP";
+    font-family: "IosevkaTerm Nerd Font";
     font-weight: 400;
     font-size: 20px;
 }

@@ -14,14 +14,14 @@ bars:
     screens: ["*"]
     class_name: "yasb-bar"
     alignment:
-      position: "top"
+      position: "bottom"
       center: false
     animation:
       enabled: true
-      duration: 400
+      duration: 100
     blur_effect:
       enabled: false
-      acrylic: false
+      acrylic: true
       dark_mode: false
       round_corners: false
       round_corners_type: "normal"
@@ -31,7 +31,8 @@ bars:
       windows_app_bar: true
     dimensions:
       width: "100%"
-      height: 32
+      # height: 38
+      height: 48
     padding:
       top: 4
       left: 4
@@ -39,19 +40,14 @@ bars:
       right: 4
     widgets:
       left:
-      - "home"
-      - "komorebi_workspaces"
       - "komorebi_active_layout"
-      - "active_window"
-      center:
-      - "clock"
-      right:
+      - "komorebi_workspaces"
+      # - "active_window"
       - "media"
-      - "weather"
-      - "microphone"
-      - "volume"
-      - "notifications"
-      - "power_menu"
+      # right:
+      # - "microphone"
+      # - "volume"
+      # - "notifications"
 widgets:
   home:
     type: "yasb.home.HomeWidget"
@@ -68,7 +64,7 @@ widgets:
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "{title}"
+      label: "{artist} - {title}"
       label_alt: "{artist} - {title}"
       max_field_size:
         label: 16
@@ -125,32 +121,18 @@ widgets:
       max_length: 30
       max_length_ellipsis: "..."
       monitor_exclusive: true
-  clock:
-    type: "yasb.clock.ClockWidget"
-    options:
-      label: "{%a, %d %b %H:%M}"
-      label_alt: "{%A, %d %B %Y %H:%M}"
-      timezones: []
-      calendar: 
-        blur: false
-        round_corners: false
-        alignment: "center"
-        direction: "down"
-      callbacks:
-        on_left: "toggle_calendar"
-        on_right: "toggle_label"
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
       label_offline: "\u23fc Offline"
-      label_workspace_btn: "\u000d"
-      label_workspace_active_btn: "\u000d"
-      label_workspace_populated_btn: "\u000d"
+      label_workspace_btn: "{index}"
+      label_workspace_active_btn: "{index}"
+      label_workspace_populated_btn: "{index}"
       label_default_name: "{index}"
       label_zero_index: false
       hide_empty_workspaces: false
       hide_if_offline: true
-      animation: true
+      animation: false
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
