@@ -20,7 +20,7 @@
       "workspaces": [
         {
           "name": "1",
-          "layout": "BSP"
+          "layout": "Columns"
         },
         {
           "name": "2",
@@ -28,15 +28,15 @@
         },
         {
           "name": "3",
-          "layout": "HorizontalStack"
+          "layout": "Columns"
         },
         {
           "name": "4",
-          "layout": "UltrawideVerticalStack"
+          "layout": "Columns"
         },
         {
           "name": "5",
-          "layout": "Rows"
+          "layout": "Columns"
         },
         {
           "name": "6",
@@ -44,7 +44,7 @@
         },
         {
           "name": "7",
-          "layout": "RightMainVerticalStack"
+          "layout": "Columns"
         }
       ]
     }
