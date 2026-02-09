@@ -1707,3 +1707,517 @@
 2026-02-05 11:55:31,027 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
 2026-02-05 11:55:31,089 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-30578a19-0281-11f1-88db-bcf10522dc64
 2026-02-05 11:55:31,472 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-30578a19-0281-11f1-88db-bcf10522dc64
+2026-02-05 12:23:16,059 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-05 12:23:16,059 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-05 12:23:16,170 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:23:16,170 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:23:16,929 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-05 12:23:16,930 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-05 12:23:17,039 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:23:17,039 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:23:17,218 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen LG HDR WQHD
+2026-02-05 12:23:17,962 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:23:17,963 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:23:17,964 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:23:17,964 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:23:18,046 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:23:18,047 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:23:18,047 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:23:18,047 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:23:18,516 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-05 12:23:18,567 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-05 12:23:18,799 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-05 12:23:18,892 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-05 12:23:18,894 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-05 12:23:19,518 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-05 12:23:19,519 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-05 12:23:19,626 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-12d72010-0285-11f1-b46e-bcf10522dc64
+2026-02-05 12:23:20,174 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-12d72010-0285-11f1-b46e-bcf10522dc64
+2026-02-05 12:23:21,287 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:21,287 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:24,364 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:24,364 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:27,430 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:27,431 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:27,981 [ERROR] [MainThread] [root/main.py:69]: Timeout waiting for previous instance. Aborting start.
+2026-02-05 12:23:30,499 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:30,499 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:33,577 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:33,577 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:36,665 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:36,666 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:39,738 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:39,739 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:42,830 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:42,830 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:45,898 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:45,898 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:48,983 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:48,984 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:52,059 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:52,059 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:55,128 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:55,128 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:23:58,211 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:23:58,211 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:01,276 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:01,277 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:04,385 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:04,385 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:07,464 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:07,464 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:10,537 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:10,537 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:13,616 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:13,616 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:16,688 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:16,688 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:19,776 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:19,776 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:22,863 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:22,863 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:25,941 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-05 12:24:25,941 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:28,013 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:30,080 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:32,146 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:34,215 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-05 12:24:36,305 [WARNING] [Dummy-6] [root/event_listener.py:82]: Pipe has been ended: (109, 'PeekNamedPipe', 'Die Pipe wurde beendet.')
+2026-02-05 12:24:36,305 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-05 12:24:39,306 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-12d72010-0285-11f1-b46e-bcf10522dc64
+2026-02-05 12:24:39,373 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-12d72010-0285-11f1-b46e-bcf10522dc64
+2026-02-05 12:27:56,372 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-05 12:27:56,477 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:27:56,478 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:27:56,485 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-05 12:27:56,807 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-05 12:27:56,946 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:27:56,947 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:27:56,947 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:27:56,947 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:27:57,198 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-05 12:27:57,218 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-05 12:27:57,219 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-05 12:27:57,637 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-05 12:27:57,637 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-05 12:27:57,724 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-b89ca574-0285-11f1-a1cb-bcf10522dc64
+2026-02-05 12:27:58,178 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-b89ca574-0285-11f1-a1cb-bcf10522dc64
+2026-02-05 12:28:22,951 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-05 12:28:23,055 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:28:23,055 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:28:23,060 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-05 12:28:23,376 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-05 12:28:23,377 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-05 12:28:23,484 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:28:23,485 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:28:23,485 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:28:23,485 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:28:23,736 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-05 12:28:23,757 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-05 12:28:23,758 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-05 12:28:24,162 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-05 12:28:24,162 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-05 12:28:24,243 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-c86c0052-0285-11f1-b8fe-bcf10522dc64
+2026-02-05 12:28:24,721 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-c86c0052-0285-11f1-b8fe-bcf10522dc64
+2026-02-05 12:28:33,654 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-05 12:28:33,756 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:28:33,756 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:28:33,761 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-05 12:28:34,061 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-05 12:28:34,062 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-05 12:28:34,178 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:28:34,178 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:28:34,179 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:28:34,179 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:28:34,430 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-05 12:28:34,450 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-05 12:28:34,451 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-05 12:28:34,880 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-05 12:28:34,880 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-05 12:28:34,949 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-cecf8139-0285-11f1-b1a6-bcf10522dc64
+2026-02-05 12:28:35,429 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-cecf8139-0285-11f1-b1a6-bcf10522dc64
+2026-02-05 12:28:43,155 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-05 12:28:43,256 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-05 12:28:43,256 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-05 12:28:43,266 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-05 12:28:43,606 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-05 12:28:43,607 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-05 12:28:43,772 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-05 12:28:43,773 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-05 12:28:43,773 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-05 12:28:43,773 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-05 12:28:44,024 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-05 12:28:44,051 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-05 12:28:44,052 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-05 12:28:44,533 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-05 12:28:44,534 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-05 12:28:44,626 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-d4907705-0285-11f1-abae-bcf10522dc64
+2026-02-05 12:28:45,203 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-d4907705-0285-11f1-abae-bcf10522dc64
+2026-02-06 07:48:49,873 [WARNING] [Dummy-6] [root/event_listener.py:82]: Pipe has been ended: (109, 'PeekNamedPipe', 'Die Pipe wurde beendet.')
+2026-02-06 07:48:49,880 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 07:48:49,933 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 07:54:37,275 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 07:54:37,276 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 07:54:37,276 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 07:54:37,304 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 07:54:37,306 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 07:54:38,291 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 07:54:38,291 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 07:54:38,397 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-b440c949-0328-11f1-ad2a-bcf10522dc64
+2026-02-06 07:54:38,582 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-b440c949-0328-11f1-ad2a-bcf10522dc64
+2026-02-06 07:54:39,393 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-06 07:54:39,393 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-06 11:50:26,980 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 11:50:26,982 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 11:50:27,096 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 11:50:27,096 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 11:50:27,125 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen LG HDR WQHD
+2026-02-06 11:50:28,631 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 11:50:28,632 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 11:50:29,130 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 11:50:29,132 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 11:50:29,133 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 11:50:29,133 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 11:50:29,893 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-06 11:50:29,995 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 11:50:29,996 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 11:50:31,140 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 11:50:31,140 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 11:50:31,235 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-a80220fe-0349-11f1-a920-bcf10522dc64
+2026-02-06 11:50:31,428 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-a80220fe-0349-11f1-a920-bcf10522dc64
+2026-02-06 11:50:31,980 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-06 11:50:31,980 [ERROR] [Dummy-6] [root/event_listener.py:129]: Failed to retrieve komorebi state before starting event listener: None returned. Retrying in 2 second... Is komorebi online and its binaries added to $PATH?
+2026-02-06 12:16:45,295 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 12:16:45,296 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 12:16:45,401 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 12:16:45,401 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 12:16:46,161 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 12:16:46,162 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 12:16:46,278 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 12:16:46,278 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 12:16:46,379 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen LG HDR WQHD
+2026-02-06 12:16:47,217 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 12:16:47,229 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 12:16:47,236 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 12:16:47,236 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 12:16:47,419 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 12:16:47,422 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 12:16:47,424 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 12:16:47,425 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 12:16:47,847 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 12:16:47,847 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 12:16:48,176 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-06 12:16:48,257 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 12:16:48,258 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 12:16:48,854 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 12:16:48,855 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 12:16:48,942 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-546641ad-034d-11f1-8b16-bcf10522dc64
+2026-02-06 12:16:49,442 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-546641ad-034d-11f1-8b16-bcf10522dc64
+2026-02-06 12:16:57,257 [ERROR] [MainThread] [root/main.py:69]: Timeout waiting for previous instance. Aborting start.
+2026-02-06 12:21:02,165 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 12:21:02,166 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 12:21:02,271 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 12:21:02,271 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 12:21:02,281 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen LG HDR WQHD
+2026-02-06 12:21:03,027 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 12:21:03,030 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 12:21:03,031 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 12:21:03,032 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 12:21:03,032 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 12:21:03,283 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-06 12:21:03,770 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 12:21:03,771 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 12:21:04,107 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 12:21:04,107 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 12:21:04,162 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-ec8aaddf-034d-11f1-82f8-bcf10522dc64
+2026-02-06 12:21:04,543 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-ec8aaddf-034d-11f1-82f8-bcf10522dc64
+2026-02-06 12:22:18,070 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen \\.\DISPLAY1
+2026-02-06 14:46:18,509 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 14:46:18,512 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 14:46:18,614 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 14:46:18,615 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 14:46:18,650 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 14:46:18,651 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 14:46:18,756 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 14:46:18,756 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 14:46:18,797 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen \\.\DISPLAY1
+2026-02-06 14:46:19,359 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 14:46:19,360 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 14:46:20,977 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 14:46:20,978 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 14:46:20,980 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 14:46:20,997 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 14:46:20,998 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 14:46:20,999 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 14:46:20,999 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 14:46:21,444 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 14:46:21,452 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 14:46:24,870 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 14:46:24,870 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 14:46:25,312 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-3a858fb4-0362-11f1-a512-bcf10522dc64
+2026-02-06 14:46:25,360 [INFO] [MainThread] [root/bar_manager.py:80]: Screens updated. Re-initialising all bars.
+2026-02-06 14:46:25,360 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of screen update.
+2026-02-06 14:46:25,475 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-06 14:46:25,475 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-06 14:46:25,874 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-3a858fb4-0362-11f1-a512-bcf10522dc64
+2026-02-06 14:46:25,875 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen LG HDR WQHD
+2026-02-06 14:46:25,915 [INFO] [MainThread] [root/bar.py:154]: Screen geometry changed. Updating position for bar primary-bar on screen DELL P2722H
+2026-02-06 14:46:26,345 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 14:46:26,346 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 14:46:26,347 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 14:46:26,347 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-06 14:46:26,504 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 14:46:26,530 [ERROR] [Dummy-6] [root/client.py:42]: Komorebi state query timed out in 0.5 seconds
+2026-02-06 14:46:26,531 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 14:46:26,767 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-06 14:46:26,824 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 14:46:26,827 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 14:46:27,524 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 14:46:27,525 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 14:46:27,633 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-3c1a9b94-0362-11f1-90e9-bcf10522dc64
+2026-02-06 14:46:28,299 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-3c1a9b94-0362-11f1-90e9-bcf10522dc64
+2026-02-06 14:46:36,366 [ERROR] [MainThread] [root/main.py:69]: Timeout waiting for previous instance. Aborting start.
+2026-02-06 14:47:09,275 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-06 14:47:09,317 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-06 14:51:32,658 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-06 14:51:32,659 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-06 14:51:32,659 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-06 14:51:32,685 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-06 14:51:32,685 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-06 14:51:33,505 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-06 14:51:33,506 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-06 14:51:33,556 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-f27b9e1c-0362-11f1-adeb-bcf10522dc64
+2026-02-06 15:15:34,011 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-f27b9e1c-0362-11f1-adeb-bcf10522dc64
+2026-02-09 08:51:05,944 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:51:06,049 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:51:06,050 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:51:06,063 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:51:06,408 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:51:06,409 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:51:07,567 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:51:07,567 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:51:07,567 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:51:07,592 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:51:07,593 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:51:08,357 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:51:08,358 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:51:08,476 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-182117a9-058c-11f1-9ceb-bcf10522dc64
+2026-02-09 08:51:08,662 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-182117a9-058c-11f1-9ceb-bcf10522dc64
+2026-02-09 08:52:59,057 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:52:59,171 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:52:59,172 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:52:59,179 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:52:59,522 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:52:59,573 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:52:59,695 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:52:59,695 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:52:59,696 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:52:59,696 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:52:59,946 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:52:59,973 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:52:59,973 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:53:00,418 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:53:00,419 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:53:00,518 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-5aec2f4e-058c-11f1-9995-bcf10522dc64
+2026-02-09 08:53:00,942 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-5aec2f4e-058c-11f1-9995-bcf10522dc64
+2026-02-09 08:53:16,831 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:53:16,936 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:53:16,936 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:53:16,945 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:53:17,287 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:53:17,288 [INFO] [Dummy-6] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:53:17,410 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:53:17,410 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:53:17,411 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:53:17,411 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:53:17,661 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:53:17,686 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:53:17,687 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:53:18,107 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:53:18,108 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:53:18,208 [INFO] [Dummy-6] [root/event_listener.py:51]: Created named pipe yasb-65775c61-058c-11f1-ba89-bcf10522dc64
+2026-02-09 08:53:18,658 [INFO] [Dummy-6] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-65775c61-058c-11f1-ba89-bcf10522dc64
+2026-02-09 08:53:43,277 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:53:43,381 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:53:43,381 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:53:43,388 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:53:43,728 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:53:43,844 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:53:43,845 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:53:43,845 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:53:43,845 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:53:44,096 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:53:44,118 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:53:44,118 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:53:44,275 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:53:44,333 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:53:45,240 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:53:45,240 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:53:45,241 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:53:45,305 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-75a37227-058c-11f1-9f3b-bcf10522dc64
+2026-02-09 08:53:45,534 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-75a37227-058c-11f1-9f3b-bcf10522dc64
+2026-02-09 08:54:52,225 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:54:52,336 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:54:52,337 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:54:52,350 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:54:52,717 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:54:52,717 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:54:52,767 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:54:52,927 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:54:52,928 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:54:52,928 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:54:52,954 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:54:52,955 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:54:53,147 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:54:53,214 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:54:54,124 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:54:54,125 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:54:54,126 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:54:54,148 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-9eb29587-058c-11f1-afb7-bcf10522dc64
+2026-02-09 08:54:54,431 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-9eb29587-058c-11f1-afb7-bcf10522dc64
+2026-02-09 08:55:04,011 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:55:04,122 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:55:04,122 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:55:04,129 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:55:04,452 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:55:04,452 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:55:04,504 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:55:04,656 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:55:04,656 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:55:04,657 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:55:04,657 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:55:04,907 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:55:04,937 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:55:04,938 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:55:05,097 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:55:05,149 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:55:05,910 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:55:05,912 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:55:05,912 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:55:05,987 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-a5b906ab-058c-11f1-92bc-bcf10522dc64
+2026-02-09 08:55:06,331 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-a5b906ab-058c-11f1-92bc-bcf10522dc64
+2026-02-09 08:55:22,612 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:55:22,724 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:55:22,724 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:55:22,730 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:55:23,086 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:55:23,086 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:55:23,206 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:55:23,207 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:55:23,207 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:55:23,208 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:55:23,458 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:55:23,482 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:55:23,483 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:55:23,639 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:55:23,691 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:55:24,449 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:55:24,450 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:55:24,450 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:55:24,516 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-b0c5aaec-058c-11f1-9161-bcf10522dc64
+2026-02-09 08:55:24,738 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-b0c5aaec-058c-11f1-9161-bcf10522dc64
+2026-02-09 08:55:30,332 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:55:30,443 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:55:30,444 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:55:30,449 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:55:30,751 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:55:30,751 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:55:30,801 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:55:30,901 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:55:30,901 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:55:30,902 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:55:30,902 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:55:31,152 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:55:31,179 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:55:31,180 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:55:31,337 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:55:31,390 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:55:32,119 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:55:32,119 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:55:32,120 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:55:32,190 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-b557fc41-058c-11f1-a0e7-bcf10522dc64
+2026-02-09 08:55:32,513 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-b557fc41-058c-11f1-a0e7-bcf10522dc64
+2026-02-09 08:55:44,218 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:55:44,331 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:55:44,331 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:55:44,340 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:55:44,686 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:55:44,686 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:55:44,831 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:55:44,831 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:55:44,832 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:55:44,832 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:55:45,082 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:55:45,105 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:55:45,105 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:55:45,259 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:55:45,311 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:55:46,019 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:55:46,019 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:55:46,020 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:55:46,092 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-bda0fa8d-058c-11f1-8fca-bcf10522dc64
+2026-02-09 08:55:46,311 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-bda0fa8d-058c-11f1-8fca-bcf10522dc64
+2026-02-09 08:56:04,927 [DEBUG] [MainThread] [MediaWidget/media.py:534]: Unknown source app in session: 'Chrome.UserData.Profile1' - consider adding to source_apps.py
+2026-02-09 08:56:29,337 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:56:29,441 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:56:29,441 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:56:29,451 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:56:29,797 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:56:29,798 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:56:29,847 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:56:29,905 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:56:29,905 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:56:29,905 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:56:29,906 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:56:30,156 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:56:30,182 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:56:30,183 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:56:30,340 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:56:30,402 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:56:31,211 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:56:31,211 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:56:31,212 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:56:31,277 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-d890a806-058c-11f1-88e4-bcf10522dc64
+2026-02-09 08:56:31,507 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-d890a806-058c-11f1-88e4-bcf10522dc64
+2026-02-09 08:57:19,764 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 08:57:19,878 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 08:57:19,878 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 08:57:19,884 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 08:57:20,223 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 08:57:20,223 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 08:57:20,274 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 08:57:20,319 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 08:57:20,320 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 08:57:20,320 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 08:57:20,320 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 08:57:20,571 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 08:57:20,595 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 08:57:20,595 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 08:57:20,754 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 08:57:20,806 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 08:57:21,651 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 08:57:21,652 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 08:57:21,652 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 08:57:21,724 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-f6a14604-058c-11f1-ba70-bcf10522dc64
+2026-02-09 08:57:21,877 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-f6a14604-058c-11f1-ba70-bcf10522dc64
+2026-02-09 09:11:27,188 [INFO] [MainThread] [root/controller.py:16]: Reloading Application because of config change.
+2026-02-09 09:11:27,292 [INFO] [MainThread] [cli_server/cli_server.py:114]: Log pipe server stopped
+2026-02-09 09:11:27,292 [DEBUG] [MainThread] [cli_server/cli_server.py:209]: CLI server stopped
+2026-02-09 09:11:27,298 [INFO] [MainThread] [root/bar_manager.py:76]: Successfully loaded updated config and re-initialised all bars.
+2026-02-09 09:11:27,625 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping KomorebiEventListener...
+2026-02-09 09:11:27,626 [INFO] [MainThread] [root/bar_manager.py:92]: Stopping WindowsNotificationEventListener...
+2026-02-09 09:11:27,626 [INFO] [Dummy-8] [root/event_listener.py:92]: Attempting to reconnect to Komorebi...
+2026-02-09 09:11:27,751 [INFO] [MainThread] [root/log.py:69]: YASB v1.8.7
+2026-02-09 09:11:27,752 [INFO] [CLIPipeServer] [cli_server/cli_server.py:215]: CLI server started v1.1.5
+2026-02-09 09:11:27,752 [INFO] [MainThread] [cli_server/cli_server.py:106]: Log pipe server started
+2026-02-09 09:11:27,752 [INFO] [MainThread] [root/main.py:46]: Waiting for previous YASB instance to exit...
+2026-02-09 09:11:28,003 [INFO] [MainThread] [root/main.py:72]: Previous instance exited, continuing startup.
+2026-02-09 09:11:28,042 [DEBUG] [MainThread] [qasync._windows._EventPoller/_windows.py:215]: Starting (proactor: <_IocpProactor overlapped#=0 result#=0>)...
+2026-02-09 09:11:28,044 [DEBUG] [Dummy-3] [qasync._windows._EventWorker/_windows.py:195]: Thread started
+2026-02-09 09:11:28,199 [INFO] [MainThread] [root/service.py:41]: AudioInputService starting...
+2026-02-09 09:11:28,252 [INFO] [MainThread] [root/service.py:52]: AudioOutputService starting...
+2026-02-09 09:11:29,048 [INFO] [MainThread] [root/bar_manager.py:85]: Starting KomorebiEventListener...
+2026-02-09 09:11:29,048 [INFO] [MainThread] [root/bar_manager.py:85]: Starting WindowsNotificationEventListener...
+2026-02-09 09:11:29,049 [INFO] [MainThread] [root/watcher.py:54]: Created file watcher for path C:\Users\micha\.config\yasb
+2026-02-09 09:11:29,114 [INFO] [Dummy-8] [root/event_listener.py:51]: Created named pipe yasb-efb7c16c-058e-11f1-a3ce-bcf10522dc64
+2026-02-09 09:11:29,354 [INFO] [Dummy-8] [root/event_listener.py:125]: Komorebi connected to named pipe: yasb-efb7c16c-058e-11f1-a3ce-bcf10522dc64
