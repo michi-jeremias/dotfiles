@@ -50,6 +50,10 @@
             // Window mode
             "space w h": "workspace::ActivatePaneLeft",
             "space w l": "workspace::ActivatePaneRight",
+            "space w H": "workspace::SwapPaneLeft",
+            "space w L": "workspace::SwapPaneRight",
+            "space w K": "workspace::SwapPaneUp",
+            "space w J": "workspace::SwapPaneDown",
             "space w k": "workspace::ActivatePaneUp",
             "space w j": "workspace::ActivatePaneDown",
             "space w q": "pane::CloseActiveItem",
