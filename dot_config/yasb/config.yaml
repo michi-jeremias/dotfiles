@@ -214,6 +214,22 @@ widgets:
     options:
       label: "<span>{icon}</span> {level}"
       label_alt: "{volume}"
+      audio_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        show_apps: true
+        show_app_labels: false
+        show_app_icons: true
+        show_apps_expanded: true
+        app_icons:
+          toggle_down: "\uf078"
+          toggle_up: "\uf077"
       tooltip: false
       volume_icons:
         - "\ueee8"
@@ -223,7 +239,12 @@ widgets:
         - "\uf028"
       callbacks:
         on_left: "toggle_mute"
-        on_right: "exec cmd.exe /c start ms-settings:sound"
+        on_right: "toggle_volume_menu"
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
   microphone:
     type: "yasb.microphone.MicrophoneWidget"
     options:
