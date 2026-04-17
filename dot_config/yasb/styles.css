@@ -208,14 +208,32 @@ For more information about configuration options, please visit the Wiki https://
     color: var(--text4);
     font-weight: 600;
 }
-.microphone-widget {
-    padding: 0 6px 0 6px;
-}
 .microphone-widget .icon {
-    font-size: 18px;
+    color: #ff6b6b;
+    margin: 0 2px 0 0;
 }
-.microphone-widget .icon {
-    color: var(--mauve);
+.microphone-menu {
+    background-color: rgba(17, 17, 27, 0.4); 
+    min-width: 200px;
+}
+/* System microphone volume */
+.microphone-menu .system-volume-container .volume-slider {
+    border: none;
+}
+/* Device list styles */
+.microphone-menu .microphone-container .device {
+    background-color: transparent;
+    border: none;
+    padding: 6px 8px 6px 4px;
+    margin: 2px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.microphone-menu .microphone-container .device.selected {
+    background-color: rgba(255, 255, 255, 0.085);
+}
+.microphone-menu .microphone-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.06);
 }
 
 .volume-widget .icon {
@@ -225,13 +243,12 @@ For more information about configuration options, please visit the Wiki https://
 
 .audio-menu {
     background-color:rgba(17, 17, 27, 0.4); 
-    min-width: 300px;
+    min-width: 200px;
 }
 /* System volume */
 .audio-menu .system-volume-container .volume-slider {
     border: none;
 }
-
 
 /* Device list styles */
 .audio-menu .audio-container .device {
