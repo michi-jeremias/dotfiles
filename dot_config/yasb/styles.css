@@ -115,11 +115,13 @@ For more information about configuration options, please visit the Wiki https://
 }
 
 .widget {
-    padding: 0 12px;
+    padding: 0 8px;
     margin: 0;
 }
 .icon {
     font-size: 16px;
+    padding-right: 0px;
+    min-width: 22px;
 }
 .widget .label {
     padding: 0px 2px;
