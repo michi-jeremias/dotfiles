@@ -141,7 +141,7 @@ widgets:
         label_padding: 1
       callbacks:
         on_left: "toggle_media_menu"
-        on_middle: "do_nothing"
+        on_middle: "exec cmd.exe /c start ms-settings:sound"
         on_right: "toggle_label"
   active_window:
     type: "yasb.active_window.ActiveWindowWidget"
@@ -298,6 +298,7 @@ widgets:
         offset_left: 0
       callbacks:
         on_left: "toggle_mic_menu"
+        on_middle: "exec cmd.exe /c start ms-settings:sound"
         on_right: "toggle_mute"
 
   wifi:
