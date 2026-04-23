@@ -246,7 +246,7 @@ widgets:
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
-      label: "<span>{icon}</span> {level}"
+      label: "<span>{icon}</span> {level} - {device}"
       label_alt: "{volume}"
       audio_menu:
         blur: true
