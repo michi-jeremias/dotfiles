@@ -232,10 +232,13 @@ For more information about configuration options, please visit the Wiki https://
     border-radius: 6px;
 }
 .microphone-menu .microphone-container .device.selected {
-    background-color: rgba(255, 255, 255, 0.085);
+    background-color: var(--yellow);
+    color: rgba(0,0,0,1);
 }
 .microphone-menu .microphone-container .device:hover {
-    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--text2);
+    background-color: var(--lavenderdark);
+    border-radius: 6px;
 }
 
 .volume-widget .icon {
@@ -263,12 +266,14 @@ For more information about configuration options, please visit the Wiki https://
     border-radius: 4px;
 }
 .audio-menu .audio-container .device.selected {
-    background-color: rgba(255, 255, 255, 0.05);
+    /* background-color: rgba(255, 255, 0, 0.3); */
+    background-color: var(--yellow);
+    color: rgba(0,0,0,1);
 }
 
-
 .audio-menu .audio-container .device:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text2);
+    background-color: var(--lavenderdark);
     border-radius: 6px;
 }
 
