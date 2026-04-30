@@ -397,57 +397,57 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; If you are looking for other keys, the file src/keys/mod.rs should hopefully
 ;; provide some insight.
 (defsrc
-  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  caps a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            f14 f13 rctl
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc pgup
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \    pgdn
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret  home
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up   end
+  lctl lmet lalt           spc            f14 f13 rctl   left down right
 )
 
 ;; The first layer defined is the layer that will be active by default when
 ;; kanata starts up. This layer is the standard QWERTY layout except for the
 ;; backtick/grave key (@grl) which is an alias for a tap-hold key.
 (deflayer qwerty
-  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @lt2 a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            @lt4 @lt3 rctl
+  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc pgup
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \    pgdn
+  @lt2 a    s    d    f    g    h    j    k    l    ;    '    ret  home
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft rsft   end
+  lctl lmet lalt           spc            @lt4 @lt3 rctl left down right
 )
 
 (deflayer layer2
-  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  _    S-2    s    d    f    g    left    down    up    right    home    end    ret
-  lsft z    x    S-\    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            _ _ rctl
+  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc pgup
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \    pgdn
+  _    S-2  s    d    f    g    left down up   right  home  end    ret home
+  lsft z    x    S-\    v    b    n    m    ,    .    /    rsft  up      end
+  lctl lmet lalt           spc            _ _ rctl left down right 
 )
 
 (deflayer layer3
-  @grl @komorebi1    @komorebi2    @komorebi3    @komorebi4    @komorebi5    @komorebi6    7    8    9    0    -    =    del
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  _    j    s    d    f    g    h    j    k    l    home    end    ret
-  lsft z    x    S-\    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            f14 rmet rctl
+  @grl @komorebi1    @komorebi2    @komorebi3    @komorebi4    @komorebi5    @komorebi6    7    8    9    0    -    =    del pgup
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \ pgdn
+  _    j    s    d    f    g    h    j    k    l    home    end    ret home
+  lsft z    x    S-\    v    b    n    m    ,    .    /    rsft up end
+  lctl lmet lalt           spc            f14 rmet rctl left down right
 )
 
 (deflayer layer4
-  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    @ü_key    i    @ö_key     p    [    ]    \
-  _    @ä_key    @ss    d    f    g    h    j    k    l    home    end    ret
-  lsft z    x    S-\  v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            f14 rmet rctl
+  @hdir 1    2    3    4    5    6    7    8    9    0    -    =    bspc pgup
+  tab  q    w    e    r    t    y    @ü_key    i    @ö_key     p    [    ]    \ pgdn
+  _    @ä_key    @ss    d    f    g    h    j    k    l    home    end    ret home
+  lsft z    x    S-\  v    b    n    m    ,    .    /    rsft up end
+  lctl lmet lalt           spc            f14 rmet rctl left down right
 )
 
 ;; The dvorak layer remaps the keys to the dvorak layout. There are several
 ;; tap-hold aliases configured on the left side.
-(deflayer dvorak
-  @grl 1    2    3    4    5    6    7    8    9    0    [    ]    bspc
-  tab  '    ,    @.ms p    y    f    g    c    r    l    /    =    \
-  @cap @anm @oar @ech @umc @ifk d    h    t    n    s    -    ret
-  lsft ;    q    j    k    x    b    m    w    v    z    rsft
-  lctl lmet lalt           spc           @ralt rmet @rcl
-)
+;; (deflayer dvorak
+;;   @grl 1    2    3    4    5    6    7    8    9    0    [    ]    bspc
+;;   tab  '    ,    @.ms p    y    f    g    c    r    l    /    =    \
+;;   @cap @anm @oar @ech @umc @ifk d    h    t    n    s    -    ret
+;;   lsft ;    q    j    k    x    b    m    w    v    z    rsft
+;;   lctl lmet lalt           spc           @ralt rmet @rcl
+;; )
 
 ;; This is an alternative to deflayer and does not rely on defsrc.
 ;; It has the advantage of simpler config if only remapping a few keys.
@@ -524,6 +524,8 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   ä_key (fork @ae @Ae (lsft rsft))
   ö_key (fork @oe @Oe (lsft rsft))
   ü_key (fork @ue @Ue (lsft rsft))
+
+  hdir (macro S-grv /)
 )
 
 ;; defalias is used to declare a shortcut for a more complicated action to keep
@@ -535,7 +537,7 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; that has been defined before it in the file.
 (defalias
   ;; aliases to change the base layer to qwerty or dvorak
-  dvk (layer-switch dvorak)
+  ;; dvk (layer-switch dvorak)
   qwr (layer-switch qwerty)
 
   ;; Aliases for layer "toggling". It's not quite toggling because the layer
@@ -546,13 +548,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   lt3 (layer-toggle layer3)
   lt4 (layer-toggle layer4)
  
-  num (layer-toggle numbers)
-  chr (layer-toggle chords)
-  arr (layer-toggle arrows)
-  msc (layer-toggle misc)
+  ;;num (layer-toggle numbers)
+  ;;chr (layer-toggle chords)
+  ;;arr (layer-toggle arrows)
+  ;;msc (layer-toggle misc)
   lay (layer-toggle layers)
-  mse (layer-toggle mouse)
-  fks (layer-while-held fakekeys)
+  ;;mse (layer-toggle mouse)
+  ;;fks (layer-while-held fakekeys)
 
   ;; tap-hold aliases with tap for dvorak key, and hold for toggle layers
   ;; WARNING(Linux only): key repeat with tap-hold can behave unexpectedly.
@@ -589,45 +591,45 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   ;; to tap-hold-next and tap-hold-next-release, respectively. If you know
   ;; the underlying keyberon crate, tap-hold-press is the HoldOnOtherKeyPress
   ;; and tap-hold-release is the PermissiveHold configuration.
-  anm (tap-hold 200 200 a @num)   ;; tap: a      hold: numbers layer
-  oar (tap-hold 200 200 o @arr)   ;; tap: o      hold: arrows layer
-  ech (tap-hold 200 200 e @chr)   ;; tap: e      hold: chords layer
-  umc (tap-hold 200 200 u @msc)   ;; tap: u      hold: misc layer
+  ;;anm (tap-hold 200 200 a @num)   ;; tap: a      hold: numbers layer
+  ;;oar (tap-hold 200 200 o @arr)   ;; tap: o      hold: arrows layer
+  ;;ech (tap-hold 200 200 e @chr)   ;; tap: e      hold: chords layer
+  ;;umc (tap-hold 200 200 u @msc)   ;; tap: u      hold: misc layer
   grl (tap-hold 200 200 grv @lay) ;; tap: grave  hold: layers layer
-  .ms (tap-hold 200 200 . @mse)   ;; tap: .      hold: mouse layer
-  ifk (tap-hold 200 200 i @fks)   ;; tap: i      hold: fake keys layer
+  ;;.ms (tap-hold 200 200 . @mse)   ;; tap: .      hold: mouse layer
+  ;;ifk (tap-hold 200 200 i @fks)   ;; tap: i      hold: fake keys layer
 
   ;; There are additional variants of tap-hold-press and tap-hold-release that
   ;; activate the timeout action (the 5th parameter) when the action times out
   ;; as opposed to the hold action being activated by other keys.
 
   ;; tap: o    hold: arrows layer    timeout: backspace
-  oat (tap-hold-press-timeout   200 200 o @arr bspc)
+  ;; oat (tap-hold-press-timeout   200 200 o @arr bspc)
   ;; tap: e    hold: chords layer    timeout: esc
-  ect (tap-hold-release-timeout 200 200 e @chr esc)
+  ;;l ect (tap-hold-release-timeout 200 200 e @chr esc)
   ;; If you add reset-timeout-on-press to tap-hold-release-timeout,
   ;; the timeout will reset on a press to give you more time to release
   ;; a key to activate the hold.
-  ect2 (tap-hold-release-timeout 200 200 e @chr esc reset-timeout-on-press)
+  ;; ect2 (tap-hold-release-timeout 200 200 e @chr esc reset-timeout-on-press)
 
   ;; There is another variant of `tap-hold-release` that takes a 5th parameter
   ;; that is a list of keys that will trigger an early tap when pressed.
 
   ;; tap: u    hold: misc layer      early tap if any of: (a o e) are pressed
-  umk (tap-hold-release-keys 200 200 u @msc (a o e))
+  ;; umk (tap-hold-release-keys 200 200 u @msc (a o e))
 
   ;; A variant of tap-hold-release-keys accepts another parameter,
   ;; which is a list of keys that activates the tap
   ;; on a press->release of a listed key.
-  umk2 (tap-hold-release-tap-keys-release 200 200 u @msc (a o e) (' , .))
+  ;; umk2 (tap-hold-release-tap-keys-release 200 200 u @msc (a o e) (' , .))
 
   ;; tap: u    hold: misc layer      always tap if any of: (a o e) are pressed
-  uek (tap-hold-except-keys 200 200 u @msc (a o e))
+  ;; uek (tap-hold-except-keys 200 200 u @msc (a o e))
 
   ;; tap: u    hold: misc layer      early tap if any of: (a o e) are pressed
   ;; Unlike tap-hold-release-keys, other keys do NOT trigger early hold.
   ;; This is useful for home row mods where fast typing should not trigger modifiers.
-  utk (tap-hold-tap-keys 200 200 u @msc (a o e))
+  ;; utk (tap-hold-tap-keys 200 200 u @msc (a o e))
 
   ;; tap-hold-keys is a flexible tap-hold with named key list options.
   ;; tap: u    hold: misc layer
@@ -635,17 +637,17 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   ;; (tap-on-press-release ' , .) — tap if ', ,, or . are pressed then released
   ;; (hold-on-press 1 2 3)        — hold immediately if 1, 2, or 3 are pressed
   ;; All list options are optional. Unlisted keys use PermissiveHold behavior.
-  uthk (tap-hold-keys 200 200 u @msc
-    (tap-on-press a o e)
-    (tap-on-press-release ' , .)
-    (hold-on-press 1 2 3))
+  ;; uthk (tap-hold-keys 200 200 u @msc
+  ;;  (tap-on-press a o e)
+  ;;  (tap-on-press-release ' , .)
+  ;;  (hold-on-press 1 2 3))
 
   ;; tap-hold-order resolves by release order instead of timeout.
   ;; tap: a    hold: lctl    buffer: 50ms (fast typing grace period)
-  aor (tap-hold-order 200 50 a lctl)
+  ;; aor (tap-hold-order 200 50 a lctl)
 
   ;; tap for capslk, hold for lctl
-  cap (tap-hold 200 200 caps lctl)
+  ;; cap (tap-hold 200 200 caps lctl)
 
   ;; Below is an alias for the `multi` action which executes multiple actions
   ;; in order but at the same time.
@@ -654,7 +656,7 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   ;; actions, so be reasonable with it. One reasonable use case is this alias:
   ;; press right-alt while also toggling to the `ralted` layer. The utility of
   ;; this is better revealed if you go see `ralted` and its aliases.
-  ralt (multi ralt (layer-toggle ralted))
+  ;; ralt (multi ralt (layer-toggle ralted))
 )
 
 ;; Wrapping a top-level configuration item in a list beginning with
@@ -853,13 +855,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
     ((input-history virtual ctl 2)) g break
 
     ;; layer evaluates to `true` if the active layer matches the given name
-    ((layer dvorak)) x break
+    ;; ((layer dvorak)) x break
     ((layer qwerty)) y break
 
     ;; base-layer evaluates to `true` if the base layer matches the given name
     ;; The base layer is the most recent target of layer-switch.
     ;; The base layer is not always the active layer.
-    ((base-layer dvorak)) x break
+    ;; ((base-layer dvorak)) x break
     ((base-layer qwerty)) y break
 
     ;; default case, empty list always evaluates to true.
@@ -919,13 +921,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; A similar concept to transparent, use-defsrc means the key will always
 ;; behave as the key as defined by defsrc.
 (defalias src use-defsrc)
-(deflayer numbers
-  @src _    _    _    _    _    nlk  kp7  kp8  kp9  _    _    _    _
-  _    _    _    _    _    XX   _    kp4  kp5  kp6  -    _    _    _
-  _    _    C-z  _    _    XX   _    kp1  kp2  kp3  +    _    _
-  _    C-z  C-x  C-c  C-v  XX   _    kp0  kp0  .    /    _
-  _    _    _              _              _    _    _
-)
+;; (deflayer numbers
+;;   @src _    _    _    _    _    nlk  kp7  kp8  kp9  _    _    _    _
+;;   _    _    _    _    _    XX   _    kp4  kp5  kp6  -    _    _    _
+;;   _    _    C-z  _    _    XX   _    kp1  kp2  kp3  +    _    _
+;;   _    C-z  C-x  C-c  C-v  XX   _    kp0  kp0  .    /    _
+;;   _    _    _              _              _    _    _
+;; )
 
 ;; The `lrld` action stands for "live reload".
 ;;
@@ -943,11 +945,11 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; in the configuration. E.g. in this example configuration, you would start on
 ;; the qwerty layer.
 (deflayer layers
-  _    @qwr @dvk lrld lrpv lrnx (lrld-num 1) _ _    _    _    _    _    _
+  _    @qwr _    lrld lrpv lrnx (lrld-num 1) _ _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _    _    _    _
 )
 
 (defalias
@@ -962,9 +964,9 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   ;; If a one-shot key is held then it will act as a regular key. E.g. for os1
   ;; below, holding an @os1 key will keep lsft held and holding an @os3 key
   ;; will keep the layer set to misc.
-  os1 (one-shot 500 lsft)
-  os2 (one-shot 500 C-S-lalt)
-  os3 (one-shot 500 (layer-toggle misc))
+  ;; os1 (one-shot 500 lsft)
+  ;; os2 (one-shot 500 C-S-lalt)
+  ;; os3 (one-shot 500 (layer-toggle misc))
 
   ;; Another name for one-shot is one-shot-press, since it ends on the first
   ;; press of another key.
@@ -1068,30 +1070,30 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; output a chord like `ctrl+c` if the previous key pressed was `C-c` - it
 ;; will only output `c`. There is a variant `rpt-any` which will repeat the
 ;; previous action and would work for that use case.
-(deflayer misc
-  _    _    _    _    _    _    _    _    _    @é   @è   _    ì #|random custom key for testing|#   _
-  _    _    @ab1 _    _    _    ins  @{   @}   [    ]    _    _    +
-  @cw  _    _    _    C-u  _    del  bspc esc  ret  _    _    _
-  @cwc C-z  C-x  C-c  C-v  _    _    _    @td  @os1 @os2 @os3
-  rpt rpt-any _            _              _    _    _
-)
+;; (deflayer misc
+;;   _    _    _    _    _    _    _    _    _    @é   @è   _    ì #|random custom key for testing|#   _
+;;   _    _    @ab1 _    _    _    ins  @{   @}   [    ]    _    _    +
+;;   @cw  _    _    _    C-u  _    del  bspc esc  ret  _    _    _
+;;   @cwc C-z  C-x  C-c  C-v  _    _    _    @td  @os1 @os2 @os3
+;;   rpt rpt-any _            _              _    _    _
+;; )
 
 
-(deflayer chords      ;; you can put list actions directly in deflayer but it's ugly, so prefer aliases.
-  _    _    _    _    _    _    _    _    _    _    @🙁  (unicode 😀) _    _
-  _    _    _    _    _    _    _    _    @csc @hpy @lch @tbm         _    _
-  _    @alp _    _    _    _    _    @ch1 @ch2 @ch4 @ch8 _            _
-  _    _    _    _    _    _    _    _    _    @csv _    _
-  _    _    _              _              _    _    _
-)
+;; (deflayer chords      ;; you can put list actions directly in deflayer but it's ugly, so prefer aliases.
+;;   _    _    _    _    _    _    _    _    _    _    @🙁  (unicode 😀) _    _
+;;   _    _    _    _    _    _    _    _    @csc @hpy @lch @tbm         _    _
+;;   _    @alp _    _    _    _    _    @ch1 @ch2 @ch4 @ch8 _            _
+;;   _    _    _    _    _    _    _    _    _    @csv _    _
+;;   _    _    _              _              _    _    _
+;; )
 
-(deflayer arrows
-  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
-  _    _    _    _    _    _    _    pgup up   pgdn _    _    _    _
-  _    _    _    _    _    _    home left down rght end  _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _
-)
+;;(deflayer arrows
+;;  _    f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+;;  _    _    _    _    _    _    _    pgup up   pgdn _    _    _    _
+;;  _    _    _    _    _    _    home left down rght end  _    _
+;;  _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _              _              _    _    _
+;;)
 
 ;; In Windows, using mouse buttons on the kanata window seems to cause it to hang.
 ;; Using the mouse on other windows seems to be fine though.
@@ -1115,13 +1117,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;;
 ;; One can also see mouse movement actions at the lower right side, with the
 ;; arrow unicode characters.
-(deflayer mouse
-  _    @mwu @mwd @mwl @mwr _    _    _    _    _    @ma↑ _    _    _
-  _    pgup bck  _    fwd  _    _    _    _    @ma← @ma↓ @ma→ _    _
-  _    pgdn mlft _    mrgt mmid _    mbck mfwd _    @ms↑ _    _
-  @fms _    mltp _    mrtp mmtp _    mbtp mftp @ms← @ms↓ @ms→
-  _    _    _              _              _    _    _
-)
+;; (deflayer mouse
+;;   _    @mwu @mwd @mwl @mwr _    _    _    _    _    @ma↑ _    _    _
+;;   _    pgup bck  _    fwd  _    _    _    _    @ma← @ma↓ @ma→ _    _
+;;   _    pgdn mlft _    mrgt mmid _    mbck mfwd _    @ms↑ _    _
+;;   @fms _    mltp _    mrtp mmtp _    mbtp mftp @ms← @ms↓ @ms→
+;;   _    _    _              _              _    _    _
+;; )
 
 (defalias
   ;; Mouse wheel actions. The first number is the interval in milliseconds
@@ -1190,11 +1192,11 @@ If you need help, please feel welcome to ask in the GitHub discussions.
   fms (movemouse-speed 200)
 )
 
-(defalias
-  lft (multi (release-key ralt) left) ;; release ralt if held and also press left
-  rgt (multi (release-key ralt) rght) ;; release ralt if held and also press rght
-  rlr (release-layer ralted)          ;; release layer-toggle of ralted
-)
+;;(defalias
+;;  lft (multi (release-key ralt) left) ;; release ralt if held and also press left
+;;  rgt (multi (release-key ralt) rght) ;; release ralt if held and also press rght
+;;  rlr (release-layer ralted)          ;; release layer-toggle of ralted
+;;)
 
 ;; It's not clear what the practical use case is for the @rlr alias, but the
 ;; combination of @ralt on the dvorak layer and this layer with @lft and @rgt
@@ -1205,13 +1207,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;;
 ;; E.g. ralt+@lft will result in only left being pressed instead of ralt+left,
 ;; while ralt(hold)+tab+tab+tab still works as intended.
-(deflayer ralted
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    @lft @rlr @rgt _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _
-)
+;; (deflayer ralted
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    @lft @rlr @rgt _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _              _              _    _    _
+;; )
 
 ;; Virtual key actions
 
@@ -1267,13 +1269,13 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;;
 ;; Fake keys are flexible in usage but can be obscure to discover how they
 ;; can be useful to you.
-(deflayer fakekeys
-  _    @fcp @fsp @fmp @pal _    _    _    _    _    _    _    _    _
-  _    @fcr @fsr @fap @ral _    _    _    _    _    _    _    _    _
-  _    @fct @fst @rma _    _    _    _    _    _    _    _    _
-  _    @t1  _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _
-)
+;; (deflayer fakekeys
+;;   _    @fcp @fsp @fmp @pal _    _    _    _    _    _    _    _    _
+;;   _    @fcr @fsr @fap @ral _    _    _    _    _    _    _    _    _
+;;   _    @fct @fst @rma _    _    _    _    _    _    _    _    _
+;;   _    @t1  _    _    _    _    _    _    _    _    _    _
+;;   _    _    _              _              _    _    _
+;; )
 
 (deffakekeys
   ctl lctl
@@ -1461,30 +1463,30 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 ;; The action executed by a chord (the right side of the chord-action pairs) may
 ;; be any regular or advanced action, including aliases. They currently cannot
 ;; however contain a `chord` action.
-(defchords binary 500
-  (1      ) 1
-  (  2    ) 2
-  (1 2    ) 3
-  (    4  ) 4
-  (1   4  ) 5
-  (  2 4  ) 6
-  (1 2 4  ) 7
-  (      8) 8
-  (1     8) 9
-  (  2   8) (multi 1 0)
-  (1 2   8) (multi 1 1)
-  (    4 8) (multi 1 2)
-  (1   4 8) (multi 1 3)
-  (  2 4 8) (multi 1 4)
-  (1 2 4 8) (multi 1 5)
-)
-
-(defalias
-  ch1 (chord binary 1)
-  ch2 (chord binary 2)
-  ch4 (chord binary 4)
-  ch8 (chord binary 8)
-)
+;;(defchords binary 500
+;;  (1      ) 1
+;;  (  2    ) 2
+;;  (1 2    ) 3
+;;  (    4  ) 4
+;;  (1   4  ) 5
+;;  (  2 4  ) 6
+;;  (1 2 4  ) 7
+;;  (      8) 8
+;;  (1     8) 9
+;;  (  2   8) (multi 1 0)
+;;  (1 2   8) (multi 1 1)
+;;  (    4 8) (multi 1 2)
+;;  (1   4 8) (multi 1 3)
+;;  (  2 4 8) (multi 1 4)
+;;  (1 2 4 8) (multi 1 5)
+;;)
+;;
+;;(defalias
+;;  ch1 (chord binary 1)
+;;  ch2 (chord binary 2)
+;;  ch4 (chord binary 4)
+;;  ch8 (chord binary 8)
+;;)
 
 ;; The top-level action `include` will read a configuration from a new file.
 ;; At the time of writing, includes can only be placed at the top level. The
@@ -1520,17 +1522,17 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 
 (defvar chord-timeout 200)
 
-(template-expand left-hand-chords qwerty a s d f qwa qws qwd qwf)
+;;(template-expand left-hand-chords qwerty a s d f qwa qws qwd qwf)
 ;; You can use t! as a short form of template-expand
-(t! left-hand-chords dvorak a o e u dva dvo dve dvu)
+;;(t! left-hand-chords dvorak a o e u dva dvo dve dvu)
 
-(deflayer template-example
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    @qwa @qws @qwd @qwf _    _    _    _    _    _    _    _    _
-  _    @dva @dvo @dve @dvu _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _              _    _    _
-)
+;;(deflayer template-example
+;;  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    @qwa @qws @qwd @qwf _    _    _    _    _    _    _    _    _
+;;  _    @dva @dvo @dve @dvu _    _    _    _    _    _    _    _
+;;  _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _              _              _    _    _
+;;)
 
 ;; Within a deftemplate you can use if-equal to conditionally insert content
 ;; into the template.
@@ -1608,9 +1610,9 @@ Syntax (5-tuples):
 |#
 
 (defchordsv2
-  (a b c)   (macro a l p h a b e t)  200 all-released  (qwerty arrows)
-  (h l o)   (macro h e l l o)        250 first-release (qwerty arrows)
-  (g b y e) (macro g o o d b y e)    400 first-release (qwerty arrows)
+  (a b c)   (macro a l p h a b e t)  200 all-released  (qwerty)
+  (h l o)   (macro h e l l o)        250 first-release (qwerty)
+  (g b y e) (macro g o o d b y e)    400 first-release (qwerty)
 )
 
 #|
