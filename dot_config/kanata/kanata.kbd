@@ -424,7 +424,7 @@ If you need help, please feel welcome to ask in the GitHub discussions.
 )
 
 (deflayer layer3
-  @grl @komorebi1    @komorebi2    @komorebi3    @komorebi4    @komorebi5    @komorebi6    7    8    9    0    -    =    bspc
+  @grl @komorebi1    @komorebi2    @komorebi3    @komorebi4    @komorebi5    @komorebi6    7    8    9    0    -    =    del
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   _    j    s    d    f    g    h    j    k    l    home    end    ret
   lsft z    x    S-\    v    b    n    m    ,    .    /    rsft
