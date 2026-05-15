@@ -1,9 +1,6 @@
-# This is default and very simple configuration file for Yasb. 
-# For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
 watch_stylesheet: true
 watch_config: true
 debug: false
-update_check: true # Enable automatic update check.
 komorebi:
   start_command: "komorebic start --whkd"
   stop_command: "komorebic stop --whkd"
@@ -17,17 +14,12 @@ bars:
       position: "top"
       center: false
     animation:
-      enabled: false
-      duration: 100
+      enabled: true
+      duration: 1000
     blur_effect:
-      enabled: false
-      acrylic: true
-      dark_mode: false
-      round_corners: false
-      round_corners_type: "normal"
-      border_color: "system"
+      enabled: true
+      acrylic: false
     window_flags:
-      always_on_top: false
       windows_app_bar: true
     dimensions:
       width: "100%"
@@ -38,20 +30,87 @@ bars:
       bottom: 0
       right: 0
     widgets:
-      left:
-      - "komorebi_active_layout"
-      - "komorebi_workspaces"
-      - "media"
-      center:
-      - "taskbar"
-      - "active_window"
-      right:
-      - "battery"
-      - "wifi"
-      - "microphone"
-      - "volume"
-      - "notifications"
+      left: 
+       - "home"
+       - "komorebi_active_layout"
+       - "komorebi_workspaces"
+       - "media"
+       - "taskbar"
+       # - "apps"
+      center: 
+       - "clock"
+       - "weather"
+      right: 
+       # - "cpu",
+       # - "memory",
+       - "wifi"
+       - "microphone"
+       - "volume"
+       - "battery"
+       - "notifications"
+       # - "power_menu"
 widgets:
+  wifi:
+    type: "yasb.wifi.WifiWidget"
+    options:
+      label: "{wifi_icon} {wifi_name} {wifi_strength}% "
+      label_alt: "{wifi_name} {wifi_strength} %"
+      update_interval: 5000
+      callbacks:
+        on_left: "toggle_menu"
+        on_middle: "exec cmd.exe /c start ms-settings:network"
+        on_right: "toggle_label"
+      ethernet_label: "{wifi_icon}"
+      ethernet_label_alt: "{wifi_icon}   {ip_addr}"
+      ethernet_icon: "\ueba9"
+      get_exact_wifi_strength: false  # Optional. Will require location access permission if true.
+      label_shadow:
+        enabled: true
+        color: "black"
+        radius: 3
+        offset: [ 1, 1 ]
+      menu_config:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+        wifi_icons_secured: 
+         - "\ue670"
+         - "\ue671"
+         - "\ue672"
+         - "\ue673"
+        wifi_icons_unsecured:
+         - "\uec3c"
+         - "\uec3d"
+         - "\uec3e"
+         - "\uec3f"
+        
+  microphone:
+    type: "yasb.microphone.MicrophoneWidget"
+    options:
+      label: "<span>{icon}</span> {level}"
+      label_alt: "<span> {icon}</span> {level}% "
+      icons:
+        normal: "\udb80\udf6c"
+        muted: "\udb80\udf6d"
+      mic_menu:
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "right"
+        direction: "down"
+        offset_top: 6
+        offset_left: 0
+      callbacks:
+        on_left: "toggle_mic_menu"
+        on_middle: "exec cmd.exe /c start ms-settings:sound"
+        on_right: "toggle_mute"
+
   battery:
     type: "yasb.battery.BatteryWidget"
     options:
@@ -82,6 +141,61 @@ widgets:
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
+  cpu:
+    type: "yasb.cpu.CpuWidget"
+    options:
+      label: "<span>\uf4bc</span> {info[percent][total]}%"
+      label_alt: "<span>\uf437</span> {info[histograms][cpu_percent]}"
+      update_interval: 2000
+      histogram_icons:
+        - '\u2581' # 0%
+        - '\u2581' # 10%
+        - '\u2582' # 20%
+        - '\u2583' # 30%
+        - '\u2584' # 40%
+        - '\u2585' # 50%
+        - '\u2586' # 60%
+        - '\u2587' # 70%
+        - '\u2588' # 80%+
+      histogram_num_columns: 8
+      callbacks:
+        on_right: "exec cmd /c Taskmgr"
+      container_padding:
+        top: 0
+        left: 12
+        bottom: 0
+        right: 0
+  memory:
+    type: "yasb.memory.MemoryWidget"
+    options:
+      label: "<span>\uefc5</span> {virtual_mem_percent}%"
+      label_alt: "<span>\uefc5</span> {virtual_mem_used}/{virtual_mem_total}"
+      update_interval: 5000
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "do_nothing"
+      container_padding:
+        top: 0
+        left: 12
+        bottom: 0
+        right: 12
+  notifications:
+    type: "yasb.notifications.NotificationsWidget"
+    options:
+      label: "<span>\uf476</span> {count}"
+      label_alt: "{count} notifications"
+      hide_empty: true
+      tooltip: false
+      callbacks:
+        on_left: "toggle_notification"
+        on_right: "do_nothing"
+        on_middle: "toggle_label"
+      container_padding:
+        top: 0
+        left: 12
+        bottom: 0
+        right: 12
   home:
     type: "yasb.home.HomeWidget"
     options:
@@ -93,67 +207,59 @@ widgets:
       - { title: "Pictures", path: "~\\Pictures" }
       system_menu: true
       power_menu: true
-      blur: false
+      blur: true
+      border_color: "None"
+      round_corners_type: "small"
+      container_padding:
+        top: 0
+        left: 12
+        bottom: 0
+        right: 12
   media:
     type: "yasb.media.MediaWidget"
     options:
-      label: "{artist} - {title}"
+      label: "{title}"
       label_alt: "{artist} - {title}"
       max_field_size:
-        label: 100
-        label_alt: 24
+        label: 48
+        label_alt: 64
       show_thumbnail: false
       controls_only: false
       controls_left: true
-      controls_hide: false
       hide_empty: true
-      thumbnail_alpha: 50
-      thumbnail_padding: 16
+      thumbnail_alpha: 150
+      thumbnail_padding: 8
       thumbnail_corner_radius: 0
-      thumbnail_edge_fade: true
       icons:
-        prev_track: "\udb81\udcae"
-        next_track: "\udb81\udcad"
-        play: "\udb81\udc0a"
-        pause: "\udb80\udfe4"
-      media_menu:
-        blur: false
-        round_corners: false
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        thumbnail_corner_radius: 4
-        thumbnail_size: 100
-        max_title_size: 80
-        max_artist_size: 20
-        show_source: true
-      label_shadow:
-        enabled: true
-        color: "#000000"
-        radius: 2
-        offset: [ 1, 1 ]
-      scrolling_label:
-        enabled: true
-        update_interval_ms: 50
-        style: "left"  # can be "left", "right", "bounce", "bounce-ease"
-        separator: " | "
-        label_padding: 1
-      callbacks:
-        on_left: "toggle_media_menu"
-        on_middle: "exec cmd.exe /c start ms-settings:sound"
-        on_right: "toggle_label"
-  active_window:
-    type: "yasb.active_window.ActiveWindowWidget"
+        prev_track: "\uf048"
+        next_track: "\uf051"
+        play: "\uf04b"
+        pause: "\uf04c"
+      container_padding:
+        top: 0
+        left: 12
+        bottom: 0
+        right: 12
+  clock:
+    type: "yasb.clock.ClockWidget"
     options:
-      label: "{win[title]}"
-      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: ""
-      label_icon: true
-      label_icon_size: 14
-      max_length: 30
-      max_length_ellipsis: "..."
-      monitor_exclusive: true
+      label: "<span>\uf017</span> {%A, %d %B %Y - %H:%M}"
+      label_alt: "{%A, %d %B %Y %H:%M}"
+      callbacks:
+        on_left: "toggle_calendar"
+      calendar: 
+        blur: True
+        round_corners: True
+        round_corners_type: "small"
+        border_color: "None"
+        alignment: "center"
+        direction: "down"
+        distance: 6
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
   komorebi_workspaces:
     type: "komorebi.workspaces.WorkspaceWidget"
     options:
@@ -166,6 +272,11 @@ widgets:
       hide_empty_workspaces: false
       hide_if_offline: true
       animation: false
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
@@ -199,71 +310,49 @@ widgets:
         on_left: "next_layout"
         on_middle: "toggle_monocle"
         on_right: "prev_layout"
+
   weather:
     type: "yasb.weather.WeatherWidget"
     options:
       label: "<span>{icon}</span> {temp}"
       label_alt: "{location}: Min {min_temp}, Max {max_temp}, Humidity {humidity}"
-      api_key: env
+      api_key: "3bf4cf9a7c3f40d6b31174128242807"
       update_interval: 600
       hide_decimal: true
-      location: env
+      location: "Austria Vienna 1120"
       callbacks:
         on_left: "toggle_card"
-        on_middle: "do_nothing"
         on_right: "toggle_label"
       icons:
-        sunnyDay: "\ue30d"
-        clearNight: "\ue32b"
-        cloudyDay: "\ue312"
-        cloudyNight: "\ue311"
-        rainyDay: "\ue308"
-        rainyNight: "\ue333"
-        snowyDay: "\ue30a"
-        snowyNight: "\ue335"
-        blizzardDay: "\udb83\udf36"
-        blizzardNight: "\udb83\udf36"
-        foggyDay: "\ue303"
-        foggyNight: "\ue346"
-        thunderstormDay: "\ue30f"
-        thunderstormNight: "\ue338"
-        default: "\uebaa"
-      weather_card:
-        blur: false
-        round_corners: false
+        sunnyDay: "\udb81\udd99"
+        clearNight: "\udb81\udd99"
+        cloudyDay: "\udb81\udd99"
+        cloudyNight: "\udb81\udd99"
+        rainyDay: "\udb81\udd99"
+        rainyNight: "\udb81\udd99"
+        snowyDay: "\udb81\udd99"
+        snowyNight: "\udb81\udd99"
+        blizzardDay: "\udb81\udd99"
+        default: "\udb81\udd99"
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+      weather_card: 
+        blur: true
+        round_corners: true
+        round_corners_type: "small"
+        border_color: "None"
         alignment: "right"
         direction: "down"
+        distance: 6
         icon_size: 64
-        show_hourly_forecast: true
-        time_format: "24h"
-        hourly_point_spacing: 76
-        hourly_icon_size: 32
-        icon_smoothing: true
-        temp_line_width: 2
-        current_line_color: "#8EAEE8"
-        current_line_width: 1
-        current_line_style: "dot"
   volume:
     type: "yasb.volume.VolumeWidget"
     options:
       label: "<span>{icon}</span> {level}"
       label_alt: "{volume}"
-      audio_menu:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "system"
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        show_apps: true
-        show_app_labels: false
-        show_app_icons: true
-        show_apps_expanded: true
-        app_icons:
-          toggle_down: "\uf078"
-          toggle_up: "\uf077"
       tooltip: false
       volume_icons:
         - "\ueee8"
@@ -274,98 +363,20 @@ widgets:
       callbacks:
         on_left: "toggle_volume_menu"
         on_right: "toggle_mute"
-      label_shadow:
-        enabled: true
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
-  microphone:
-    type: "yasb.microphone.MicrophoneWidget"
-    options:
-      label: "<span>{icon}</span> {level}"
-      label_alt: "<span>{icon}</span> {level}%"
-      icons:
-        normal: "\udb80\udf6c"
-        muted: "\udb80\udf6d"
-      mic_menu:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "system"
+      audio_menu:
+        blur: True
+        round_corners: True
+        round_corners_type: "small"
+        border_color: "None"
         alignment: "right"
         direction: "down"
-        offset_top: 6
-        offset_left: 0
-      callbacks:
-        on_left: "toggle_mic_menu"
-        on_middle: "exec cmd.exe /c start ms-settings:sound"
-        on_right: "toggle_mute"
-
-  wifi:
-    type: "yasb.wifi.WifiWidget"
-    options:
-      label: "{wifi_icon}   {wifi_name} {wifi_strength}%"
-      label_alt: "{wifi_name} {wifi_strength} %"
-      update_interval: 5000
-      callbacks:
-        on_left: "toggle_menu"
-        on_middle: "exec cmd.exe /c start ms-settings:network"
-        on_right: "toggle_label"
-      ethernet_label: "<span>{wifi_icon}</span>"
-      ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
-      ethernet_icon: "\ueba9"
-      get_exact_wifi_strength: false  # Optional. Will require location access permission if true.
-      label_shadow:
-        enabled: true
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
-      menu_config:
-        blur: true
-        round_corners: true
-        round_corners_type: "normal"
-        border_color: "System"
-        alignment: "right"
-        direction: "down"
-        offset_top: 6
-        offset_left: 0
-        wifi_icons_secured: [
-          "\ue670",
-          "\ue671",
-          "\ue672",
-          "\ue673",
-        ]
-        wifi_icons_unsecured: [
-          "\uec3c",
-          "\uec3d",
-          "\uec3e",
-          "\uec3f",
-        ]
-  taskbar:
-    type: "yasb.taskbar.TaskbarWidget"
-    options:
-      show_only_visible: false
-      monitor_exclusive: false
-      strict_filtering: false
-      icon_size: 24
-      animation:
-        enabled: false
-      preview:
-        enabled: false
-        width: 240
-        delay: 400
-        padding: 8
-        margin: 8
-      title_label:
-        enabled: false
-        show: "always"
-        min_length: 10
-        max_length: 30
-      ignore_apps:
-        processes: []
-        titles: []
-        classes: []
-    power_menu:
+        distance: 6
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+  power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
       label: "\uf011"
@@ -381,14 +392,40 @@ widgets:
         hibernate: ["\uf28e", "Hibernate"]
         sleep: ["\u23fe", "Sleep"]
         cancel: ["", "Cancel"]
-  notifications:
-    type: "yasb.notifications.NotificationsWidget"
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+  apps:
+    type: "yasb.applications.ApplicationsWidget"
     options:
-      label: "<span>\uf476</span> {count}"
-      label_alt: "{count} notifications"
-      hide_empty: false
-      tooltip: false
-      callbacks:
-        on_left: "toggle_notification"
-        on_right: "do_nothing"
-        on_middle: "toggle_label"
+      container_padding:
+        top: 0
+        left: 8
+        bottom: 0
+        right: 8
+      label: "{data}"
+      app_list:
+        - { icon: "\uf422", launch: "search" }
+        - { icon: "\ueb03", launch: "cmd /c Taskmgr" }
+        - { icon: "\udb80\ude39",launch: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" }
+        - { icon: "\uf489", launch: "wt" }
+        - { icon: "\uf1ff",launch: "C:\\Users\\amn\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe" }
+        - { icon: "\udb80\ude39",launch: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" }
+        - { icon: "\udb82\ude1e",launch: "C:\\Users\\amn\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe" }
+  taskbar:
+    type: "yasb.taskbar.TaskbarWidget"
+    options:
+      animation:
+        enabled: true
+      icon_size: 16
+      ignore_apps:
+        processes: []
+        titles: []
+        classes: []
+      container_padding:
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
